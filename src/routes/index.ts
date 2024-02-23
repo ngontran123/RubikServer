@@ -1,5 +1,5 @@
 import * as express from 'express'
-import {user,room_user,user_room_detail} from '../models/user_model';
+import {user,room_user,user_room_detail,rubik_info,image_detail} from '../models/user_model';
 import checkingDuplicateUserNameOrEmail from '../config/checking';
 import {token_checking,email_token_checking} from '../config/checkingToken';
 import {username,password,registerUrl,loginUrl,registerServerUrl} from './gmail_account';
@@ -12,6 +12,8 @@ var nodemailer=require('nodemailer');
 const bcrypt=require('bcrypt');
 const crypto=require('crypto');
 const uuid=require('uuid');
+const cheerio=require('cheerio');
+var axios= require('axios');
 const transportEmail=nodemailer.createTransport({
     service:'gmail',
     auth:{
@@ -429,4 +431,74 @@ catch(err)
   throw err;
 }
 });
+
+var downloadImageFromUrl=async(url:string,outputDir:string)=>
+{
+  try
+  { 
+  var response = await axios.get(url,{responseType: 'text'});
+  const html = response.data;
+  var $=cheerio.load(html);
+  console.log($.html());
+  var imageUrl:string[]=[];
+  $('img').each(async(index,ele)=>
+  {
+      const src=$(ele).attr('src');
+      if(src)
+      {
+        imageUrl.push(src);
+      }
+  })
+  }
+  catch(error)
+  {
+    console.log("download image error:"+error.message);
+  }
+  return imageUrl;
+}
+
+router.get('/get-rubik',async function(req,res,next)
+{
+ try
+ {
+   await rubik_info.find({}).exec((err,element)=>{
+    if(err)
+    {
+      throw err;
+    }
+    res.status(200).send({status:true,list:element,message:'Lay danh sach rubik thanh cong'});
+   });
+ }
+ catch(err)
+ { res.status(401).send({status:false,list:[],message:err.message});
+   console.log('Get ruibk list error:'+err.message);
+ }
+});
+
+router.get('/download_img',async function(req,res,next)
+{
+  try
+  {
+  console.log('This api has been called');
+  const url='https://rubiks.com/en-US/products/';
+  var imageList=await downloadImageFromUrl(url,'');
+  console.log("The size of image list is:"+imageList.length);
+  if(imageList!=null)
+  {
+    imageList.forEach((val,idx)=>
+    {
+  console.log("Image"+val+"\n");
+    });
+  }
+  else{
+    console.log('The Image List is null');
+  }
+  }
+  catch(error)
+  {
+    console.log('get img error:'+error.message);
+  }
+});
+
+
 module.exports = router;

@@ -6,7 +6,9 @@
     "start": "nodemon server.ts"
   },
   "dependencies": {
+    "axios": "^1.6.7",
     "bcrypt": "^5.1.0",
+    "cheerio": "^1.0.0-rc.12",
     "cookie-parser": "~1.4.4",
     "cookie-session": "^2.0.0",
     "cors": "^2.8.5",

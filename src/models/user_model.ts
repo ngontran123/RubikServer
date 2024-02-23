@@ -36,6 +36,20 @@ const userRoomDetailSchema=new Schema({
     status:{type:String,required:true}
 });
 
+const rubikInfoSchema = new Schema({
+    _id:{type:Number,required:false},
+    name:{type:String,require:true},
+    description:{type:String,require:true},
+    avatar:{type:String,require:true},
+    feature:{type:String,require:true}
+})
+
+const detailImageSchema = new Schema({
+ _id:{type:Number,require:false},
+ rubik_id:{type:Number,require:true},
+ _url:{type:String,require:true},
+});
+
 const singleBoardDetailSchema=new Schema({
 _id:{type:Number,required:false},
 user_id:{type:Number,required:true},
@@ -51,11 +65,20 @@ userRoomDetailSchema.plugin(autoIncrement.plugin,'userRoomDetail');
 
 singleBoardDetailSchema.plugin(autoIncrement.plugin,'singleBoardDetail');
 
+rubikInfoSchema.plugin(autoIncrement.plugin,'rubikInfo');
+detailImageSchema.plugin(autoIncrement.plugin,'detailImage');
+
+
+
 const room_user=mongoose.model('room',roomSchema,'Room');
 
 const user_room_detail=mongoose.model('userRoomDetail',userRoomDetailSchema,'UserRoomDetail');
 
 const single_board_detail=mongoose.model('singleBoardDetail',singleBoardDetailSchema,'SingleBoardDetail');
 
-export {user,question_level,room_user,user_room_detail,single_board_detail};
+const rubik_info=mongoose.model('rubikInfo',rubikInfoSchema,'RubikInfo');
+
+const image_detail=mongoose.model('detailImage',detailImageSchema,'DetailImage');
+
+export {user,question_level,room_user,user_room_detail,single_board_detail,rubik_info,image_detail};
 
