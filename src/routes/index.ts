@@ -475,6 +475,30 @@ router.get('/get-rubik',async function(req,res,next)
  }
 });
 
+router.get('/product-details/:id',async function(req,res,next){
+ try
+ {
+  var rubik_id=req.params.id.toString();
+  console.log("rubik_id here is:"+rubik_id);
+  await rubik_info.findOne({_id:rubik_id}).exec((err,ele)=>
+  {
+   if(err)
+   {
+    throw err;
+   }
+   console.log("data here is:"+ele);
+   res.status(200).send({status:true,message:'Lay du lieu rubik thanh cong.',data:ele});
+  });
+ }
+ catch(error)
+ {
+  res.status(401).send({status:false,message:error.message});
+  console.log("Get rubik by id error:"+error.message);
+ }
+
+});
+
+
 router.get('/download_img',async function(req,res,next)
 {
   try
