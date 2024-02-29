@@ -4,6 +4,7 @@ import checkingDuplicateUserNameOrEmail from '../config/checking';
 import {token_checking,email_token_checking} from '../config/checkingToken';
 import {username,password,registerUrl,loginUrl,registerServerUrl} from './gmail_account';
 import { DateTime } from 'luxon';
+import mongoose from 'mongoose';
 var router = express.Router();
 var config=require('../config/auth');
 var jwt=require('jsonwebtoken');
@@ -457,7 +458,7 @@ var downloadImageFromUrl=async(url:string,outputDir:string)=>
   return imageUrl;
 }
 
-router.get('/get-rubik',async function(req,res,next)
+router.get('/get-rubik',token_checking,async function(req,res,next)
 {
  try
  {
@@ -478,9 +479,10 @@ router.get('/get-rubik',async function(req,res,next)
 router.get('/product-details/:id',async function(req,res,next){
  try
  {
-  var rubik_id=req.params.id.toString();
+  var rubik_id=req.params.id;
+  console.log("did here");
   console.log("rubik_id here is:"+rubik_id);
-  await rubik_info.findOne({_id:rubik_id}).exec((err,ele)=>
+  await rubik_info.findOne({name:rubik_id}).exec((err,ele)=>
   {
    if(err)
    {
@@ -495,7 +497,6 @@ router.get('/product-details/:id',async function(req,res,next){
   res.status(401).send({status:false,message:error.message});
   console.log("Get rubik by id error:"+error.message);
  }
-
 });
 
 

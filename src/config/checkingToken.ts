@@ -2,7 +2,7 @@ import {user} from "../models/user_model"
 const jwt=require('jsonwebtoken');
 const config=require('./auth');
 var token_checking=(req,res,next)=>{
- var token=req.query.token;
+ var token=req.header('authorization');
  if(!token)
  {  return res.status(401).send({message:"No token is provided"});
  }
