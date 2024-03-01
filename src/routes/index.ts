@@ -405,33 +405,19 @@ router.get('/user_detail/:username',token_checking,function(req,res,next)
  }
 });
 
-router.get('/waiting_room/:room_name',token_checking,function(req,res,next)
+
+router.get('/about',token_checking,function(req,res,next)
 {
-     try
-     {
-    var room_name=req.params.room_name;
-    console.log("room_name is:"+room_name);
-    res.status(200).send({room_name:room_name});
-     }
-     catch(err)
-     {  
-        throw err;
-     }
+  try
+  {
+    res.status(200).send({status:true,message:'Request success'});
+  }
+  catch(err)
+  {
+    console.log('Error loading About page:'+err);
+  }
 });
 
-router.get('/match/:room_name',token_checking,function(req,res,next)
-{
-try
-{
-  var room_name=req.params.room_name;
-  console.log("room_name is:"+room_name);
-  res.status(200).send({room_name:room_name});
-}
-catch(err)
-{
-  throw err;
-}
-});
 
 var downloadImageFromUrl=async(url:string,outputDir:string)=>
 {
@@ -476,7 +462,7 @@ router.get('/get-rubik',token_checking,async function(req,res,next)
  }
 });
 
-router.get('/product-details/:id',async function(req,res,next){
+router.get('/product-details/:id',token_checking,async function(req,res,next){
  try
  {
   var rubik_id=req.params.id;
