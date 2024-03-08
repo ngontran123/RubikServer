@@ -485,6 +485,47 @@ router.get('/product-details/:id',token_checking,async function(req,res,next){
  }
 });
 
+router.post('/product',token_checking,async function(req,res,next)
+{
+  try{
+  var rubik_name=req.body.productname;
+  var rubik_description=req.body.description;
+  var avatar_url=req.body.url;
+  var rubik_feature=req.body.feature;
+  var rubik_ob=
+  {
+     name:rubik_name,
+     description:rubik_description,
+     avatar:avatar_url,
+     feature:rubik_feature
+  };
+  var product=new rubik_info(rubik_ob);
+  product.save((err,data)=>
+  {
+     if(err)
+     {
+      throw err;
+     }
+     res.status(200).send({status:true,message:'Add product successfully',data:data});
+  });
+} 
+catch(err)
+{ 
+  res.status(401).send({status:false,message:err.message});
+  console.log('There is error while creating the product:'+err.message);
+}
+});
+
+router.get('/product',token_checking,function(req,res,next){
+    try
+    {
+   res.status(200).send({status:true,message:'Load Add-Product page success'});
+    }
+    catch(error)
+    {
+      console.log('Error loading add-product page.');
+    }
+});
 
 router.get('/download_img',async function(req,res,next)
 {
@@ -510,6 +551,8 @@ router.get('/download_img',async function(req,res,next)
     console.log('get img error:'+error.message);
   }
 });
+
+
 
 
 module.exports = router;
