@@ -1,5 +1,5 @@
 import * as express from 'express'
-import {user,room_user,user_room_detail,rubik_info,image_detail} from '../models/user_model';
+import {user,room_user,user_room_detail,rubik_info,image_detail,role} from '../models/user_model';
 import checkingDuplicateUserNameOrEmail from '../config/checking';
 import {token_checking,email_token_checking} from '../config/checkingToken';
 import {username,password,registerUrl,loginUrl,registerServerUrl} from './gmail_account';
@@ -22,18 +22,7 @@ const transportEmail=nodemailer.createTransport({
       pass:password
     }
   });
-  const getIdGameLevel=(level:string)=>
-  {
-    var id_level=0;
-    switch(level)
-    {
-      case 'Easy':id_level=1;break;
-      case 'Medium':id_level=2;break;
-      case 'Hard':id_level=3;break;
-      case 'Extreme':id_level=4;break;
-    }
-    return id_level;
-  }
+
 const hbs=require('nodemailer-express-handlebars');
 const path=require('path');
 const handlebarsOption={
@@ -142,8 +131,88 @@ router.get('/login',function(req,res,next){
     }
 });
   
+
+router.post('/add-account',function(req,res,next)
+{
+try
+{
+  var username=req.body.username;
+  var password=bcrypt.hashSync(req.body.password,8);
+  var gender=req.body.gender;
+  var email=req.body.email;
+  var avatar_url=req.body.avatar;
+  var role_id=req.body.role_id;
+  var account_obj=
+  {
+  username:username,
+  password:password,
+  gender:gender,
+  email:email,
+  avatar:avatar_url,
+  created_date:new Date().toLocaleString(),
+  role_id:role_id
+  }
+  var account=new user(account_obj);
+  account.save((err,data)=>{
+   if(err)
+   {
+    throw(err);
+   } 
+   res.status(200).send({status:true,message:'Add account successfuly',data:data});
+  });
+}
+catch(err)
+{
+  console.log('There is error while adding new account');
+  res.status(401).send({stauts:false,message:err.message});
+}
+});
+
 router.post('/login',function (req,res,next){
+ try{
    console.log("Username here is:"+req.body.username);
+
+    var user_object=
+    {
+     username:'helloman123',
+     password:'$2b$08$w1sjTXM8kcjfDxaBPRJtP.8a.CMKZzqpGQE9LRhjPhV/L3BRIThC2',
+     email:'helloman123@gmail.com',
+     gender:'male',
+     avatar:'https://gw.alipayobjects.com/zos/rmsportal/BiazfanxmamNRoxxVxka.png',
+     created_dat:new Date().toLocaleString(),
+     role_id:0
+    };
+    var role_ob=
+    {
+     role_type:'Admin'
+    };
+    var role_user=
+    {
+      role_type:'User'
+    };
+    var create_role_admin=new role(role_ob);
+    var create_role_user= new role(role_user);
+    create_role_admin.save((err,data)=>{
+      if(err)
+      {
+        throw err;
+      }
+    });
+   
+    create_role_user.save((err,data)=>{
+   if(err)
+   {
+    throw err;
+   }
+    });
+    var create_user=new user(user_object);
+    create_user.save((err,data)=>{
+      if(err)
+      {
+        throw err;
+      }
+    });
+    
     user.findOne({username:req.body.username}).exec((err,userr)=>{
         if(err)
         {    
@@ -167,7 +236,15 @@ router.post('/login',function (req,res,next){
     req.session.token=token;
     return res.status(200).send({message:"Đăng nhập thành công",token:req.session.token,username:userr.username,avatar:userr.avatar});
     })
+  }
+  catch(err)
+  {
+    res.status(401).send({status:false,message:err.message});
+  }
 });
+
+
+
 router.post('/auth/verify',function(req,res,next){
     try{
     let token=req.body.token;
@@ -256,7 +333,7 @@ try
          {
              "level_push":
              {
-              $all:[getIdGameLevel(level)]
+              //$all:[getIdGameLevel(level)]
              }
          }
       }
@@ -467,7 +544,7 @@ router.get('/product-details/:id',token_checking,async function(req,res,next){
  {
   var rubik_id=req.params.id;
   console.log("did here");
-  console.log("rubik_id here is:"+rubik_id);
+  console.log("rubik_id here is:"+rubik_id); 
   await rubik_info.findOne({name:rubik_id}).exec((err,ele)=>
   {
    if(err)
@@ -487,7 +564,7 @@ router.get('/product-details/:id',token_checking,async function(req,res,next){
 
 router.post('/product',token_checking,async function(req,res,next)
 {
-  try{
+  try{ 
   var rubik_name=req.body.productname;
   var rubik_description=req.body.description;
   var avatar_url=req.body.url;
@@ -539,8 +616,7 @@ router.get('/download_img',async function(req,res,next)
   {
     imageList.forEach((val,idx)=>
     {
-  console.log("Image"+val+"\n");
-    });
+     });
   }
   else{
     console.log('The Image List is null');
@@ -552,7 +628,4 @@ router.get('/download_img',async function(req,res,next)
   }
 });
 
-
-
-
-module.exports = router;
+module.exports = router;  

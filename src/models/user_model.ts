@@ -9,6 +9,7 @@ const userSchema=new Schema({
     email:{type:String,required:true},
     avatar:{type:String,required:true},
     created_date:{type:String,required:true},
+    role_id:{type:Number,required:true}
 });
 autoIncrement.initialize(mongoose.connection);
 userSchema.plugin(autoIncrement.plugin,'user');
@@ -57,6 +58,12 @@ level_id:{type:Number,require:true},
 time_complete:{type:String,require:true}
 });
 
+
+const roleSchema=new Schema({
+    _id:{type:Number,required:false},
+    role_type:{type:String,required:true}
+});
+
 const question_level=mongoose.model('question',questionLevelSchema,'QuestionLevel');
 
 roomSchema.plugin(autoIncrement.plugin,'room');
@@ -68,6 +75,7 @@ singleBoardDetailSchema.plugin(autoIncrement.plugin,'singleBoardDetail');
 rubikInfoSchema.plugin(autoIncrement.plugin,'rubikInfo');
 detailImageSchema.plugin(autoIncrement.plugin,'detailImage');
 
+roleSchema.plugin(autoIncrement.plugin,'role');
 
 
 const room_user=mongoose.model('room',roomSchema,'Room');
@@ -80,5 +88,9 @@ const rubik_info=mongoose.model('rubikInfo',rubikInfoSchema,'RubikInfo');
 
 const image_detail=mongoose.model('detailImage',detailImageSchema,'DetailImage');
 
-export {user,question_level,room_user,user_room_detail,single_board_detail,rubik_info,image_detail};
+const role=mongoose.model('role',roleSchema,'Role');
+
+export {user,question_level,room_user,user_room_detail,single_board_detail,rubik_info,image_detail,role}; 
+
+
 
