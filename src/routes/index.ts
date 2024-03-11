@@ -130,6 +130,17 @@ router.get('/login',function(req,res,next){
     res.status(404).json({message:error});
     }
 });
+
+router.get('/add-account',token_checking,function(req,res,next){
+  try{
+    res.status(200).send({status:true,message:'Get page successfully.'});
+  }
+  catch(error)
+  {
+  res.status(401).send({status:false,message:error.message});
+  }
+});
+
   
 
 router.post('/add-account',function(req,res,next)
@@ -142,6 +153,7 @@ try
   var email=req.body.email;
   var avatar_url=req.body.avatar;
   var role_id=req.body.role_id;
+
   var account_obj=
   {
   username:username,
@@ -171,47 +183,46 @@ catch(err)
 router.post('/login',function (req,res,next){
  try{
    console.log("Username here is:"+req.body.username);
-
-    var user_object=
-    {
-     username:'helloman123',
-     password:'$2b$08$w1sjTXM8kcjfDxaBPRJtP.8a.CMKZzqpGQE9LRhjPhV/L3BRIThC2',
-     email:'helloman123@gmail.com',
-     gender:'male',
-     avatar:'https://gw.alipayobjects.com/zos/rmsportal/BiazfanxmamNRoxxVxka.png',
-     created_dat:new Date().toLocaleString(),
-     role_id:0
-    };
-    var role_ob=
-    {
-     role_type:'Admin'
-    };
-    var role_user=
-    {
-      role_type:'User'
-    };
-    var create_role_admin=new role(role_ob);
-    var create_role_user= new role(role_user);
-    create_role_admin.save((err,data)=>{
-      if(err)
-      {
-        throw err;
-      }
-    });
+  //   var user_object=
+  //   {
+  //    username:'helloman123',
+  //    password:'$2b$08$w1sjTXM8kcjfDxaBPRJtP.8a.CMKZzqpGQE9LRhjPhV/L3BRIThC2',
+  //    email:'helloman123@gmail.com',
+  //    gender:'male',
+  //    avatar:'https://gw.alipayobjects.com/zos/rmsportal/BiazfanxmamNRoxxVxka.png',
+  //    created_date:new Date().toLocaleString(),
+  //    role_id:0
+  //   };
+  //   var role_ob=
+  //   {
+  //    role_type:'Admin'
+  //   };
+  //   var role_user=
+  //   {
+  //     role_type:'User'
+  //   };
+  //   var create_role_admin=new role(role_ob);
+  //   var create_role_user= new role(role_user);
+  //   create_role_admin.save((err,data)=>{
+  //     if(err)
+  //     {
+  //       throw err;
+  //     }
+  //   });
    
-    create_role_user.save((err,data)=>{
-   if(err)
-   {
-    throw err;
-   }
-    });
-    var create_user=new user(user_object);
-    create_user.save((err,data)=>{
-      if(err)
-      {
-        throw err;
-      }
-    });
+  //   create_role_user.save((err,data)=>{
+  //  if(err)
+  //  {
+  //   throw err;
+  //  }
+  //   });
+  //   var create_user=new user(user_object);
+  //   create_user.save((err,data)=>{
+  //     if(err)
+  //     {
+  //       throw err;
+  //     }
+  //   });
     
     user.findOne({username:req.body.username}).exec((err,userr)=>{
         if(err)
@@ -234,7 +245,7 @@ router.post('/login',function (req,res,next){
     }
     var token=jwt.sign(jwt_payload,config.secret,{expiresIn:'1h'});
     req.session.token=token;
-    return res.status(200).send({message:"Đăng nhập thành công",token:req.session.token,username:userr.username,avatar:userr.avatar});
+    return res.status(200).send({message:"Đăng nhập thành công",token:req.session.token,data:userr});
     })
   }
   catch(err)
