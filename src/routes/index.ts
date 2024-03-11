@@ -143,16 +143,32 @@ router.get('/add-account',token_checking,function(req,res,next){
 
   
 
-router.post('/add-account',function(req,res,next)
+router.post('/add-account',async function(req,res,next)
 {
 try
-{
+{  
   var username=req.body.username;
   var password=bcrypt.hashSync(req.body.password,8);
   var gender=req.body.gender;
   var email=req.body.email;
   var avatar_url=req.body.avatar;
   var role_id=req.body.role_id;
+  
+  var check_exist=await user.find({$or:[{username:username},{email:email}]}).exec((err,data)=>{
+   if(err)
+   {
+    throw err;
+   }
+
+   if(data[0].username==username)
+   {
+     return res.status(401).send({status:false,message:'This username existed in the system.'});
+   }
+   else
+   {
+   return res.status(401).send({status:false,message:'This email existed in the system.'});
+   }
+  });
 
   var account_obj=
   {
@@ -170,13 +186,13 @@ try
    {
     throw(err);
    } 
-   res.status(200).send({status:true,message:'Add account successfuly',data:data});
+  return res.status(200).send({status:true,message:'Add account successfuly',data:data});
   });
 }
 catch(err)
 {
   console.log('There is error while adding new account');
-  res.status(401).send({stauts:false,message:err.message});
+  return res.status(401).send({stauts:false,message:err.message});
 }
 });
 
@@ -281,7 +297,8 @@ catch(error)
 }
 });
 
-router.get('/join',token_checking,function(req,res,next){
+router.get('/join',token_checking,function(req,res,next)
+{
     return res.status(200).send({user:''});
 });
 
@@ -322,6 +339,7 @@ router.get('/user_profile/:username',token_checking,function(req,res,next)
      }
      
 });
+
 const delay=ms=>new Promise(rs=>setTimeout(rs,ms));
 
 const get_statistic_by_level=async(username:string,level:string)=>
@@ -580,6 +598,16 @@ router.post('/product',token_checking,async function(req,res,next)
   var rubik_description=req.body.description;
   var avatar_url=req.body.url;
   var rubik_feature=req.body.feature;
+
+  var check_exist=await rubik_info.find({name:rubik_name}).exec((err,data)=>{
+
+    if(err)
+    {
+      throw err;
+    }
+    res.status(401).send({status:false,message:'This product name already existed in the system.'});
+  });
+
   var rubik_ob=
   {
      name:rubik_name,
@@ -626,10 +654,11 @@ router.get('/download_img',async function(req,res,next)
   if(imageList!=null)
   {
     imageList.forEach((val,idx)=>
-    {
-     });
+    { 
+    });
   }
-  else{
+  else
+  {
     console.log('The Image List is null');
   }
   }
