@@ -340,6 +340,19 @@ router.get('/user_profile/:username',token_checking,function(req,res,next)
      
 });
 
+
+ router.get('/profile/:username',token_checking,function(req,res,next){
+     try
+     {
+      var username=req.params.username;
+      res.status(200).send({status:true,message:`Get profile ${username} successfully.`});
+     }
+     catch(error)
+     {
+      res.status(401).send({status:false,message:error.message});
+     }
+ });
+
 const delay=ms=>new Promise(rs=>setTimeout(rs,ms));
 
 const get_statistic_by_level=async(username:string,level:string)=>
