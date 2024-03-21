@@ -480,7 +480,7 @@ router.post('/user_detail/:username',token_checking,function(req,res,next)
 {
   try
   { 
-    var token=uuid.v4();
+    var token=uuid.v4();    
     var current_time=Date.now();
     var expire=(current_time/1000)+2400;
     var signature=crypto.createHmac('sha1','private_/h5OYTyHT+iEuJ9X4d4SXbe6w4E=').update(token+expire).digest('hex');
@@ -602,6 +602,21 @@ router.get('/product-details/:id',token_checking,async function(req,res,next){
   res.status(401).send({status:false,message:error.message});
   console.log("Get rubik by id error:"+error.message);
  }
+});
+
+
+router.get('/rubik-solve/:name',token_checking,async function(req,res,next)
+{
+  try
+  {
+  var rubik_name=req.params.name;
+  res.status(200).send({status:true,message:`Token is valid for ${rubik_name} page.`});
+  }
+  catch(err)
+  {
+    res.status(401).send({status:false,message:err.message});
+  }
+  
 });
 
 router.post('/product',token_checking,async function(req,res,next)
