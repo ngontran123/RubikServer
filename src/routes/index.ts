@@ -65,6 +65,51 @@ transportEmail.use('compile',hbs(handlebarsOption));
        res.status(200).send({'message':'Vui lòng vào email của bạn để xác thực tài khoản.'});
  });
 
+
+
+const colorToFace=(color:string)=>
+{
+ try
+ { 
+  var res='';
+  switch(color)
+  {
+    case 'whitesmoke':res='U';break;
+    case 'orange':res='L';break;
+    case 'green': res='F';break;
+    case 'red':res='R';break;
+    case 'blue':res='B';break;
+    case 'yellow':res='D';break;
+  }
+  return res;
+ }
+ catch(err)
+ {
+  return err;
+ }
+}
+
+const convertRubikAnno=(colors:string[])=>
+{
+  try
+  { 
+    var res='';
+     for(let color in colors)
+     {
+       var convert_color=colorToFace(color);
+       if(convert_color!='')
+       {
+        res+=convert_color;
+       }
+     }
+     return res;
+  } 
+  catch(error)
+  {
+    return error.message;
+  }
+};
+
 router.post('/register',email_token_checking,function(req, res, next) {
    const new_user={
     username:'',
@@ -585,8 +630,9 @@ router.get('/product-details/:id',token_checking,async function(req,res,next){
  try
  {
   var rubik_id=req.params.id;
+
   console.log("did here");
-  console.log("rubik_id here is:"+rubik_id); 
+  console.log("rubik_id here is:"+rubik_id);
   await rubik_info.findOne({name:rubik_id}).exec((err,ele)=>
   {
    if(err)
@@ -618,6 +664,7 @@ router.get('/rubik-solve/:name',token_checking,async function(req,res,next)
   }
   
 });
+
 
 router.post('/product',token_checking,async function(req,res,next)
 {
@@ -696,4 +743,4 @@ router.get('/download_img',async function(req,res,next)
   }
 });
 
-module.exports = router;  
+module.exports = router;
