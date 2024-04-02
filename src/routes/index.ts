@@ -15,6 +15,7 @@ const crypto=require('crypto');
 const uuid=require('uuid');
 const cheerio=require('cheerio');
 var axios= require('axios');
+const Cube= require('cubejs');
 const transportEmail=nodemailer.createTransport({
     service:'gmail',
     auth:{
