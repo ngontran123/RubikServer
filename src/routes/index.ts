@@ -104,6 +104,7 @@ const convertRubikAnno=(colors:string[])=>
        }
      }
      return res;
+     
   } 
   catch(error)
   {
