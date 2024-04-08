@@ -95,8 +95,8 @@ const convertRubikAnno=(colors:string[])=>
   try
   { 
     var res='';
-     for(let color in colors)
-     {
+     for(let color of colors)
+     { 
        var convert_color=colorToFace(color);
        if(convert_color!='')
        {
@@ -104,8 +104,7 @@ const convertRubikAnno=(colors:string[])=>
        }
      }
      return res;
-     
-  } 
+  }
   catch(error)
   {
     return error.message;
@@ -718,6 +717,34 @@ router.get('/product',token_checking,function(req,res,next){
     {
       console.log('Error loading add-product page.');
     }
+});
+
+
+router.post('/solve_rubik/:name',function(req,res,next)
+{
+try{
+  var rubik_name=req.params.name;
+  console.log(rubik_name);
+  var colors=req.body.colors;
+  console.log('Color is:'+colors);
+  var face_convert=convertRubikAnno(colors);
+  console.log('rubik after converting:'+face_convert);
+  console.log(face_convert.length);
+  if(rubik_name =="Rubik's 3x3")
+  {  
+  console.log('here already');
+    const cube_val= Cube.fromString(face_convert);
+    console.log(cube_val.asString());
+    console.log("as string is:"+(cube_val.asString().length));
+    Cube.initSolver();
+    var res=cube_val.solve();
+    console.log("solution is:"+res);
+  }
+}
+catch(err)
+{
+  console.log('Solve rubik exception:'+err.message);
+}
 });
 
 router.get('/download_img',async function(req,res,next)
