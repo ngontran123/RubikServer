@@ -5,6 +5,7 @@ import {token_checking,email_token_checking} from '../config/checkingToken';
 import {username,password,registerUrl,loginUrl,registerServerUrl} from './gmail_account';
 import { DateTime } from 'luxon';
 import mongoose from 'mongoose';
+const logger=require('../logger/index');
 var router = express.Router();
 var config=require('../config/auth');
 var jwt=require('jsonwebtoken');
@@ -81,11 +82,12 @@ const colorToFace=(color:string)=>
     case 'red':res='R';break;
     case 'blue':res='B';break;
     case 'yellow':res='D';break;
+    default:res='';break;
   }
   return res;
  }
  catch(err)
- {
+ { logger.error('Color to Face error:'+err.message);
   return err;
  }
 }
@@ -106,7 +108,7 @@ const convertRubikAnno=(colors:string[])=>
      return res;
   }
   catch(error)
-  {
+  {logger.error('ConvertRubikAnno error:'+error.message);
     return error.message;
   }
 };
@@ -173,6 +175,7 @@ router.get('/login',function(req,res,next){
     }
     catch(error)
     {
+    logger.error('Get Login error:'+error.message);
     res.status(404).json({message:error});
     }
 });
@@ -536,7 +539,7 @@ router.post('/user_detail/:username',token_checking,function(req,res,next)
     res.status(200).send({token:token,expire:expire,signature:signature});
   }
   catch(err)
-  {
+  { 
     throw err;
   }
 });
@@ -554,11 +557,11 @@ router.get('/user_detail/:username',token_checking,function(req,res,next)
             throw err;
           }
          if(!user)
-        {
+        {   logger.error('Get User detail '+user_name+' failed:Cannot find user.');
             res.status(404).send({message:'Không tìm thấy user này'});
         }
         else
-        {
+        {   logger.info('Get User detail '+user_name+' successful');
             res.status(200).send({message:'OK'});
         }
         });
@@ -566,7 +569,7 @@ router.get('/user_detail/:username',token_checking,function(req,res,next)
  }
  catch(err)
  {
-   console.log("error:"+err);
+  logger.error("user detail error:"+err.message);
  }
 });
 
@@ -574,12 +577,14 @@ router.get('/user_detail/:username',token_checking,function(req,res,next)
 router.get('/about',token_checking,function(req,res,next)
 {
   try
-  {
+  { logger.info('Access about page successful');
     res.status(200).send({status:true,message:'Request success'});
   }
   catch(err)
   {
     console.log('Error loading About page:'+err);
+    logger.error('Error loading About page:'+err);
+
   }
 });
 
@@ -612,8 +617,8 @@ var downloadImageFromUrl=async(url:string,outputDir:string)=>
 router.get('/get-rubik',token_checking,async function(req,res,next)
 {
  try
- {
-   await rubik_info.find({}).exec((err,element)=>{
+ {    logger.info('get Rubik successful');
+     await rubik_info.find({}).exec((err,element)=>{
     if(err)
     {
       throw err;
@@ -622,14 +627,16 @@ router.get('/get-rubik',token_checking,async function(req,res,next)
    });
  }
  catch(err)
- { res.status(401).send({status:false,list:[],message:err.message});
+ { 
+  logger.error('Get rubik failed:'+err.message);
+  res.status(401).send({status:false,list:[],message:err.message});
    console.log('Get ruibk list error:'+err.message);
  }
 });
 
 router.get('/product-details/:id',token_checking,async function(req,res,next){
  try
- {
+ { 
   var rubik_id=req.params.id;
 
   console.log("did here");
@@ -641,11 +648,14 @@ router.get('/product-details/:id',token_checking,async function(req,res,next){
     throw err;
    }
    console.log("data here is:"+ele);
+   logger.info('get product-detail '+rubik_id+' successfull');
    res.status(200).send({status:true,message:'Lay du lieu rubik thanh cong.',data:ele});
   });
  }
  catch(error)
- {
+ {   var rubik_id=req.params.id;
+
+  logger.error('Get product detail '+rubik_id+' failed:'+error.message);
   res.status(401).send({status:false,message:error.message});
   console.log("Get rubik by id error:"+error.message);
  }
@@ -732,13 +742,19 @@ try{
   console.log(face_convert.length);
   if(rubik_name =="Rubik's 3x3")
   {  
-  console.log('here already');
-    const cube_val= Cube.fromString(face_convert);
-    console.log(cube_val.asString());
-    console.log("as string is:"+(cube_val.asString().length));
-    Cube.initSolver();
-    var res=cube_val.solve();
-    console.log("solution is:"+res);
+    console.log('here already');
+    const cube_val= new Cube();
+    console.log('before moving:'+cube_val.asString());
+    cube_val.move('D');
+    console.log('after moving:'+face_convert);
+    console.log('after moving:'+cube_val.asString());
+    if(face_convert===(cube_val.asString()))
+      {
+        console.log('Equals');
+      }
+      else{
+        console.log('Not equals');
+      }
   }
 }
 catch(err)
