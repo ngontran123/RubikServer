@@ -745,14 +745,16 @@ try{
     console.log('here already');
     const cube_val= new Cube();
     console.log('before moving:'+cube_val.asString());
-    cube_val.move('D');
+    cube_val.move("R D R D' F' L");
     console.log('after moving:'+face_convert);
     console.log('after moving:'+cube_val.asString());
+    
     if(face_convert===(cube_val.asString()))
       {
         console.log('Equals');
       }
-      else{
+      else
+      {
         console.log('Not equals');
       }
   }
