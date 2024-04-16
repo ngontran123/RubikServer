@@ -730,7 +730,7 @@ router.get('/product',token_checking,function(req,res,next){
 });
 
 
-router.post('/solve_rubik/:name',function(req,res,next)
+router.post('/solve_rubik/:name',async function(req,res,next)
 {
 try{
   var rubik_name=req.params.name;
@@ -742,25 +742,43 @@ try{
   console.log(face_convert.length);
   if(rubik_name =="Rubik's 3x3")
   {  
-    console.log('here already');
-    const cube_val= new Cube();
-    console.log('before moving:'+cube_val.asString());
-    cube_val.move("R D R D' F' L");
-    console.log('after moving:'+face_convert);
-    console.log('after moving:'+cube_val.asString());
+    var payload={name:rubik_name,facelets:face_convert,original_cube:'',des_cube:''}
+    var response=await axios.post('http://localhost:8002/solve_rubik',payload).then((result)=>
+    {
+        var sol=result.data.data;
+        if(sol!=='')
+          {
+            res.status(200).send({status:true,message:sol});
+          }
+        else 
+        {
+          res.status(401).send({status:false,message:'Get solution failed'});
+        }        
+    }).catch(err=>{
+      console.log("rubik data:"+err);
+      res.status(401).send({status:false,message:err});
+    });
+    // console.log('here already');
+    // const cube_val= new Cube();
+    // console.log('before moving:'+cube_val.asString());
+    // var temp='LLDDUDDBFUBRURFBUDBLRUFFUFULRRRDBDLFUFLBLRBDBFUFLBRLDR';
+    // cube_val.move("D F U");
+    // console.log('after moving:'+face_convert);
+    // console.log('after moving:'+cube_val.asString());
     
-    if(face_convert===(cube_val.asString()))
-      {
-        console.log('Equals');
-      }
-      else
-      {
-        console.log('Not equals');
-      }
+    // if(face_convert===(cube_val.asString()))
+    //   {
+    //     console.log('Equals');
+    //   }
+    //   else
+    //   {
+    //     console.log('Not equals');
+    //   }
   }
 }
 catch(err)
-{
+{ 
+  
   console.log('Solve rubik exception:'+err.message);
 }
 });
