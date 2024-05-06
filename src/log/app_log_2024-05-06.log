@@ -1,0 +1,91 @@
+[2024-05-06T09:47:49.725] [INFO] default - Access about page successful
+[2024-05-06T09:47:51.033] [INFO] default - get Rubik successful
+[2024-05-06T09:47:52.749] [INFO] default - get product-detail Rubik's Coach Cube successfull
+[2024-05-06T09:47:52.775] [INFO] default - get product-detail Rubik's 3x3 successfull
+[2024-05-06T09:47:52.789] [INFO] default - get product-detail Rubik’s Apprentice 2x2 successfull
+[2024-05-06T10:04:26.387] [ERROR] default - MQTT CONNECT FAILED:Connection error: Client network socket disconnected before secure TLS connection was established
+[2024-05-06T10:04:26.434] [ERROR] default - MQTT TRANSMIT FAILED:The producer is disconnected
+[2024-05-06T10:04:37.017] [ERROR] default - MQTT CONNECT FAILED:Connection error: Client network socket disconnected before secure TLS connection was established
+[2024-05-06T10:04:37.032] [ERROR] default - MQTT TRANSMIT FAILED:The producer is disconnected
+[2024-05-06T10:51:19.017] [INFO] default - Access about page successful
+[2024-05-06T10:51:20.307] [INFO] default - get product-detail Rubik's Coach Cube successfull
+[2024-05-06T10:51:20.321] [INFO] default - get product-detail Rubik's 3x3 successfull
+[2024-05-06T10:51:20.336] [INFO] default - get product-detail Rubik’s Apprentice 2x2 successfull
+[2024-05-06T14:09:17.617] [INFO] default - Access about page successful
+[2024-05-06T14:09:19.074] [INFO] default - get product-detail Rubik's Coach Cube successfull
+[2024-05-06T14:09:19.092] [INFO] default - get product-detail Rubik's 3x3 successfull
+[2024-05-06T14:09:19.106] [INFO] default - get product-detail Rubik’s Apprentice 2x2 successfull
+[2024-05-06T14:54:40.429] [INFO] default - Access about page successful
+[2024-05-06T14:54:44.356] [INFO] default - Access about page successful
+[2024-05-06T14:54:57.902] [INFO] default - Access about page successful
+[2024-05-06T14:59:30.650] [INFO] default - Access about page successful
+[2024-05-06T14:59:37.759] [INFO] default - Access about page successful
+[2024-05-06T14:59:43.669] [INFO] default - get product-detail Rubik's Coach Cube successfull
+[2024-05-06T14:59:43.682] [INFO] default - get product-detail Rubik's 3x3 successfull
+[2024-05-06T14:59:43.695] [INFO] default - get product-detail Rubik’s Apprentice 2x2 successfull
+[2024-05-06T14:59:46.799] [INFO] default - get product-detail Rubik's Coach Cube successfull
+[2024-05-06T14:59:46.854] [INFO] default - get product-detail Rubik's 3x3 successfull
+[2024-05-06T14:59:46.864] [INFO] default - get product-detail Rubik’s Apprentice 2x2 successfull
+[2024-05-06T14:59:54.410] [INFO] default - get Rubik successful
+[2024-05-06T14:59:55.258] [INFO] default - Access about page successful
+[2024-05-06T14:59:57.159] [INFO] default - get Rubik successful
+[2024-05-06T14:59:57.688] [INFO] default - Access about page successful
+[2024-05-06T14:59:58.387] [INFO] default - get Rubik successful
+[2024-05-06T15:00:40.109] [INFO] default - get product-detail Rubik's Coach Cube successfull
+[2024-05-06T15:00:40.120] [INFO] default - get product-detail Rubik's 3x3 successfull
+[2024-05-06T15:00:40.133] [INFO] default - get product-detail Rubik’s Apprentice 2x2 successfull
+[2024-05-06T15:00:46.207] [INFO] default - Access about page successful
+[2024-05-06T15:00:47.312] [INFO] default - get product-detail Rubik's Coach Cube successfull
+[2024-05-06T15:00:47.326] [INFO] default - get product-detail Rubik's 3x3 successfull
+[2024-05-06T15:00:47.338] [INFO] default - get product-detail Rubik’s Apprentice 2x2 successfull
+[2024-05-06T15:00:51.571] [INFO] default - Access about page successful
+[2024-05-06T15:30:32.412] [INFO] default - Access about page successful
+[2024-05-06T15:30:49.277] [INFO] default - Access about page successful
+[2024-05-06T15:31:10.392] [INFO] default - Access about page successful
+[2024-05-06T16:22:49.990] [INFO] default - Access about page successful
+[2024-05-06T16:23:05.382] [INFO] default - Access about page successful
+[2024-05-06T16:23:33.922] [INFO] default - get product-detail Rubik's Coach Cube successfull
+[2024-05-06T16:23:33.971] [INFO] default - get product-detail Rubik's 3x3 successfull
+[2024-05-06T16:23:33.986] [INFO] default - get product-detail Rubik’s Apprentice 2x2 successfull
+[2024-05-06T16:23:35.361] [INFO] default - get Rubik successful
+[2024-05-06T16:23:56.715] [INFO] default - Access about page successful
+[2024-05-06T16:23:57.846] [INFO] default - get Rubik successful
+[2024-05-06T16:23:58.435] [INFO] default - Access about page successful
+[2024-05-06T16:23:59.566] [INFO] default - get product-detail Rubik's Coach Cube successfull
+[2024-05-06T16:23:59.582] [INFO] default - get product-detail Rubik's 3x3 successfull
+[2024-05-06T16:23:59.598] [INFO] default - get product-detail Rubik’s Apprentice 2x2 successfull
+[2024-05-06T16:26:52.025] [INFO] default - get product-detail Rubik's Coach Cube successfull
+[2024-05-06T16:26:52.038] [INFO] default - get product-detail Rubik's 3x3 successfull
+[2024-05-06T16:26:52.051] [INFO] default - get product-detail Rubik’s Apprentice 2x2 successfull
+[2024-05-06T16:30:29.501] [INFO] default - Access about page successful
+[2024-05-06T16:30:30.125] [INFO] default - get Rubik successful
+[2024-05-06T16:30:54.280] [INFO] default - Access about page successful
+[2024-05-06T16:30:55.598] [INFO] default - Access about page successful
+[2024-05-06T16:31:20.451] [INFO] default - Access about page successful
+[2024-05-06T16:31:21.801] [INFO] default - get product-detail Rubik's Coach Cube successfull
+[2024-05-06T16:31:21.814] [INFO] default - get product-detail Rubik's 3x3 successfull
+[2024-05-06T16:31:21.828] [INFO] default - get product-detail Rubik’s Apprentice 2x2 successfull
+[2024-05-06T16:34:04.907] [INFO] default - Access about page successful
+[2024-05-06T16:35:56.513] [INFO] default - get product-detail Rubik's Coach Cube successfull
+[2024-05-06T16:35:56.526] [INFO] default - get product-detail Rubik's 3x3 successfull
+[2024-05-06T16:35:56.544] [INFO] default - get product-detail Rubik’s Apprentice 2x2 successfull
+[2024-05-06T16:40:12.738] [INFO] default - Access about page successful
+[2024-05-06T16:40:13.926] [INFO] default - Access about page successful
+[2024-05-06T16:52:23.349] [INFO] default - get product-detail Rubik's Coach Cube successfull
+[2024-05-06T16:52:23.364] [INFO] default - get product-detail Rubik's 3x3 successfull
+[2024-05-06T16:52:23.378] [INFO] default - get product-detail Rubik’s Apprentice 2x2 successfull
+[2024-05-06T17:09:47.645] [INFO] default - Access about page successful
+[2024-05-06T17:10:44.659] [INFO] default - Access about page successful
+[2024-05-06T17:17:19.963] [INFO] default - Access about page successful
+[2024-05-06T17:19:14.740] [INFO] default - Access about page successful
+[2024-05-06T17:19:45.967] [INFO] default - Access about page successful
+[2024-05-06T17:20:10.239] [INFO] default - Access about page successful
+[2024-05-06T17:20:13.202] [INFO] default - Access about page successful
+[2024-05-06T17:20:28.436] [INFO] default - Access about page successful
+[2024-05-06T17:20:49.060] [INFO] default - Access about page successful
+[2024-05-06T17:21:15.969] [INFO] default - Access about page successful
+[2024-05-06T17:21:38.981] [INFO] default - Access about page successful
+[2024-05-06T17:23:48.961] [INFO] default - Access about page successful
+[2024-05-06T17:24:12.091] [INFO] default - Access about page successful
+[2024-05-06T17:24:38.029] [INFO] default - Access about page successful
+[2024-05-06T17:24:58.916] [INFO] default - Access about page successful

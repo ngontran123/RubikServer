@@ -1,0 +1,8 @@
+[2024-05-04T21:45:29.524] [INFO] default - Access about page successful
+[2024-05-04T21:45:33.587] [INFO] default - Access about page successful
+[2024-05-04T21:45:35.681] [INFO] default - get product-detail Rubik's Coach Cube successfull
+[2024-05-04T21:45:35.699] [INFO] default - get product-detail Rubik's 3x3 successfull
+[2024-05-04T21:45:35.717] [INFO] default - get product-detail Rubik’s Apprentice 2x2 successfull
+[2024-05-04T21:56:47.824] [ERROR] default - MQTT TRANSAMIT FAILED:Invalid message without value for topic "test": {}
+[2024-05-04T21:58:51.061] [ERROR] default - MQTT TRANSAMIT FAILED:Invalid message without value for topic "test": {}
+[2024-05-04T22:05:17.201] [ERROR] default - MQTT TRANSAMIT FAILED:Invalid message without value for topic "test": {}

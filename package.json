@@ -24,6 +24,7 @@
     "http-errors": "~1.6.3",
     "jade": "~1.11.0",
     "jsonwebtoken": "^9.0.0",
+    "kafkajs": "^2.2.4",
     "lodash.clonedeep": "^4.5.0",
     "log4js": "^6.9.1",
     "luxon": "^3.4.3",

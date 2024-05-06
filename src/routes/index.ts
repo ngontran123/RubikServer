@@ -1,9 +1,10 @@
 import * as express from 'express'
-import {user,room_user,user_room_detail,rubik_info,image_detail,role} from '../models/user_model';
+import {user,room_user,user_room_detail,rubik_info,image_detail,session,role} from '../models/user_model';
 import checkingDuplicateUserNameOrEmail from '../config/checking';
 import {token_checking,email_token_checking} from '../config/checkingToken';
 import {username,password,registerUrl,loginUrl,registerServerUrl} from './gmail_account';
 import { DateTime } from 'luxon';
+import { Kafka } from 'kafkajs';
 import mongoose from 'mongoose';
 const logger=require('../logger/index');
 var router = express.Router();
@@ -17,6 +18,13 @@ const uuid=require('uuid');
 const cheerio=require('cheerio');
 var axios= require('axios');
 const Cube= require('cubejs');
+const kafka=new Kafka({
+  clientId:"Rubik-BE",
+  brokers:['localhost:9092','localhost:9092']
+});
+const producer=kafka.producer();
+const consumer = kafka.consumer({groupId:'Rubik-BE'});
+
 const transportEmail=nodemailer.createTransport({
     service:'gmail',
     auth:{
@@ -248,6 +256,8 @@ catch(err)
 router.post('/login',function (req,res,next){
  try{
    console.log("Username here is:"+req.body.username);
+   var ip_addr=req.body.ip_addr;
+   var city=req.body.city;
   //   var user_object=
   //   {
   //    username:'helloman123',
@@ -289,26 +299,38 @@ router.post('/login',function (req,res,next){
   //     }
   //   });
     
-    user.findOne({username:req.body.username}).exec((err,userr)=>{
+    user.findOne({username:req.body.username}).exec(async(err,userr)=>{
         if(err)
         {    
             console.log("Error while fetching user");
             return;
         }
         if(!userr)
-        {  return res.status(401).send({message:"Username do not exist"});
+        {  
+          return res.status(401).send({message:"Username do not exist"});
         }
     var passwordIsValid=bcrypt.compareSync(req.body.password,userr.password);
     if(!passwordIsValid)
     {  
         return res.status(401).send({message:"Password is invalid"});
     }
+    
     const jwt_payload=
     {
         user_id:userr.id,
         username:userr.username
     }
     var token=jwt.sign(jwt_payload,config.secret,{expiresIn:'1h'});
+    var created_time=DateTime.now().toLocaleString(DateTime.DATETIME_FULL_WITH_SECONDS);
+    const existingToken=await session.findOne({user_name:userr.username});
+    if(existingToken)
+      {
+       await session.updateOne({user_name:userr.username},{$set:{token:token,created_time:created_time,ip_address:ip_addr,city:city}});
+      }
+    else
+    {
+     await session.create({user_name:userr.username,token:token,created_time:created_time,ip_address:ip_addr,city:city});
+    }
     req.session.token=token;
     return res.status(200).send({message:"Đăng nhập thành công",token:req.session.token,data:userr});
     })
@@ -351,7 +373,8 @@ router.get('/join',token_checking,function(req,res,next)
     return res.status(200).send({user:''});
 });
 
-router.get('/hall',token_checking,function(req,res,next){
+router.get('/hall',token_checking,function(req,res,next)
+{
   return res.status(200).send({user:''});
 });
 
@@ -662,6 +685,7 @@ router.get('/product-details/:id',token_checking,async function(req,res,next){
 });
 
 
+
 router.get('/rubik-solve/:name',token_checking,async function(req,res,next)
 {
   try
@@ -730,7 +754,53 @@ router.get('/product',token_checking,function(req,res,next){
 });
 
 
-router.post('/solve_rubik/:name',async function(req,res,next)
+router.get('/mqtt_connect',token_checking,async function(req,res,next){
+  try
+  {
+   await producer.connect();
+   await consumer.connect();
+   await consumer.subscribe({topics:['test','solve'],fromBeginning:true});
+   await consumer.run({
+    eachMessage:async({topic,partition,message})=>{
+        console.log('The info received is:',{
+          topic,
+          partition,
+          value:message.value.toString()
+        });
+    }
+   });
+   res.status(200).send({status:true,message:'Connect Mqtt Success.'});
+  }
+  catch(err)
+  {
+    console.log('MQTT CONNECT FAILED:'+err.message);
+    logger.error("MQTT CONNECT FAILED:"+err.message);
+    res.status(401).send({status:false,message:err.message});
+  }
+});
+
+router.post('/mqtt_transmit',async function(req,res,next)
+{
+ try
+ { 
+  var content=req.body.command;
+  await producer.send({
+    topic:'solve',
+    messages:[{
+     value:content, 
+    },]
+  });
+  res.status(200).send({status:true,message:'Transmit Message Successfully'});
+ }
+ catch(err)
+ {
+  console.log("Mqtt Transmit failed:"+err.message);
+  logger.error("MQTT TRANSMIT FAILED:"+err.message);
+  res.status(401).send({status:false,message:err.message});
+ }
+});
+
+router.post('/solve_rubik/:name',token_checking,async function(req,res,next)
 {
 try{
   var rubik_name=req.params.name;
@@ -743,7 +813,7 @@ try{
   if(rubik_name =="Rubik's 3x3")
   {  
     var payload={name:rubik_name,facelets:face_convert,original_cube:'',des_cube:''}
-    var response=await axios.post('http://localhost:8002/solve_rubik',payload).then((result)=>
+    var response=await axios.post('http://localhost:8001/solve_rubik',payload).then((result)=>
     {
         var sol=result.data.data;
         if(sol!=='')

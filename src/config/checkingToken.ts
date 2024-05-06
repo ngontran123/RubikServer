@@ -1,11 +1,16 @@
-import {user} from "../models/user_model"
+import {session, user} from "../models/user_model"
 const jwt=require('jsonwebtoken');
 const config=require('./auth');
-var token_checking=(req,res,next)=>{
+var token_checking=async(req,res,next)=>{
  var token=req.header('authorization');
  if(!token)
  {  return res.status(401).send({message:"No token is provided"});
  }
+ var existingToken=await session.findOne({token:token});
+ if(!existingToken)
+  {
+    return res.status(401).send({message:"Your account has been login from another place"});
+  }
  jwt.verify(token,config.secret,(err,decoded)=>{
   if(err)
   { 
