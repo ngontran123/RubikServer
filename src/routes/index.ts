@@ -1,5 +1,5 @@
 import * as express from 'express'
-import {user,room_user,user_room_detail,rubik_info,image_detail,session,role} from '../models/user_model';
+import {user,room_user,user_room_detail,rubik_info,image_detail,session,role, device} from '../models/user_model';
 import checkingDuplicateUserNameOrEmail from '../config/checking';
 import {token_checking,email_token_checking} from '../config/checkingToken';
 import {username,password,registerUrl,loginUrl,registerServerUrl} from './gmail_account';
@@ -200,6 +200,7 @@ router.get('/add-account',token_checking,function(req,res,next){
 
   
 
+
 router.post('/add-account',async function(req,res,next)
 {
 try
@@ -243,13 +244,87 @@ try
    {
     throw(err);
    } 
-  return res.status(200).send({status:true,message:'Add account successfuly',data:data});
+  return res.status(200).send({status:true,message:'Add account successfully',data:data});
   });
 }
 catch(err)
 {
   console.log('There is error while adding new account');
   return res.status(401).send({stauts:false,message:err.message});
+}
+});
+
+router.get('/device/:username',token_checking,async function(req,res,next){
+  try
+  {
+   var username =req.params.username;
+   await device.find({username:username}).exec((err,devicee)=>{
+     if(err)
+      { 
+        logger.success(`GET DEVICE LIST FAILED FOR USER ${username}:${err}`);
+        res.status(400).send({status:false,message:err.message})
+      }
+  
+      logger.info(`GET DEVICE LIST SUCCESSFULLY FOR USER ${username}`);
+      res.status(200).send({status:true,message:devicee});
+   });
+  }
+  catch(err)
+  {
+    console.log("Exception occured when getting device list:"+err.message);
+    logger.error("EXCEPTION GETTING DEVICE LIST:"+err.message);
+    res.status(400).send({status:false,message:err.message});
+  }
+});
+
+router.post('/add_device',token_checking,async function(req,res,next)
+{
+try
+{
+  var device_name=req.body.device_name;
+  var user_name=req.body.username;
+  var checkExistingDevice = await device.findOne({$and:[{device_name:device_name},{username:user_name}]});
+  if(checkExistingDevice)
+    {  logger.error(`DEVICE ${device_name} HAS EXISTED`);
+      res.status(400).send({status:false,message:'This device name has existed in this user device list'});
+    } 
+  else
+  {
+   var created_date=DateTime.now().toLocaleString(DateTime.DATETIME_FULL_WITH_SECONDS);
+   await device.create({username:user_name,device_name:device_name,created_date:created_date});
+   logger.info(`ADD DEVICE ${device_name} SUCCESSFULLY FOR USER ${user_name}`);
+   res.status(200).send({status:true,message:'Add new device successfully'});
+  }
+}
+catch(err)
+{
+  console.log("Exception occured when adding device:"+err.message);
+  logger.error("EXCEPTION ADDING DEVICE:"+err.message);
+  res.status(400).send({status:false,message:err.message});
+}
+});
+
+
+router.post('/delete_device',token_checking,async function(req,res,next){
+try
+{
+  var device_name=req.body.device_name;
+  var username=req.body.username;
+  await device.deleteOne({$and:[{username:username},{device_name:device_name}]}).exec((err,deleted_device)=>{
+    if(err)
+      { 
+        logger.error(`DELETE DEVICE ${deleted_device} FAILED:${err}`);
+        res.status(400).send({status:false,message:err.message});
+      }
+      logger.info(`DELETE DEVICE ${device_name} SUCCESSFULLY FROM USER ${username}`);
+    res.status(200).send({status:true,message:'Delete successfully'});
+  });
+}
+catch(err)
+{
+  console.log("Exception occured when deleting device:"+err.message);
+  logger.error("EXCEPTION DELETING DEVICE:"+err.message);
+  res.status(400).send({status:false,message:err.message});
 }
 });
 
@@ -783,13 +858,21 @@ router.post('/mqtt_transmit',async function(req,res,next)
 {
  try
  { 
+  var topic=req.body.topic;
   var content=req.body.command;
+  await consumer.subscribe({topics:[topic],fromBeginning:true});
   await producer.send({
-    topic:'solve',
+    topic:topic,
     messages:[{
-     value:content, 
+     value:content,
     },]
   });
+  res.setHeader('Content-Type','text/event-stream');
+  res.setHeader('Cache-Control','no-cache');
+  res.setHeader('Connection','keep-alive');
+  const interval=setInterval(()=>{
+      res.write(`data:${JSON.stringify({message:'Hello my friend,this is SSE Tech'})}\n\n`);
+  },2000);
   res.status(200).send({status:true,message:'Transmit Message Successfully'});
  }
  catch(err)
