@@ -1,0 +1,102 @@
+[2024-05-08T16:18:20.955] [INFO] default - Access about page successful
+[2024-05-08T16:18:49.579] [INFO] default - Access about page successful
+[2024-05-08T16:18:51.676] [INFO] default - Access about page successful
+[2024-05-08T16:18:52.292] [INFO] default - get product-detail Rubik's Coach Cube successfull
+[2024-05-08T16:18:52.321] [INFO] default - get product-detail Rubik's 3x3 successfull
+[2024-05-08T16:18:52.339] [INFO] default - get product-detail Rubik’s Apprentice 2x2 successfull
+[2024-05-08T16:22:28.110] [INFO] default - get product-detail Rubik's Coach Cube successfull
+[2024-05-08T16:22:28.126] [INFO] default - get product-detail Rubik's 3x3 successfull
+[2024-05-08T16:22:28.139] [INFO] default - get product-detail Rubik’s Apprentice 2x2 successfull
+[2024-05-08T16:22:31.399] [INFO] default - Access about page successful
+[2024-05-08T16:22:33.092] [INFO] default - Access about page successful
+[2024-05-08T16:31:42.117] [INFO] default - Access about page successful
+[2024-05-08T16:31:51.479] [INFO] default - get Rubik successful
+[2024-05-08T16:31:52.693] [INFO] default - Access about page successful
+[2024-05-08T16:32:45.933] [INFO] default - Access about page successful
+[2024-05-08T16:36:00.946] [INFO] default - Access about page successful
+[2024-05-08T16:36:03.083] [INFO] default - Access about page successful
+[2024-05-08T16:36:05.823] [INFO] default - Access about page successful
+[2024-05-08T16:36:06.740] [INFO] default - get product-detail Rubik's Coach Cube successfull
+[2024-05-08T16:36:06.755] [INFO] default - get product-detail Rubik's 3x3 successfull
+[2024-05-08T16:36:06.791] [INFO] default - get product-detail Rubik’s Apprentice 2x2 successfull
+[2024-05-08T16:36:43.158] [INFO] default - Access about page successful
+[2024-05-08T16:36:44.304] [INFO] default - get product-detail Rubik's Coach Cube successfull
+[2024-05-08T16:36:44.321] [INFO] default - get product-detail Rubik's 3x3 successfull
+[2024-05-08T16:36:44.336] [INFO] default - get product-detail Rubik’s Apprentice 2x2 successfull
+[2024-05-08T16:44:15.174] [INFO] default - get product-detail Rubik's Coach Cube successfull
+[2024-05-08T16:44:15.194] [INFO] default - get product-detail Rubik's 3x3 successfull
+[2024-05-08T16:44:15.209] [INFO] default - get product-detail Rubik’s Apprentice 2x2 successfull
+[2024-05-08T16:44:25.095] [INFO] default - get product-detail Rubik's Coach Cube successfull
+[2024-05-08T16:44:25.111] [INFO] default - get product-detail Rubik's 3x3 successfull
+[2024-05-08T16:44:25.129] [INFO] default - get product-detail Rubik’s Apprentice 2x2 successfull
+[2024-05-08T16:45:28.110] [INFO] default - get product-detail Rubik's Coach Cube successfull
+[2024-05-08T16:45:28.131] [INFO] default - get product-detail Rubik's 3x3 successfull
+[2024-05-08T16:45:28.183] [INFO] default - get product-detail Rubik’s Apprentice 2x2 successfull
+[2024-05-08T16:45:54.095] [INFO] default - get product-detail Rubik's Coach Cube successfull
+[2024-05-08T16:45:54.111] [INFO] default - get product-detail Rubik's 3x3 successfull
+[2024-05-08T16:45:54.123] [INFO] default - get product-detail Rubik’s Apprentice 2x2 successfull
+[2024-05-08T16:46:01.587] [INFO] default - Access about page successful
+[2024-05-08T16:46:04.824] [INFO] default - GET DEVICE LIST SUCCESSFULLY FOR USER helloman123
+[2024-05-08T16:46:28.830] [INFO] default - GET DEVICE LIST SUCCESSFULLY FOR USER helloman123
+[2024-05-08T16:46:29.405] [INFO] default - GET DEVICE LIST SUCCESSFULLY FOR USER helloman123
+[2024-05-08T16:46:29.623] [INFO] default - GET DEVICE LIST SUCCESSFULLY FOR USER helloman123
+[2024-05-08T16:46:29.789] [INFO] default - GET DEVICE LIST SUCCESSFULLY FOR USER helloman123
+[2024-05-08T16:46:29.929] [INFO] default - GET DEVICE LIST SUCCESSFULLY FOR USER helloman123
+[2024-05-08T16:46:30.133] [INFO] default - GET DEVICE LIST SUCCESSFULLY FOR USER helloman123
+[2024-05-08T16:50:49.184] [INFO] default - GET DEVICE LIST SUCCESSFULLY FOR USER helloman123
+[2024-05-08T16:51:49.666] [INFO] default - GET DEVICE LIST SUCCESSFULLY FOR USER helloman123
+[2024-05-08T16:52:04.115] [INFO] default - GET DEVICE LIST SUCCESSFULLY FOR USER helloman123
+[2024-05-08T16:52:55.081] [INFO] default - GET DEVICE LIST SUCCESSFULLY FOR USER helloman123
+[2024-05-08T16:55:33.137] [INFO] default - GET DEVICE LIST SUCCESSFULLY FOR USER helloman123
+[2024-05-08T16:56:52.239] [INFO] default - GET DEVICE LIST SUCCESSFULLY FOR USER helloman123
+[2024-05-08T16:57:49.969] [INFO] default - GET DEVICE LIST SUCCESSFULLY FOR USER helloman123
+[2024-05-08T16:58:40.109] [INFO] default - GET DEVICE LIST SUCCESSFULLY FOR USER helloman123
+[2024-05-08T16:59:00.217] [INFO] default - GET DEVICE LIST SUCCESSFULLY FOR USER helloman123
+[2024-05-08T17:00:31.225] [INFO] default - GET DEVICE LIST SUCCESSFULLY FOR USER helloman123
+[2024-05-08T17:01:11.209] [INFO] default - GET DEVICE LIST SUCCESSFULLY FOR USER helloman123
+[2024-05-08T17:01:20.098] [INFO] default - GET DEVICE LIST SUCCESSFULLY FOR USER helloman123
+[2024-05-08T17:02:32.928] [INFO] default - GET DEVICE LIST SUCCESSFULLY FOR USER helloman123
+[2024-05-08T17:02:37.327] [INFO] default - DELETE DEVICE device 3 SUCCESSFULLY FROM USER helloman123
+[2024-05-08T17:02:41.279] [INFO] default - GET DEVICE LIST SUCCESSFULLY FOR USER helloman123
+[2024-05-08T17:02:42.231] [INFO] default - GET DEVICE LIST SUCCESSFULLY FOR USER helloman123
+[2024-05-08T17:02:42.376] [INFO] default - GET DEVICE LIST SUCCESSFULLY FOR USER helloman123
+[2024-05-08T17:02:42.535] [INFO] default - GET DEVICE LIST SUCCESSFULLY FOR USER helloman123
+[2024-05-08T17:02:42.745] [INFO] default - GET DEVICE LIST SUCCESSFULLY FOR USER helloman123
+[2024-05-08T17:02:42.900] [INFO] default - GET DEVICE LIST SUCCESSFULLY FOR USER helloman123
+[2024-05-08T17:02:43.068] [INFO] default - GET DEVICE LIST SUCCESSFULLY FOR USER helloman123
+[2024-05-08T17:02:43.195] [INFO] default - GET DEVICE LIST SUCCESSFULLY FOR USER helloman123
+[2024-05-08T17:02:43.308] [INFO] default - GET DEVICE LIST SUCCESSFULLY FOR USER helloman123
+[2024-05-08T17:02:43.454] [INFO] default - GET DEVICE LIST SUCCESSFULLY FOR USER helloman123
+[2024-05-08T17:02:43.629] [INFO] default - GET DEVICE LIST SUCCESSFULLY FOR USER helloman123
+[2024-05-08T17:02:43.750] [INFO] default - GET DEVICE LIST SUCCESSFULLY FOR USER helloman123
+[2024-05-08T17:02:43.908] [INFO] default - GET DEVICE LIST SUCCESSFULLY FOR USER helloman123
+[2024-05-08T17:02:44.063] [INFO] default - GET DEVICE LIST SUCCESSFULLY FOR USER helloman123
+[2024-05-08T17:02:44.218] [INFO] default - GET DEVICE LIST SUCCESSFULLY FOR USER helloman123
+[2024-05-08T17:02:44.525] [INFO] default - GET DEVICE LIST SUCCESSFULLY FOR USER helloman123
+[2024-05-08T17:02:44.645] [INFO] default - GET DEVICE LIST SUCCESSFULLY FOR USER helloman123
+[2024-05-08T17:03:20.111] [INFO] default - GET DEVICE LIST SUCCESSFULLY FOR USER helloman123
+[2024-05-08T17:04:59.148] [INFO] default - GET DEVICE LIST SUCCESSFULLY FOR USER helloman123
+[2024-05-08T17:05:11.933] [INFO] default - GET DEVICE LIST SUCCESSFULLY FOR USER helloman123
+[2024-05-08T17:05:15.039] [INFO] default - GET DEVICE LIST SUCCESSFULLY FOR USER helloman123
+[2024-05-08T17:07:19.119] [INFO] default - GET DEVICE LIST SUCCESSFULLY FOR USER helloman123
+[2024-05-08T17:08:05.094] [INFO] default - GET DEVICE LIST SUCCESSFULLY FOR USER helloman123
+[2024-05-08T17:08:43.134] [INFO] default - GET DEVICE LIST SUCCESSFULLY FOR USER helloman123
+[2024-05-08T17:08:55.109] [INFO] default - GET DEVICE LIST SUCCESSFULLY FOR USER helloman123
+[2024-05-08T17:09:53.115] [INFO] default - GET DEVICE LIST SUCCESSFULLY FOR USER helloman123
+[2024-05-08T17:09:56.067] [INFO] default - GET DEVICE LIST SUCCESSFULLY FOR USER helloman123
+[2024-05-08T17:10:30.353] [INFO] default - GET DEVICE LIST SUCCESSFULLY FOR USER helloman123
+[2024-05-08T17:14:46.145] [INFO] default - GET DEVICE LIST SUCCESSFULLY FOR USER helloman123
+[2024-05-08T17:15:15.151] [INFO] default - GET DEVICE LIST SUCCESSFULLY FOR USER helloman123
+[2024-05-08T17:15:18.684] [INFO] default - DELETE DEVICE device 2 SUCCESSFULLY FROM USER helloman123
+[2024-05-08T17:15:45.538] [INFO] default - DELETE DEVICE device 2 SUCCESSFULLY FROM USER helloman123
+[2024-05-08T17:17:18.142] [INFO] default - GET DEVICE LIST SUCCESSFULLY FOR USER helloman123
+[2024-05-08T17:17:23.060] [INFO] default - GET DEVICE LIST SUCCESSFULLY FOR USER helloman123
+[2024-05-08T17:17:45.857] [INFO] default - DELETE DEVICE device 4 SUCCESSFULLY FROM USER helloman123
+[2024-05-08T17:17:48.392] [INFO] default - GET DEVICE LIST SUCCESSFULLY FOR USER helloman123
+[2024-05-08T17:19:06.119] [INFO] default - GET DEVICE LIST SUCCESSFULLY FOR USER helloman123
+[2024-05-08T17:26:43.951] [INFO] default - GET DEVICE LIST SUCCESSFULLY FOR USER helloman123
+[2024-05-08T17:26:47.422] [INFO] default - GET DEVICE LIST SUCCESSFULLY FOR USER helloman123
+[2024-05-08T17:26:48.189] [INFO] default - DELETE DEVICE device 1 SUCCESSFULLY FROM USER helloman123
+[2024-05-08T17:26:54.924] [INFO] default - GET DEVICE LIST SUCCESSFULLY FOR USER helloman123
+[2024-05-08T17:30:26.947] [INFO] default - GET DEVICE LIST SUCCESSFULLY FOR USER helloman123
+[2024-05-08T17:31:48.130] [INFO] default - GET DEVICE LIST SUCCESSFULLY FOR USER helloman123

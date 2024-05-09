@@ -331,6 +331,7 @@ catch(err)
 router.post('/login',function (req,res,next){
  try{
    console.log("Username here is:"+req.body.username);
+   console.log("Password here is:"+req.body.password);
    var ip_addr=req.body.ip_addr;
    var city=req.body.city;
   //   var user_object=
@@ -474,7 +475,8 @@ router.get('/user_profile/:username',token_checking,function(req,res,next)
          {
             res.status(404).send({message:'Không tìm thấy user này'});
          }
-        else{
+        else
+        {
             res.status(200).send({message:'OK'});
         }
         });
@@ -499,6 +501,19 @@ router.get('/user_profile/:username',token_checking,function(req,res,next)
       res.status(401).send({status:false,message:error.message});
      }
  });
+
+ router.get('/device/:username',token_checking,function(req,res,next)
+ {
+  try
+  {
+   var username=req.params.username;
+   res.status(200).send({status:true,message:`Get Device for ${username} successfully.`});
+  }
+  catch(error)
+  {
+   res.status(401).send({status:false,message:error.message});
+  }
+ })
 
 const delay=ms=>new Promise(rs=>setTimeout(rs,ms));
 
@@ -871,7 +886,7 @@ router.post('/mqtt_transmit',async function(req,res,next)
   res.setHeader('Cache-Control','no-cache');
   res.setHeader('Connection','keep-alive');
   const interval=setInterval(()=>{
-      res.write(`data:${JSON.stringify({message:'Hello my friend,this is SSE Tech'})}\n\n`);
+      res.write(`message:${JSON.stringify({message:'Hello my friend,this is SSE Tech'})}\n\n`);
   },2000);
   res.status(200).send({status:true,message:'Transmit Message Successfully'});
  }
