@@ -3,9 +3,10 @@ import {user,room_user,user_room_detail,rubik_info,image_detail,session,role, de
 import checkingDuplicateUserNameOrEmail from '../config/checking';
 import {token_checking,email_token_checking} from '../config/checkingToken';
 import {username,password,registerUrl,loginUrl,registerServerUrl} from './gmail_account';
-import { DateTime } from 'luxon';
+import { DateTime, Interval } from 'luxon';
 import { Kafka } from 'kafkajs';
 import mongoose from 'mongoose';
+import { log } from 'console';
 const logger=require('../logger/index');
 var router = express.Router();
 var config=require('../config/auth');
@@ -24,6 +25,21 @@ const kafka=new Kafka({
 });
 const producer=kafka.producer();
 const consumer = kafka.consumer({groupId:'Rubik-BE'});
+const admin= kafka.admin();
+const mqttInit=async()=>{
+  try{
+   await producer.connect();
+   await consumer.connect();
+   await admin.connect();
+  }
+  catch(err)
+  {
+    console.log("MQTT INIT FAILED:"+err.message);
+    logger.error("MQTT INIT FAILED:"+err.message);
+  }
+}
+
+mqttInit();
 
 const transportEmail=nodemailer.createTransport({
     service:'gmail',
@@ -44,6 +60,8 @@ const handlebarsOption={
 };
 
 transportEmail.use('compile',hbs(handlebarsOption));
+
+
  router.post('/verify',checkingDuplicateUserNameOrEmail,function(req,res,next){
     var new_user=req.body;
     let email_payload=
@@ -116,7 +134,7 @@ const convertRubikAnno=(colors:string[])=>
      return res;
   }
   catch(error)
-  {logger.error('ConvertRubikAnno error:'+error.message);
+  {logger.error('Convert Rubik Anno error:'+error.message);
     return error.message;
   }
 };
@@ -250,7 +268,7 @@ try
 catch(err)
 {
   console.log('There is error while adding new account');
-  return res.status(401).send({stauts:false,message:err.message});
+  return res.status(401).send({status:false,message:err.message});
 }
 });
 
@@ -264,7 +282,7 @@ router.get('/device/:username',token_checking,async function(req,res,next){
         logger.success(`GET DEVICE LIST FAILED FOR USER ${username}:${err}`);
         res.status(400).send({status:false,message:err.message})
       }
-  
+
       logger.info(`GET DEVICE LIST SUCCESSFULLY FOR USER ${username}`);
       res.status(200).send({status:true,message:devicee});
    });
@@ -291,7 +309,7 @@ try
   else
   {
    var created_date=DateTime.now().toLocaleString(DateTime.DATETIME_FULL_WITH_SECONDS);
-   await device.create({username:user_name,device_name:device_name,created_date:created_date});
+   await device.create({username:user_name,device_name:device_name,created_date:created_date,status:false,online_time:created_date});
    logger.info(`ADD DEVICE ${device_name} SUCCESSFULLY FOR USER ${user_name}`);
    res.status(200).send({status:true,message:'Add new device successfully'});
   }
@@ -316,8 +334,8 @@ try
         logger.error(`DELETE DEVICE ${deleted_device} FAILED:${err}`);
         res.status(400).send({status:false,message:err.message});
       }
-      logger.info(`DELETE DEVICE ${device_name} SUCCESSFULLY FROM USER ${username}`);
-    res.status(200).send({status:true,message:'Delete successfully'});
+  logger.info(`DELETE DEVICE ${device_name} SUCCESSFULLY FROM USER ${username}`);
+  res.status(200).send({status:true,message:'Delete successfully'});
   });
 }
 catch(err)
@@ -409,6 +427,7 @@ router.post('/login',function (req,res,next){
     }
     req.session.token=token;
     return res.status(200).send({message:"Đăng nhập thành công",token:req.session.token,data:userr});
+    
     })
   }
   catch(err)
@@ -691,13 +710,13 @@ router.get('/about',token_checking,function(req,res,next)
 {
   try
   { logger.info('Access about page successful');
+    var session_time=req.headers['x-session-id'];
     res.status(200).send({status:true,message:'Request success'});
   }
   catch(err)
   {
     console.log('Error loading About page:'+err);
     logger.error('Error loading About page:'+err);
-
   }
 });
 
@@ -843,15 +862,87 @@ router.get('/product',token_checking,function(req,res,next){
     }
 });
 
+router.get('/mqtt_check_device_status/:username',token_checking,async function(req,res,next)
+{
+ try
+ {
+  var username=req.params.username;
+  var list_device=await device.find({username:username});
+ var check_status= setInterval(async()=>{
+      for(let devic of list_device)
+        {
+         var now_str =DateTime.now().toLocaleString(DateTime.DATETIME_FULL_WITH_SECONDS);
+         var device_time_str=devic.online_time;
+        var now=DateTime.fromFormat(now_str,"MMMM dd, yyyy 'at' h:mm:ss a 'GMT'Z");
+        var device_time= DateTime.fromFormat(device_time_str,"MMMM dd, yyyy 'at' h:mm:ss a 'GMT'Z");
+        var diff = Interval.fromDateTimes(device_time,now);
+        var diff_to_seconds=diff.length('seconds');
+        console.log("now:"+now);
+        console.log("device time:"+device_time);
+        console.log(devic.device_name+":"+diff_to_seconds);
+        if(diff_to_seconds>60)
+          {
+            console.log(devic.device_name+":"+diff_to_seconds);
+           await device.updateOne({device_name:devic.device_name},{$set:{status:false}});
+           
+          } 
+        }
+  },5000);
+ }
+ catch(err)
+ {
+  console.log("CHECK_STATUS_ERROR:"+err.message);
+  logger.error("CHECK_STATUS_ERROR:"+err.message);
+  res.status(401).send({status:false,message:err.message});
+ }
+});
 
-router.get('/mqtt_connect',token_checking,async function(req,res,next){
+
+
+router.get('/mqtt_connect/:username',token_checking,async function(req,res,next){
   try
   {
-   await producer.connect();
-   await consumer.connect();
-   await consumer.subscribe({topics:['test','solve'],fromBeginning:true});
+  var username=req.params.username;
+  var list_device=await device.find({username:username});
+  var list_topic=[];
+  var subscribe_list=[];
+   for(const device of list_device)
+    {
+      var topic=device.device_name;
+      const ob_topic=
+      {topic:topic,
+      numPartitions: 1,
+      replicationFactor: 1
+      };
+      console.log(JSON.stringify(ob_topic)+"\n");
+      list_topic.push(ob_topic);
+      subscribe_list.push(topic);
+    }
+    await admin.createTopics({
+      waitForLeaders:true,
+      topics:list_topic
+    });
+   console.log('Topic created successfully');
+   await consumer.subscribe({topics:subscribe_list,fromBeginning:true});
    await consumer.run({
     eachMessage:async({topic,partition,message})=>{
+      
+      if(subscribe_list.includes(topic))
+        {
+        console.log("this topic exist here");
+        var message_topic=message.value.toString();
+        if(message_topic=='CONNECT')
+        {
+        console.log('here already');
+        var updated_date=DateTime.now().toLocaleString(DateTime.DATETIME_FULL_WITH_SECONDS);
+         await device.updateOne({device_name:topic},{$set:{status:true,online_time:updated_date}});
+        }
+        else if(message_topic=="DISCONNECT")
+          {
+            var updated_date=DateTime.now().toLocaleString(DateTime.DATETIME_FULL_WITH_SECONDS);
+            await device.updateOne({device_name:topic},{$set:{status:false,online_time:updated_date}});
+          }
+      }
         console.log('The info received is:',{
           topic,
           partition,
@@ -875,20 +966,13 @@ router.post('/mqtt_transmit',async function(req,res,next)
  { 
   var topic=req.body.topic;
   var content=req.body.command;
-  await consumer.subscribe({topics:[topic],fromBeginning:true});
+  // await consumer.subscribe({topics:[topic],fromBeginning:true});
   await producer.send({
     topic:topic,
     messages:[{
      value:content,
     },]
   });
-  res.setHeader('Content-Type','text/event-stream');
-  res.setHeader('Cache-Control','no-cache');
-  res.setHeader('Connection','keep-alive');
-  const interval=setInterval(()=>{
-      res.write(`message:${JSON.stringify({message:'Hello my friend,this is SSE Tech'})}\n\n`);
-  },2000);
-  res.status(200).send({status:true,message:'Transmit Message Successfully'});
  }
  catch(err)
  {
@@ -898,11 +982,37 @@ router.post('/mqtt_transmit',async function(req,res,next)
  }
 });
 
+router.get('/mqtt_transmit', function(req,res,next){
+ try{
+  res.setHeader('Content-Type','text/event-stream');
+  res.setHeader('Cache-Control','no-cache');
+  res.setHeader('Connection', 'keep-alive');
+  res.setHeader('X-Accel-Buffering','no');
+  res.flushHeaders();
+  const interval=setInterval(()=>{
+    res.write("event:message\n");
+    res.write(`data: ${JSON.stringify({ message: 'Hello from server!' })}`);
+    res.write('\n\n');
+    // res.end();
+  },5000);
+  req.on('close',()=>
+  {
+    clearInterval(interval);
+    res.end();
+  })
+ }
+ catch(errr)
+ {
+  logger.error("GET MQTT_TRANSMIT ERROR:"+errr.message);
+ }
+});
+
 router.post('/solve_rubik/:name',token_checking,async function(req,res,next)
 {
 try{
   var rubik_name=req.params.name;
   console.log(rubik_name);
+
   var colors=req.body.colors;
   console.log('Color is:'+colors);
   var face_convert=convertRubikAnno(colors);

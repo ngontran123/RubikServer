@@ -1,0 +1,57 @@
+[2024-05-10T09:57:51.827] [ERROR] default - MQTT CONNECT FAILED:Cannot subscribe to topic while consumer is running
+[2024-05-10T09:57:51.978] [ERROR] default - MQTT CONNECT FAILED:Cannot subscribe to topic while consumer is running
+[2024-05-10T09:58:05.973] [ERROR] default - MQTT CONNECT FAILED:Cannot subscribe to topic while consumer is running
+[2024-05-10T09:59:00.842] [ERROR] default - MQTT CONNECT FAILED:Cannot subscribe to topic while consumer is running
+[2024-05-10T09:59:05.746] [ERROR] default - MQTT CONNECT FAILED:Cannot subscribe to topic while consumer is running
+[2024-05-10T10:04:38.142] [ERROR] default - MQTT CONNECT FAILED:Cannot subscribe to topic while consumer is running
+[2024-05-10T10:18:32.881] [ERROR] default - MQTT CONNECT FAILED:Cannot subscribe to topic while consumer is running
+[2024-05-10T10:18:43.932] [ERROR] default - MQTT CONNECT FAILED:Cannot subscribe to topic while consumer is running
+[2024-05-10T10:27:57.853] [ERROR] default - MQTT TRANSMIT FAILED:Cannot set headers after they are sent to the client
+[2024-05-10T10:28:30.043] [ERROR] default - MQTT TRANSMIT FAILED:Cannot set headers after they are sent to the client
+[2024-05-10T10:29:48.677] [ERROR] default - MQTT CONNECT FAILED:Cannot subscribe to topic while consumer is running
+[2024-05-10T10:29:57.197] [ERROR] default - MQTT CONNECT FAILED:Cannot subscribe to topic while consumer is running
+[2024-05-10T11:13:12.625] [ERROR] default - MQTT TRANSMIT FAILED:The producer is disconnected
+[2024-05-10T11:13:14.171] [ERROR] default - MQTT TRANSMIT FAILED:The producer is disconnected
+[2024-05-10T11:15:07.442] [INFO] default - Access about page successful
+[2024-05-10T11:15:08.730] [INFO] default - get product-detail Rubik's Coach Cube successfull
+[2024-05-10T11:15:08.747] [INFO] default - get product-detail Rubik's 3x3 successfull
+[2024-05-10T11:15:08.760] [INFO] default - get product-detail Rubik’s Apprentice 2x2 successfull
+[2024-05-10T11:15:12.489] [ERROR] default - MQTT TRANSMIT FAILED:The producer is disconnected
+[2024-05-10T11:15:27.932] [INFO] default - get product-detail Rubik's Coach Cube successfull
+[2024-05-10T11:15:27.977] [INFO] default - get product-detail Rubik's 3x3 successfull
+[2024-05-10T11:15:27.990] [INFO] default - get product-detail Rubik’s Apprentice 2x2 successfull
+[2024-05-10T11:20:45.291] [INFO] default - Access about page successful
+[2024-05-10T11:23:02.657] [INFO] default - get product-detail Rubik's Coach Cube successfull
+[2024-05-10T11:23:02.670] [INFO] default - get product-detail Rubik's 3x3 successfull
+[2024-05-10T11:23:02.681] [INFO] default - get product-detail Rubik’s Apprentice 2x2 successfull
+[2024-05-10T11:23:16.756] [INFO] default - Access about page successful
+[2024-05-10T11:24:53.633] [INFO] default - Access about page successful
+[2024-05-10T11:24:55.476] [INFO] default - get product-detail Rubik's Coach Cube successfull
+[2024-05-10T11:24:55.492] [INFO] default - get product-detail Rubik's 3x3 successfull
+[2024-05-10T11:24:55.507] [INFO] default - get product-detail Rubik’s Apprentice 2x2 successfull
+[2024-05-10T14:30:17.340] [ERROR] default - MQTT TRANSMIT FAILED:The producer is disconnected
+[2024-05-10T14:37:41.031] [INFO] default - Access about page successful
+[2024-05-10T14:37:44.299] [INFO] default - get product-detail Rubik's Coach Cube successfull
+[2024-05-10T14:37:44.314] [INFO] default - get product-detail Rubik's 3x3 successfull
+[2024-05-10T14:37:44.328] [INFO] default - get product-detail Rubik’s Apprentice 2x2 successfull
+[2024-05-10T15:13:09.117] [ERROR] default - GET MQTT_TRANSMIT ERROR:res.flushHeader is not a function
+[2024-05-10T15:13:11.548] [ERROR] default - GET MQTT_TRANSMIT ERROR:res.flushHeader is not a function
+[2024-05-10T15:13:14.313] [ERROR] default - GET MQTT_TRANSMIT ERROR:res.flushHeader is not a function
+[2024-05-10T16:53:53.690] [INFO] default - Access about page successful
+[2024-05-10T16:53:54.848] [INFO] default - get product-detail Rubik's Coach Cube successfull
+[2024-05-10T16:53:54.867] [INFO] default - get product-detail Rubik's 3x3 successfull
+[2024-05-10T16:53:54.880] [INFO] default - get product-detail Rubik’s Apprentice 2x2 successfull
+[2024-05-10T16:58:02.510] [INFO] default - get product-detail Rubik's Coach Cube successfull
+[2024-05-10T16:58:02.521] [INFO] default - get product-detail Rubik's 3x3 successfull
+[2024-05-10T16:58:02.538] [INFO] default - get product-detail Rubik’s Apprentice 2x2 successfull
+[2024-05-10T16:58:05.188] [ERROR] default - MQTT TRANSMIT FAILED:The producer is disconnected
+[2024-05-10T16:59:24.782] [INFO] default - Access about page successful
+[2024-05-10T16:59:26.250] [INFO] default - get product-detail Rubik's Coach Cube successfull
+[2024-05-10T16:59:26.266] [INFO] default - get product-detail Rubik's 3x3 successfull
+[2024-05-10T16:59:26.277] [INFO] default - get product-detail Rubik’s Apprentice 2x2 successfull
+[2024-05-10T18:09:15.785] [INFO] default - Access about page successful
+[2024-05-10T18:09:18.173] [INFO] default - GET DEVICE LIST SUCCESSFULLY FOR USER helloman123
+[2024-05-10T18:09:35.302] [INFO] default - Access about page successful
+[2024-05-10T18:09:37.464] [INFO] default - get product-detail Rubik's Coach Cube successfull
+[2024-05-10T18:09:37.483] [INFO] default - get product-detail Rubik's 3x3 successfull
+[2024-05-10T18:09:37.501] [INFO] default - get product-detail Rubik’s Apprentice 2x2 successfull

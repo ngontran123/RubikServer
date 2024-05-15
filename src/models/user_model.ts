@@ -64,11 +64,10 @@ const deviceSchema = new Schema(
  _id:{type:Number,required:false},
  username:{type:String,required:true},
  device_name:{type:String,required:true},
- created_date:{type:String,required:true}
+ created_date:{type:String,required:true},
+ status:{type:Boolean,required:true},
+ online_time:{type:String,required:true}
 })
-
-
-
 
 const detailImageSchema = new Schema({
  _id:{type:Number,require:false},

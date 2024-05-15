@@ -1,0 +1,55 @@
+[2024-05-13T14:48:03.391] [INFO] default - Access about page successful
+[2024-05-13T14:48:06.738] [INFO] default - Access about page successful
+[2024-05-13T14:48:29.073] [INFO] default - Access about page successful
+[2024-05-13T14:49:44.059] [INFO] default - Access about page successful
+[2024-05-13T14:50:24.774] [INFO] default - Access about page successful
+[2024-05-13T14:51:02.061] [INFO] default - Access about page successful
+[2024-05-13T14:51:15.674] [INFO] default - GET DEVICE LIST SUCCESSFULLY FOR USER helloman123
+[2024-05-13T14:51:15.690] [INFO] default - Access about page successful
+[2024-05-13T14:51:17.035] [INFO] default - Access about page successful
+[2024-05-13T14:51:58.051] [INFO] default - Access about page successful
+[2024-05-13T14:52:40.336] [INFO] default - GET DEVICE LIST SUCCESSFULLY FOR USER helloman123
+[2024-05-13T14:52:42.514] [INFO] default - Access about page successful
+[2024-05-13T15:12:42.413] [INFO] default - GET DEVICE LIST SUCCESSFULLY FOR USER helloman123
+[2024-05-13T15:12:43.368] [INFO] default - Access about page successful
+[2024-05-13T15:18:26.421] [INFO] default - GET DEVICE LIST SUCCESSFULLY FOR USER helloman123
+[2024-05-13T15:18:27.470] [INFO] default - Access about page successful
+[2024-05-13T15:31:30.863] [INFO] default - GET DEVICE LIST SUCCESSFULLY FOR USER helloman123
+[2024-05-13T15:31:31.604] [INFO] default - Access about page successful
+[2024-05-13T15:32:25.666] [INFO] default - get Rubik successful
+[2024-05-13T15:32:26.432] [INFO] default - Access about page successful
+[2024-05-13T15:32:27.208] [INFO] default - get product-detail Rubik's Coach Cube successfull
+[2024-05-13T15:32:27.266] [INFO] default - get product-detail Rubik's 3x3 successfull
+[2024-05-13T15:32:27.274] [INFO] default - get product-detail Rubik’s Apprentice 2x2 successfull
+[2024-05-13T15:32:47.544] [INFO] default - GET DEVICE LIST SUCCESSFULLY FOR USER helloman123
+[2024-05-13T15:32:47.559] [INFO] default - Access about page successful
+[2024-05-13T15:32:53.875] [INFO] default - get Rubik successful
+[2024-05-13T15:32:57.422] [INFO] default - get Rubik successful
+[2024-05-13T15:38:14.444] [INFO] default - GET DEVICE LIST SUCCESSFULLY FOR USER helloman123
+[2024-05-13T15:38:14.458] [INFO] default - Access about page successful
+[2024-05-13T15:38:31.247] [ERROR] default - EXCEPTION ADDING DEVICE:device validation failed: username: Path `username` is required.
+[2024-05-13T15:53:29.678] [INFO] default - GET DEVICE LIST SUCCESSFULLY FOR USER helloman123
+[2024-05-13T15:53:56.575] [INFO] default - GET DEVICE LIST SUCCESSFULLY FOR USER helloman123
+[2024-05-13T15:53:57.057] [INFO] default - GET DEVICE LIST SUCCESSFULLY FOR USER helloman123
+[2024-05-13T15:53:57.219] [INFO] default - GET DEVICE LIST SUCCESSFULLY FOR USER helloman123
+[2024-05-13T15:53:57.379] [INFO] default - GET DEVICE LIST SUCCESSFULLY FOR USER helloman123
+[2024-05-13T15:53:57.539] [INFO] default - GET DEVICE LIST SUCCESSFULLY FOR USER helloman123
+[2024-05-13T15:53:57.669] [INFO] default - GET DEVICE LIST SUCCESSFULLY FOR USER helloman123
+[2024-05-13T15:53:57.975] [INFO] default - GET DEVICE LIST SUCCESSFULLY FOR USER helloman123
+[2024-05-13T15:54:03.196] [ERROR] default - EXCEPTION ADDING DEVICE:device validation failed: online_time: Path `online_time` is required., status: Path `status` is required.
+[2024-05-13T15:54:04.756] [INFO] default - GET DEVICE LIST SUCCESSFULLY FOR USER helloman123
+[2024-05-13T15:54:06.987] [INFO] default - GET DEVICE LIST SUCCESSFULLY FOR USER helloman123
+[2024-05-13T15:54:07.497] [INFO] default - GET DEVICE LIST SUCCESSFULLY FOR USER helloman123
+[2024-05-13T15:54:07.643] [INFO] default - GET DEVICE LIST SUCCESSFULLY FOR USER helloman123
+[2024-05-13T15:54:12.744] [ERROR] default - EXCEPTION ADDING DEVICE:device validation failed: online_time: Path `online_time` is required., status: Path `status` is required.
+[2024-05-13T15:54:19.480] [INFO] default - GET DEVICE LIST SUCCESSFULLY FOR USER helloman123
+[2024-05-13T15:54:20.886] [INFO] default - GET DEVICE LIST SUCCESSFULLY FOR USER helloman123
+[2024-05-13T15:56:42.991] [INFO] default - GET DEVICE LIST SUCCESSFULLY FOR USER helloman123
+[2024-05-13T15:57:50.084] [INFO] default - GET DEVICE LIST SUCCESSFULLY FOR USER helloman123
+[2024-05-13T15:59:59.328] [INFO] default - GET DEVICE LIST SUCCESSFULLY FOR USER helloman123
+[2024-05-13T16:00:02.158] [INFO] default - GET DEVICE LIST SUCCESSFULLY FOR USER helloman123
+[2024-05-13T16:00:02.302] [INFO] default - GET DEVICE LIST SUCCESSFULLY FOR USER helloman123
+[2024-05-13T16:00:07.170] [INFO] default - ADD DEVICE device 10 SUCCESSFULLY FOR USER helloman123
+[2024-05-13T16:00:07.257] [INFO] default - GET DEVICE LIST SUCCESSFULLY FOR USER helloman123
+[2024-05-13T16:16:22.202] [INFO] default - GET DEVICE LIST SUCCESSFULLY FOR USER helloman123
+[2024-05-13T16:16:36.059] [INFO] default - GET DEVICE LIST SUCCESSFULLY FOR USER helloman123
