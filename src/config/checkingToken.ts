@@ -1,4 +1,5 @@
-import {session, user} from "../models/user_model"
+import {session, user,device} from "../models/user_model"
+import {DateTime} from 'luxon';
 const jwt=require('jsonwebtoken');
 const config=require('./auth');
 var token_checking=async(req,res,next)=>{
@@ -11,15 +12,18 @@ var token_checking=async(req,res,next)=>{
   {
     return res.status(401).send({message:"Your account has been login from another place"});
   }
- jwt.verify(token,config.secret,(err,decoded)=>{
+ jwt.verify(token,config.secret,async (err,decoded)=>{
   if(err)
   { 
     return res.status(401).send({message:"Unauthorized"});
   }
   req.userId=decoded.id;
+  var now_str=DateTime.now().toLocaleString(DateTime.DATETIME_FULL_WITH_SECONDS);
+  await user.updateOne({username:decoded.username},{$set:{last_active:now_str}});
   next();
  }) 
 }
+
 
 var email_token_checking=(req,res,next)=>{
   var email_token=req.query.token;
@@ -49,4 +53,6 @@ catch(error)
     res.redirect(expired_link);
 }
 }
+
+
 export {token_checking,email_token_checking};

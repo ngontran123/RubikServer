@@ -9,7 +9,9 @@ const userSchema=new Schema({
     email:{type:String,required:true},
     avatar:{type:String,required:true},
     created_date:{type:String,required:true},
-    role_id:{type:Number,required:true}
+    last_active:{type:String,required:true},
+    is_checking:{type:Boolean,required:true},
+    role_id:{type:Number,required:true},
 });
 autoIncrement.initialize(mongoose.connection);
 userSchema.plugin(autoIncrement.plugin,'user');
@@ -66,7 +68,7 @@ const deviceSchema = new Schema(
  device_name:{type:String,required:true},
  created_date:{type:String,required:true},
  status:{type:Boolean,required:true},
- online_time:{type:String,required:true}
+ online_time:{type:String,required:true},
 })
 
 const detailImageSchema = new Schema({

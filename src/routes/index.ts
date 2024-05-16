@@ -26,8 +26,10 @@ const kafka=new Kafka({
 const producer=kafka.producer();
 const consumer = kafka.consumer({groupId:'Rubik-BE'});
 const admin= kafka.admin();
+var solver_list=[];
 const mqttInit=async()=>{
-  try{
+  try
+  {    
    await producer.connect();
    await consumer.connect();
    await admin.connect();
@@ -861,33 +863,52 @@ router.get('/product',token_checking,function(req,res,next){
       console.log('Error loading add-product page.');
     }
 });
+var check_status_device=async(username:string)=>
+  {
 
+    var user_info=await user.findOne({username:username});
+    if(!user_info.is_checking)
+  {
+    await user.updateOne({username:username},{$set:{is_checking:true}});
+   var check_status= setInterval(async()=>{
+
+    var list_device=await device.find({username:username})
+        for(let devic of list_device)
+          {
+           var now_str =DateTime.now().toLocaleString(DateTime.DATETIME_FULL_WITH_SECONDS);
+           var device_time_str=devic.online_time;
+          var now=DateTime.fromFormat(now_str,"MMMM dd, yyyy 'at' h:mm:ss a 'GMT'Z");
+          var device_time= DateTime.fromFormat(device_time_str,"MMMM dd, yyyy 'at' h:mm:ss a 'GMT'Z");
+          const diff_to_seconds = now.diff(device_time,'seconds').seconds;
+          if(diff_to_seconds>60)
+            {
+             await device.updateOne({device_name:devic.device_name},{$set:{status:false}});
+            } 
+          }
+          var now_str =DateTime.now().toLocaleString(DateTime.DATETIME_FULL_WITH_SECONDS);
+          var now=DateTime.fromFormat(now_str,"MMMM dd, yyyy 'at' h:mm:ss a 'GMT'Z");
+          var last_active_str=user_info.last_active;
+          var last_active=DateTime.fromFormat(last_active_str,"MMMM dd, yyyy 'at' h:mm:ss a 'GMT'Z");
+          var diff_to_seconds=now.diff(last_active,'minutes').minutes;
+          if(diff_to_seconds>=30)
+            {
+             await user.updateOne({username:username},{$set:{is_checking:false}});
+             clearInterval(check_status);
+            }
+    },30000);
+ 
+    }
+    else{
+      console.log("is checking is true");
+    }
+  }
+  
 router.get('/mqtt_check_device_status/:username',token_checking,async function(req,res,next)
 {
  try
  {
   var username=req.params.username;
-  var list_device=await device.find({username:username});
- var check_status= setInterval(async()=>{
-      for(let devic of list_device)
-        {
-         var now_str =DateTime.now().toLocaleString(DateTime.DATETIME_FULL_WITH_SECONDS);
-         var device_time_str=devic.online_time;
-        var now=DateTime.fromFormat(now_str,"MMMM dd, yyyy 'at' h:mm:ss a 'GMT'Z");
-        var device_time= DateTime.fromFormat(device_time_str,"MMMM dd, yyyy 'at' h:mm:ss a 'GMT'Z");
-        var diff = Interval.fromDateTimes(device_time,now);
-        var diff_to_seconds=diff.length('seconds');
-        console.log("now:"+now);
-        console.log("device time:"+device_time);
-        console.log(devic.device_name+":"+diff_to_seconds);
-        if(diff_to_seconds>60)
-          {
-            console.log(devic.device_name+":"+diff_to_seconds);
-           await device.updateOne({device_name:devic.device_name},{$set:{status:false}});
-           
-          } 
-        }
-  },5000);
+  await check_status_device(username);
  }
  catch(err)
  {
@@ -902,21 +923,23 @@ router.get('/mqtt_check_device_status/:username',token_checking,async function(r
 router.get('/mqtt_connect/:username',token_checking,async function(req,res,next){
   try
   {
-  var username=req.params.username;
+  var username=req.params.username; 
   var list_device=await device.find({username:username});
   var list_topic=[];
+
   var subscribe_list=[];
    for(const device of list_device)
     {
       var topic=device.device_name;
+      var topic_name=`${username}_${topic}`;
       const ob_topic=
-      {topic:topic,
+      {topic:topic_name,
       numPartitions: 1,
       replicationFactor: 1
       };
       console.log(JSON.stringify(ob_topic)+"\n");
       list_topic.push(ob_topic);
-      subscribe_list.push(topic);
+      subscribe_list.push(topic_name);
     }
     await admin.createTopics({
       waitForLeaders:true,
@@ -1012,8 +1035,10 @@ router.post('/solve_rubik/:name',token_checking,async function(req,res,next)
 try{
   var rubik_name=req.params.name;
   console.log(rubik_name);
-
   var colors=req.body.colors;
+  var device_name=req.body.device_name;
+  var username=req.body.username;
+  var topic_name=`${username}_${device_name}`;
   console.log('Color is:'+colors);
   var face_convert=convertRubikAnno(colors);
   console.log('rubik after converting:'+face_convert);
@@ -1021,11 +1046,17 @@ try{
   if(rubik_name =="Rubik's 3x3")
   {  
     var payload={name:rubik_name,facelets:face_convert,original_cube:'',des_cube:''}
-    var response=await axios.post('http://localhost:8001/solve_rubik',payload).then((result)=>
-    {
+    var response=await axios.post('http://localhost:8001/solve_rubik',payload).then(async(result)=>
+    {   
         var sol=result.data.data;
         if(sol!=='')
-          {
+          { 
+            await producer.send({
+              topic:topic_name,
+              messages:[{
+               value:sol,
+              },]
+            });
             res.status(200).send({status:true,message:sol});
           }
         else 
