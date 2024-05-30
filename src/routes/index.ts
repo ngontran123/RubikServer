@@ -1,5 +1,5 @@
 import * as express from 'express'
-import {user,room_user,user_room_detail,rubik_info,image_detail,session,role, device} from '../models/user_model';
+import {user,room_user,user_room_detail,rubik_info,image_detail,session,role, temp_device,device} from '../models/user_model';
 import checkingDuplicateUserNameOrEmail from '../config/checking';
 import {token_checking,email_token_checking} from '../config/checkingToken';
 import {username,password,registerUrl,loginUrl,registerServerUrl} from './gmail_account';
@@ -7,6 +7,7 @@ import { DateTime, Interval } from 'luxon';
 import { Kafka } from 'kafkajs';
 import mongoose from 'mongoose';
 import { log } from 'console';
+import { json } from 'stream/consumers';
 const logger=require('../logger/index');
 var router = express.Router();
 var config=require('../config/auth');
@@ -19,6 +20,8 @@ const uuid=require('uuid');
 const cheerio=require('cheerio');
 var axios= require('axios');
 const Cube= require('cubejs');
+const fs=require('fs');
+const rimraf= require('rimraf');
 const kafka=new Kafka({
   clientId:"Rubik-BE",
   brokers:['localhost:9092','localhost:9092']
@@ -26,13 +29,37 @@ const kafka=new Kafka({
 const producer=kafka.producer();
 const consumer = kafka.consumer({groupId:'Rubik-BE'});
 const admin= kafka.admin();
-var solver_list=[];
+var list_topic=[];
+var subscribe_list=[];
+var received_message='';
 const mqttInit=async()=>{
   try
   {    
    await producer.connect();
    await consumer.connect();
    await admin.connect();
+   var list_device=await device.find();
+   for(const device of list_device)
+    {
+      var topic=device.device_name;
+      var username=device.username;
+      var topic_name=`${username}_${topic}`;
+      const ob_topic=
+      {topic:topic_name,
+      numPartitions: 1,
+      replicationFactor: 1
+      };
+      console.log(JSON.stringify(ob_topic)+"\n");
+      list_topic.push(ob_topic);
+      subscribe_list.push(topic_name);
+    }
+    await admin.createTopics({
+      waitForLeaders:true,
+      topics:list_topic
+    });
+   console.log('Topic created successfully');
+   await consumer.subscribe({topics:subscribe_list,fromBeginning:true});
+   await consumer_run();
   }
   catch(err)
   {
@@ -41,7 +68,143 @@ const mqttInit=async()=>{
   }
 }
 
+const autoUpdateTopicList=()=>
+{
+   try
+   {
+    setInterval(async()=>{
+       var new_device_list=await temp_device.find({});
+       var list_new_topic=[];
+       var subscribe_new_topic=[];
+       await admin.disconnect();
+       await consumer.disconnect();
+
+      for(let device of new_device_list)
+        { 
+          var username = device.username;
+          var device_name=device.device_name;
+          var topic_name=`${username}_${device_name}`;
+          // var created_date= device.created_date;
+          // var status=false;
+          // var online_time=created_date;
+          const ob_topic =
+          {
+           topic:topic_name,
+           numPartitions:1,
+           replicationFactor:1
+          };
+          list_new_topic.push(ob_topic);
+          subscribe_new_topic.push(topic_name);
+        }
+        await admin.connect();
+        await consumer.connect();
+        await admin.createTopics({
+          waitForLeaders:true,
+          topics:list_topic
+        });
+        await consumer.subscribe({topics:subscribe_list,fromBeginning:true});
+        await consumer_run();
+        await temp_device.deleteMany({});
+        console.log("Update Topic List Successful");
+    },720000);
+   }
+   catch(ex)
+   {
+    console.log("Auto Update Exception:"+ex.message);
+    logger.error("Auto Update Exception:"+ex.message);
+   }
+}
+
+
+const deleteAllTopics=async()=>
+{
+  try
+  { await admin.connect();
+    var topics = await admin.listTopics();
+    
+    for(const topic of topics)
+      {
+     await admin.deleteTopics({
+      topics:[topic],
+      timeout:5000
+     });
+      }
+    await admin.disconnect();
+  
+  console.log("delete topics successfully");
+    }
+  catch(err)
+  {
+    console.log("Delete All Topics Exception:"+err.message);
+    logger.error("Delete All Topics Exception:"+err.message);
+   }
+  }
+
+
+  const deleteAllLogsFiles=async(directory:string)=>
+  {
+  try
+  {
+  fs.readdir(directory,(err,files)=>
+  {
+    if(err)
+      {
+        throw err;
+      }
+    files.forEach((file)=>{
+      const file_path=path.join(directory,file);
+      fs.stat(file_path,(err,file_stats)=>{
+         if(err)
+          {
+            throw err;
+          }
+         if(file_stats.isFile())
+          {
+            fs.unlink(file_path,(err)=>{
+              if(err)
+                {
+                  throw err;
+                }
+            });
+          }
+        else if(file_stats.isDirectory())
+        {
+          fs.rmSync(file_path,{recursive:true,force:true});
+        } 
+      })
+    })
+  })
+  }
+  catch(ex)
+  {
+    console.log('Delete All Logs File Exception:'+ex.message);
+    logger.error('Delete All Logs File Exception:'+ex.message);
+  }
+  }
+
+
+const rotateSerectKey=()=>
+{
+  try
+  {
+   config.secret=Math.random().toString(36).slice(2);
+  }
+  catch(ex)
+  {
+    console.log("Rotate Secret Key Exception:"+ex.message);
+    logger.error("Rotate Secret Key Exception:"+ex.message);
+  }
+}
+
+
+
+
+rotateSerectKey();
+//deleteAllLogsFiles('C:/kafka/config/kafka-logs');
+//deleteAllTopics();
 mqttInit();
+autoUpdateTopicList();
+
 
 const transportEmail=nodemailer.createTransport({
     service:'gmail',
@@ -89,6 +252,7 @@ transportEmail.use('compile',hbs(handlebarsOption));
         if(error)
         {  
            throw Error(error);
+           
         }
         console.log("Send mail successfully:"+info);
        });
@@ -136,7 +300,8 @@ const convertRubikAnno=(colors:string[])=>
      return res;
   }
   catch(error)
-  {logger.error('Convert Rubik Anno error:'+error.message);
+  { 
+    logger.error('Convert Rubik Anno error:'+error.message);
     return error.message;
   }
 };
@@ -209,7 +374,8 @@ router.get('/login',function(req,res,next){
 });
 
 router.get('/add-account',token_checking,function(req,res,next){
-  try{
+  try
+  {
     res.status(200).send({status:true,message:'Get page successfully.'});
   }
   catch(error)
@@ -217,8 +383,6 @@ router.get('/add-account',token_checking,function(req,res,next){
   res.status(401).send({status:false,message:error.message});
   }
 });
-
-  
 
 
 router.post('/add-account',async function(req,res,next)
@@ -256,7 +420,7 @@ try
   email:email,
   avatar:avatar_url,
   created_date:new Date().toLocaleString(),
-  role_id:role_id
+  role_id:role_id,
   }
   var account=new user(account_obj);
   account.save((err,data)=>{
@@ -312,7 +476,8 @@ try
   {
    var created_date=DateTime.now().toLocaleString(DateTime.DATETIME_FULL_WITH_SECONDS);
    await device.create({username:user_name,device_name:device_name,created_date:created_date,status:false,online_time:created_date});
-   logger.info(`ADD DEVICE ${device_name} SUCCESSFULLY FOR USER ${user_name}`);
+   await temp_device.create({username:user_name,device_name:device_name,created_date:created_date});
+   logger.info(`ADD DEVICE ${device_name} SUCCESSFULLY FOR USER ${user_name}.Your device will be available to use in the next day.`);
    res.status(200).send({status:true,message:'Add new device successfully'});
   }
 }
@@ -712,7 +877,7 @@ router.get('/about',token_checking,function(req,res,next)
 {
   try
   { logger.info('Access about page successful');
-    var session_time=req.headers['x-session-id'];
+    //var session_time=req.headers['x-session-id'];
     res.status(200).send({status:true,message:'Request success'});
   }
   catch(err)
@@ -863,16 +1028,18 @@ router.get('/product',token_checking,function(req,res,next){
       console.log('Error loading add-product page.');
     }
 });
+
+
+
 var check_status_device=async(username:string)=>
   {
-
     var user_info=await user.findOne({username:username});
     if(!user_info.is_checking)
   {
     await user.updateOne({username:username},{$set:{is_checking:true}});
    var check_status= setInterval(async()=>{
 
-    var list_device=await device.find({username:username})
+    var list_device=await device.find({username:username});
         for(let devic of list_device)
           {
            var now_str =DateTime.now().toLocaleString(DateTime.DATETIME_FULL_WITH_SECONDS);
@@ -889,14 +1056,13 @@ var check_status_device=async(username:string)=>
           var now=DateTime.fromFormat(now_str,"MMMM dd, yyyy 'at' h:mm:ss a 'GMT'Z");
           var last_active_str=user_info.last_active;
           var last_active=DateTime.fromFormat(last_active_str,"MMMM dd, yyyy 'at' h:mm:ss a 'GMT'Z");
-          var diff_to_seconds=now.diff(last_active,'minutes').minutes;
-          if(diff_to_seconds>=30)
+          var diff_to_minutes=now.diff(last_active,'minutes').minutes;
+          if(diff_to_minutes>=30)
             {
              await user.updateOne({username:username},{$set:{is_checking:false}});
              clearInterval(check_status);
             }
     },30000);
- 
     }
     else{
       console.log("is checking is true");
@@ -918,67 +1084,150 @@ router.get('/mqtt_check_device_status/:username',token_checking,async function(r
  }
 });
 
-
-
-router.get('/mqtt_connect/:username',token_checking,async function(req,res,next){
+router.post('/reset_checking_status',token_checking,async function(req,res,next)
+{
   try
   {
-  var username=req.params.username; 
-  var list_device=await device.find({username:username});
-  var list_topic=[];
+   var username = req.body.username;
+   await user.updateOne({username:username,$set:{is_checking:false}});
+   res.status(200).send({status:true,message:'Reset Checking Status Successfully'});
+  }
+  catch(ex)
+  {
+    console.log("Reset Checking Status Exception:"+ex.message);
+    logger.error("Reset Checking Status Exception:"+ex.message);
+    res.status(400).send({status:false,message:ex.message});
+  }
+});
 
-  var subscribe_list=[];
-   for(const device of list_device)
-    {
-      var topic=device.device_name;
-      var topic_name=`${username}_${topic}`;
-      const ob_topic=
-      {topic:topic_name,
-      numPartitions: 1,
-      replicationFactor: 1
-      };
-      console.log(JSON.stringify(ob_topic)+"\n");
-      list_topic.push(ob_topic);
-      subscribe_list.push(topic_name);
+
+router.get('/mqtt_consumer_run',token_checking,async function(req,res,next){
+ try
+ {
+  await consumer.run({
+    eachMessage:async({topic,partition,message})=>{        
     }
-    await admin.createTopics({
-      waitForLeaders:true,
-      topics:list_topic
-    });
-   console.log('Topic created successfully');
-   await consumer.subscribe({topics:subscribe_list,fromBeginning:true});
-   await consumer.run({
+  })
+ }
+ catch(err)
+ {
+  console.log("MQTT CONSUMER RUN:"+err.message);
+  logger.err("MQTT CONSUMER RUN:"+err.message);
+ }
+});
+
+
+const consumer_run=async()=>
+{
+try
+{
+  await consumer.run({
     eachMessage:async({topic,partition,message})=>{
       
       if(subscribe_list.includes(topic))
         {
         console.log("this topic exist here");
         var message_topic=message.value.toString();
+        var modifield_topic=topic.replace(`${username}_`,'');
         if(message_topic=='CONNECT')
         {
-        console.log('here already');
         var updated_date=DateTime.now().toLocaleString(DateTime.DATETIME_FULL_WITH_SECONDS);
-         await device.updateOne({device_name:topic},{$set:{status:true,online_time:updated_date}});
+        await device.updateOne({device_name:modifield_topic},{$set:{status:true,online_time:updated_date}});
         }
         else if(message_topic=="DISCONNECT")
           {
             var updated_date=DateTime.now().toLocaleString(DateTime.DATETIME_FULL_WITH_SECONDS);
-            await device.updateOne({device_name:topic},{$set:{status:false,online_time:updated_date}});
+            await device.updateOne({device_name:modifield_topic},{$set:{status:false,online_time:updated_date}});
           }
-      }
+        else
+        {
+          received_message=message.value.toString();
+          await delay(200);
+        }
+        }
         console.log('The info received is:',{
           topic,
           partition,
           value:message.value.toString()
         });
-    }
+    } 
    });
-   res.status(200).send({status:true,message:'Connect Mqtt Success.'});
+}
+catch(ex)
+{
+
+}
+}
+
+
+router.get('/products',token_checking,async function(req,res,next)
+{
+ try
+ {
+    res.status(200).send({status:true,message:'Get Product Page Successfully'});  
+ }
+ catch(ex)
+ { 
+  res.status(400).send({status:false,message:ex.message});
+  logger.error('GET PRODUCTS EXCEPTION:'+ex.message);
+ }
+});
+
+router.get('/mqtt_connect/:username',async function(req,res,next){
+  try
+  {
+  var username=req.params.username;
+  
+  console.log("MQTT CONNECT:"+username);
+  res.setHeader('Content-Type','text/event-stream');
+        res.setHeader('Cache-Control','no-cache');
+        res.setHeader('Connection', 'keep-alive');
+        res.setHeader('X-Accel-Buffering','no');
+        res.flushHeaders();
+  
+  var send_log_interval=setInterval(()=>{
+     if(received_message!='' && received_message !=null)
+      {
+      res.write(`event:message\n`);
+      res.write(`data:${received_message}\n\n`);
+      received_message='';
+      }
+  },100);
+  req.on('close',()=>{
+    clearInterval(send_log_interval);
+    
+  });
+  // var list_device=await device.find({username:username});
+  
+  //  for(const device of list_device)
+  //   {
+  //     var topic=device.device_name;
+  //     var topic_name=`${username}_${topic}`;
+  //     const ob_topic=
+  //     {topic:topic_name,
+  //     numPartitions: 1,
+  //     replicationFactor: 1
+  //     };
+  //     console.log(JSON.stringify(ob_topic)+"\n");
+  //     list_topic.push(ob_topic);
+  //     subscribe_list.push(topic_name);
+  //   }
+  //   await admin.createTopics({
+  //     waitForLeaders:true,
+  //     topics:list_topic
+  //   });
+  //  console.log('Topic created successfully');
+  //  await consumer.subscribe({topics:subscribe_list,fromBeginning:true});
+   
+  //  req.on('close',()=>{
+  //    res.end();
+  //  });
+   //res.status(200).send({status:true,message:'Connect Mqtt Success.'});
   }
   catch(err)
   {
     console.log('MQTT CONNECT FAILED:'+err.message);
-    logger.error("MQTT CONNECT FAILED:"+err.message);
+    logger.error("MQTT CONNECT FAILED:"+err);
     res.status(401).send({status:false,message:err.message});
   }
 });
@@ -1020,8 +1269,8 @@ router.get('/mqtt_transmit', function(req,res,next){
   },5000);
   req.on('close',()=>
   {
-    clearInterval(interval);
-    res.end();
+   clearInterval(interval);
+   res.end();
   })
  }
  catch(errr)
@@ -1087,7 +1336,6 @@ try{
 }
 catch(err)
 { 
-  
   console.log('Solve rubik exception:'+err.message);
 }
 });

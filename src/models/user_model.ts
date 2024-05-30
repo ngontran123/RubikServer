@@ -71,6 +71,13 @@ const deviceSchema = new Schema(
  online_time:{type:String,required:true},
 })
 
+const tempDeviceSchema=new Schema({
+    _id:{type:Number,required:false},
+    username:{type:String,required:true},
+    device_name:{type:String,required:true},
+    created_date:{type:String,required:true}    
+})
+
 const detailImageSchema = new Schema({
  _id:{type:Number,require:false},
  rubik_id:{type:Number,require:true},
@@ -109,6 +116,7 @@ detailImageSchema.plugin(autoIncrement.plugin,'detailImage');
 
 roleSchema.plugin(autoIncrement.plugin,'role');
 
+tempDeviceSchema.plugin(autoIncrement.plugin,'tempDevice');
 
 const room_user=mongoose.model('room',roomSchema,'Room');
 
@@ -120,11 +128,13 @@ const rubik_info=mongoose.model('rubikInfo',rubikInfoSchema,'RubikInfo');
 
 const device=mongoose.model('device',deviceSchema,'Device');
 
+const temp_device=mongoose.model('tempDevice',tempDeviceSchema,'TempDevice');
+
 const image_detail=mongoose.model('detailImage',detailImageSchema,'DetailImage');
 
 const role=mongoose.model('role',roleSchema,'Role');
 
-export {user,question_level,room_user,user_room_detail,single_board_detail,rubik_info,image_detail,session,device,role}; 
+export {user,question_level,room_user,user_room_detail,single_board_detail,rubik_info,image_detail,session,temp_device,device,role}; 
 
 
 

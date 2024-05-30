@@ -1,0 +1,206 @@
+[2024-05-22T10:56:21.060] [ERROR] default - MQTT INIT FAILED:Connection error: 
+[2024-05-22T11:09:28.830] [ERROR] default - MQTT INIT FAILED:Connection error: 
+[2024-05-22T11:14:13.351] [INFO] default - Access about page successful
+[2024-05-22T11:14:41.134] [INFO] default - GET DEVICE LIST SUCCESSFULLY FOR USER helloman123
+[2024-05-22T11:20:56.899] [ERROR] default - MQTT INIT FAILED:Connection error: 
+[2024-05-22T11:21:10.362] [ERROR] default - MQTT INIT FAILED:Connection error: 
+[2024-05-22T11:21:10.910] [ERROR] default - Delete All Topics Exception:Connection error: 
+[2024-05-22T11:28:54.887] [ERROR] default - Delete All Topics Exception:Connection error: read ECONNRESET
+[2024-05-22T11:29:56.185] [ERROR] default - Delete All Topics Exception:Connection error: 
+[2024-05-22T11:29:57.193] [ERROR] default - MQTT INIT FAILED:Connection error: 
+[2024-05-22T11:30:15.185] [ERROR] default - MQTT INIT FAILED:Connection error: 
+[2024-05-22T11:30:17.504] [ERROR] default - Delete All Topics Exception:Connection error: 
+[2024-05-22T11:39:05.638] [ERROR] default - MQTT INIT FAILED:Connection error: read ECONNRESET
+[2024-05-22T11:45:22.623] [ERROR] default - MQTT INIT FAILED:Connection error: read ECONNRESET
+[2024-05-22T11:45:22.625] [ERROR] default - Delete All Topics Exception:Connection error: read ECONNRESET
+[2024-05-22T11:45:40.811] [ERROR] default - Delete All Topics Exception:Connection error: 
+[2024-05-22T11:45:43.423] [ERROR] default - MQTT INIT FAILED:Connection error: 
+[2024-05-22T11:46:27.700] [ERROR] default - MQTT INIT FAILED:Connection error: 
+[2024-05-22T11:46:53.694] [ERROR] default - MQTT INIT FAILED:Connection error: 
+[2024-05-22T11:46:57.271] [ERROR] default - Delete All Topics Exception:Connection error: 
+[2024-05-22T11:47:31.942] [ERROR] default - MQTT INIT FAILED:Connection error: 
+[2024-05-22T11:48:51.731] [INFO] default - Access about page successful
+[2024-05-22T11:48:53.352] [INFO] default - Access about page successful
+[2024-05-22T11:48:55.910] [INFO] default - GET DEVICE LIST SUCCESSFULLY FOR USER helloman123
+[2024-05-22T11:49:16.259] [INFO] default - GET DEVICE LIST SUCCESSFULLY FOR USER helloman123
+[2024-05-22T11:49:16.950] [INFO] default - GET DEVICE LIST SUCCESSFULLY FOR USER helloman123
+[2024-05-22T11:49:17.475] [INFO] default - GET DEVICE LIST SUCCESSFULLY FOR USER helloman123
+[2024-05-22T11:49:17.633] [INFO] default - GET DEVICE LIST SUCCESSFULLY FOR USER helloman123
+[2024-05-22T11:49:17.814] [INFO] default - GET DEVICE LIST SUCCESSFULLY FOR USER helloman123
+[2024-05-22T11:49:18.002] [INFO] default - GET DEVICE LIST SUCCESSFULLY FOR USER helloman123
+[2024-05-22T11:49:18.170] [INFO] default - GET DEVICE LIST SUCCESSFULLY FOR USER helloman123
+[2024-05-22T11:49:18.346] [INFO] default - GET DEVICE LIST SUCCESSFULLY FOR USER helloman123
+[2024-05-22T11:49:18.499] [INFO] default - GET DEVICE LIST SUCCESSFULLY FOR USER helloman123
+[2024-05-22T11:49:18.648] [INFO] default - GET DEVICE LIST SUCCESSFULLY FOR USER helloman123
+[2024-05-22T11:49:24.050] [INFO] default - GET DEVICE LIST SUCCESSFULLY FOR USER helloman123
+[2024-05-22T11:49:24.192] [INFO] default - GET DEVICE LIST SUCCESSFULLY FOR USER helloman123
+[2024-05-22T11:49:24.646] [INFO] default - GET DEVICE LIST SUCCESSFULLY FOR USER helloman123
+[2024-05-22T11:49:24.782] [INFO] default - GET DEVICE LIST SUCCESSFULLY FOR USER helloman123
+[2024-05-22T11:53:58.465] [INFO] default - Access about page successful
+[2024-05-22T11:55:13.729] [INFO] default - Access about page successful
+[2024-05-22T11:55:30.009] [INFO] default - Access about page successful
+[2024-05-22T11:55:53.836] [INFO] default - GET DEVICE LIST SUCCESSFULLY FOR USER helloman123
+[2024-05-22T11:56:36.646] [INFO] default - GET DEVICE LIST SUCCESSFULLY FOR USER helloman123
+[2024-05-22T14:20:28.868] [INFO] default - Access about page successful
+[2024-05-22T14:20:30.658] [INFO] default - Access about page successful
+[2024-05-22T14:40:39.232] [INFO] default - Access about page successful
+[2024-05-22T14:40:54.118] [INFO] default - GET DEVICE LIST SUCCESSFULLY FOR USER helloman123
+[2024-05-22T14:41:00.922] [INFO] default - GET DEVICE LIST SUCCESSFULLY FOR USER helloman123
+[2024-05-22T14:42:09.228] [INFO] default - GET DEVICE LIST SUCCESSFULLY FOR USER helloman123
+[2024-05-22T15:07:31.894] [INFO] default - Access about page successful
+[2024-05-22T15:07:33.633] [INFO] default - GET DEVICE LIST SUCCESSFULLY FOR USER helloman123
+[2024-05-22T15:07:36.924] [INFO] default - GET DEVICE LIST SUCCESSFULLY FOR USER helloman123
+[2024-05-22T15:07:39.130] [INFO] default - get product-detail Rubik's Coach Cube successfull
+[2024-05-22T15:07:39.143] [INFO] default - get product-detail Rubik's 3x3 successfull
+[2024-05-22T15:07:39.161] [INFO] default - get product-detail Rubik’s Apprentice 2x2 successfull
+[2024-05-22T15:07:40.246] [INFO] default - GET DEVICE LIST SUCCESSFULLY FOR USER helloman123
+[2024-05-22T15:09:16.308] [INFO] default - GET DEVICE LIST SUCCESSFULLY FOR USER helloman123
+[2024-05-22T15:10:06.693] [INFO] default - GET DEVICE LIST SUCCESSFULLY FOR USER helloman123
+[2024-05-22T15:10:40.433] [INFO] default - GET DEVICE LIST SUCCESSFULLY FOR USER helloman123
+[2024-05-22T15:11:34.132] [INFO] default - GET DEVICE LIST SUCCESSFULLY FOR USER helloman123
+[2024-05-22T15:11:40.698] [INFO] default - GET DEVICE LIST SUCCESSFULLY FOR USER helloman123
+[2024-05-22T15:11:47.596] [INFO] default - GET DEVICE LIST SUCCESSFULLY FOR USER helloman123
+[2024-05-22T15:12:42.771] [INFO] default - GET DEVICE LIST SUCCESSFULLY FOR USER helloman123
+[2024-05-22T15:14:51.913] [INFO] default - GET DEVICE LIST SUCCESSFULLY FOR USER helloman123
+[2024-05-22T15:14:58.319] [INFO] default - GET DEVICE LIST SUCCESSFULLY FOR USER helloman123
+[2024-05-22T15:15:16.203] [INFO] default - GET DEVICE LIST SUCCESSFULLY FOR USER helloman123
+[2024-05-22T15:15:47.010] [INFO] default - GET DEVICE LIST SUCCESSFULLY FOR USER helloman123
+[2024-05-22T15:16:04.585] [INFO] default - GET DEVICE LIST SUCCESSFULLY FOR USER helloman123
+[2024-05-22T15:43:30.983] [INFO] default - Access about page successful
+[2024-05-22T15:43:33.766] [INFO] default - get product-detail Rubik's Coach Cube successfull
+[2024-05-22T15:43:33.776] [INFO] default - get product-detail Rubik's 3x3 successfull
+[2024-05-22T15:43:33.788] [INFO] default - get product-detail Rubik’s Apprentice 2x2 successfull
+[2024-05-22T15:43:35.085] [INFO] default - GET DEVICE LIST SUCCESSFULLY FOR USER helloman123
+[2024-05-22T15:44:57.978] [INFO] default - GET DEVICE LIST SUCCESSFULLY FOR USER helloman123
+[2024-05-22T15:45:02.615] [INFO] default - GET DEVICE LIST SUCCESSFULLY FOR USER helloman123
+[2024-05-22T15:45:17.078] [INFO] default - GET DEVICE LIST SUCCESSFULLY FOR USER helloman123
+[2024-05-22T15:45:20.601] [INFO] default - GET DEVICE LIST SUCCESSFULLY FOR USER helloman123
+[2024-05-22T15:46:07.647] [INFO] default - GET DEVICE LIST SUCCESSFULLY FOR USER helloman123
+[2024-05-22T15:46:14.609] [INFO] default - GET DEVICE LIST SUCCESSFULLY FOR USER helloman123
+[2024-05-22T15:49:12.613] [INFO] default - GET DEVICE LIST SUCCESSFULLY FOR USER helloman123
+[2024-05-22T15:51:07.813] [INFO] default - Access about page successful
+[2024-05-22T15:51:08.907] [INFO] default - get Rubik successful
+[2024-05-22T15:51:10.728] [INFO] default - get product-detail Rubik's Coach Cube successfull
+[2024-05-22T15:51:10.785] [INFO] default - get product-detail Rubik's 3x3 successfull
+[2024-05-22T15:51:10.796] [INFO] default - get product-detail Rubik’s Apprentice 2x2 successfull
+[2024-05-22T15:51:17.884] [INFO] default - GET DEVICE LIST SUCCESSFULLY FOR USER helloman123
+[2024-05-22T15:51:21.181] [INFO] default - GET DEVICE LIST SUCCESSFULLY FOR USER helloman123
+[2024-05-22T15:59:14.021] [INFO] default - Access about page successful
+[2024-05-22T15:59:16.019] [INFO] default - get product-detail Rubik's Coach Cube successfull
+[2024-05-22T15:59:16.030] [INFO] default - get product-detail Rubik's 3x3 successfull
+[2024-05-22T15:59:16.046] [INFO] default - get product-detail Rubik’s Apprentice 2x2 successfull
+[2024-05-22T15:59:17.114] [INFO] default - GET DEVICE LIST SUCCESSFULLY FOR USER helloman123
+[2024-05-22T15:59:28.629] [INFO] default - GET DEVICE LIST SUCCESSFULLY FOR USER helloman123
+[2024-05-22T16:34:16.886] [INFO] default - Access about page successful
+[2024-05-22T16:34:18.564] [INFO] default - get product-detail Rubik's Coach Cube successfull
+[2024-05-22T16:34:18.574] [INFO] default - get product-detail Rubik's 3x3 successfull
+[2024-05-22T16:34:18.584] [INFO] default - get product-detail Rubik’s Apprentice 2x2 successfull
+[2024-05-22T16:34:20.000] [INFO] default - GET DEVICE LIST SUCCESSFULLY FOR USER helloman123
+[2024-05-22T16:36:49.783] [INFO] default - Access about page successful
+[2024-05-22T16:36:52.067] [INFO] default - get product-detail Rubik's Coach Cube successfull
+[2024-05-22T16:36:52.078] [INFO] default - get product-detail Rubik's 3x3 successfull
+[2024-05-22T16:36:52.092] [INFO] default - get product-detail Rubik’s Apprentice 2x2 successfull
+[2024-05-22T16:36:53.127] [INFO] default - GET DEVICE LIST SUCCESSFULLY FOR USER helloman123
+[2024-05-22T16:37:27.283] [INFO] default - get product-detail Rubik's Coach Cube successfull
+[2024-05-22T16:37:27.293] [INFO] default - get product-detail Rubik's 3x3 successfull
+[2024-05-22T16:37:27.302] [INFO] default - get product-detail Rubik’s Apprentice 2x2 successfull
+[2024-05-22T16:37:28.250] [INFO] default - GET DEVICE LIST SUCCESSFULLY FOR USER helloman123
+[2024-05-22T16:37:30.740] [INFO] default - get Rubik successful
+[2024-05-22T16:37:31.220] [INFO] default - Access about page successful
+[2024-05-22T16:37:31.446] [INFO] default - get product-detail Rubik's Coach Cube successfull
+[2024-05-22T16:37:31.456] [INFO] default - get product-detail Rubik's 3x3 successfull
+[2024-05-22T16:37:31.465] [INFO] default - get product-detail Rubik’s Apprentice 2x2 successfull
+[2024-05-22T16:37:32.366] [INFO] default - GET DEVICE LIST SUCCESSFULLY FOR USER helloman123
+[2024-05-22T16:38:04.671] [INFO] default - GET DEVICE LIST SUCCESSFULLY FOR USER helloman123
+[2024-05-22T16:38:33.266] [INFO] default - GET DEVICE LIST SUCCESSFULLY FOR USER helloman123
+[2024-05-22T16:38:42.107] [INFO] default - Access about page successful
+[2024-05-22T16:45:10.400] [INFO] default - Access about page successful
+[2024-05-22T16:45:16.628] [INFO] default - get product-detail Rubik's Coach Cube successfull
+[2024-05-22T16:45:16.639] [INFO] default - get product-detail Rubik's 3x3 successfull
+[2024-05-22T16:45:16.653] [INFO] default - get product-detail Rubik’s Apprentice 2x2 successfull
+[2024-05-22T16:45:19.427] [INFO] default - GET DEVICE LIST SUCCESSFULLY FOR USER helloman123
+[2024-05-22T16:45:21.336] [INFO] default - get product-detail Rubik's Coach Cube successfull
+[2024-05-22T16:45:21.345] [INFO] default - get product-detail Rubik's 3x3 successfull
+[2024-05-22T16:45:21.353] [INFO] default - get product-detail Rubik’s Apprentice 2x2 successfull
+[2024-05-22T16:45:23.763] [INFO] default - get product-detail Rubik's Coach Cube successfull
+[2024-05-22T16:45:23.817] [INFO] default - get product-detail Rubik's 3x3 successfull
+[2024-05-22T16:45:23.827] [INFO] default - get product-detail Rubik’s Apprentice 2x2 successfull
+[2024-05-22T16:45:24.935] [INFO] default - GET DEVICE LIST SUCCESSFULLY FOR USER helloman123
+[2024-05-22T16:47:01.400] [INFO] default - Access about page successful
+[2024-05-22T16:47:02.102] [INFO] default - get Rubik successful
+[2024-05-22T16:48:39.008] [INFO] default - Access about page successful
+[2024-05-22T16:49:02.485] [INFO] default - Access about page successful
+[2024-05-22T16:49:27.451] [INFO] default - Access about page successful
+[2024-05-22T16:49:34.152] [INFO] default - Access about page successful
+[2024-05-22T16:49:35.456] [INFO] default - get product-detail Rubik's Coach Cube successfull
+[2024-05-22T16:49:35.497] [INFO] default - get product-detail Rubik's 3x3 successfull
+[2024-05-22T16:49:35.520] [INFO] default - get product-detail Rubik’s Apprentice 2x2 successfull
+[2024-05-22T16:49:36.339] [INFO] default - get Rubik successful
+[2024-05-22T16:49:36.665] [INFO] default - Access about page successful
+[2024-05-22T16:49:49.668] [INFO] default - GET DEVICE LIST SUCCESSFULLY FOR USER helloman123
+[2024-05-22T16:50:07.334] [INFO] default - Access about page successful
+[2024-05-22T16:52:26.722] [INFO] default - Access about page successful
+[2024-05-22T16:53:40.085] [INFO] default - Access about page successful
+[2024-05-22T17:02:03.425] [INFO] default - Access about page successful
+[2024-05-22T17:02:04.706] [INFO] default - Access about page successful
+[2024-05-22T17:02:38.618] [INFO] default - Access about page successful
+[2024-05-22T17:08:39.576] [INFO] default - Access about page successful
+[2024-05-22T17:14:56.524] [INFO] default - Access about page successful
+[2024-05-22T17:14:58.554] [INFO] default - get product-detail Rubik's Coach Cube successfull
+[2024-05-22T17:14:58.588] [INFO] default - get product-detail Rubik's 3x3 successfull
+[2024-05-22T17:14:58.609] [INFO] default - get product-detail Rubik’s Apprentice 2x2 successfull
+[2024-05-22T17:15:00.251] [INFO] default - Access about page successful
+[2024-05-22T17:15:01.821] [INFO] default - get product-detail Rubik's Coach Cube successfull
+[2024-05-22T17:15:01.903] [INFO] default - get product-detail Rubik's 3x3 successfull
+[2024-05-22T17:15:01.930] [INFO] default - get product-detail Rubik’s Apprentice 2x2 successfull
+[2024-05-22T17:15:02.430] [INFO] default - get Rubik successful
+[2024-05-22T17:15:02.853] [INFO] default - Access about page successful
+[2024-05-22T17:19:23.200] [INFO] default - Access about page successful
+[2024-05-22T17:19:26.022] [INFO] default - Access about page successful
+[2024-05-22T17:19:51.314] [INFO] default - Access about page successful
+[2024-05-22T20:26:13.818] [INFO] default - Access about page successful
+[2024-05-22T20:26:20.755] [INFO] default - get product-detail Rubik's Coach Cube successfull
+[2024-05-22T20:26:20.827] [INFO] default - get product-detail Rubik's 3x3 successfull
+[2024-05-22T20:26:20.860] [INFO] default - get product-detail Rubik’s Apprentice 2x2 successfull
+[2024-05-22T20:26:34.580] [INFO] default - Access about page successful
+[2024-05-22T20:26:51.414] [INFO] default - get product-detail Rubik's Coach Cube successfull
+[2024-05-22T20:26:51.472] [INFO] default - get product-detail Rubik's 3x3 successfull
+[2024-05-22T20:26:51.503] [INFO] default - get product-detail Rubik’s Apprentice 2x2 successfull
+[2024-05-22T20:26:52.977] [INFO] default - GET DEVICE LIST SUCCESSFULLY FOR USER helloman123
+[2024-05-22T20:27:03.920] [INFO] default - Access about page successful
+[2024-05-22T21:32:18.547] [INFO] default - Access about page successful
+[2024-05-22T21:32:21.319] [INFO] default - GET DEVICE LIST SUCCESSFULLY FOR USER helloman123
+[2024-05-22T21:32:57.392] [INFO] default - GET DEVICE LIST SUCCESSFULLY FOR USER helloman123
+[2024-05-22T21:32:59.435] [INFO] default - GET DEVICE LIST SUCCESSFULLY FOR USER helloman123
+[2024-05-22T21:33:00.263] [INFO] default - GET DEVICE LIST SUCCESSFULLY FOR USER helloman123
+[2024-05-22T21:33:05.085] [INFO] default - get product-detail Rubik's Coach Cube successfull
+[2024-05-22T21:33:05.095] [INFO] default - get product-detail Rubik's 3x3 successfull
+[2024-05-22T21:33:05.105] [INFO] default - get product-detail Rubik’s Apprentice 2x2 successfull
+[2024-05-22T21:33:06.375] [INFO] default - GET DEVICE LIST SUCCESSFULLY FOR USER helloman123
+[2024-05-22T21:33:46.561] [INFO] default - get product-detail Rubik's Coach Cube successfull
+[2024-05-22T21:33:46.573] [INFO] default - get product-detail Rubik's 3x3 successfull
+[2024-05-22T21:33:46.589] [INFO] default - get product-detail Rubik’s Apprentice 2x2 successfull
+[2024-05-22T21:33:48.209] [INFO] default - GET DEVICE LIST SUCCESSFULLY FOR USER helloman123
+[2024-05-22T21:34:19.824] [INFO] default - GET DEVICE LIST SUCCESSFULLY FOR USER helloman123
+[2024-05-22T21:34:22.190] [INFO] default - GET DEVICE LIST SUCCESSFULLY FOR USER helloman123
+[2024-05-22T21:34:32.351] [INFO] default - Access about page successful
+[2024-05-22T21:34:43.019] [INFO] default - Access about page successful
+[2024-05-22T21:34:43.859] [INFO] default - get product-detail Rubik's Coach Cube successfull
+[2024-05-22T21:34:43.870] [INFO] default - get product-detail Rubik's 3x3 successfull
+[2024-05-22T21:34:43.882] [INFO] default - get product-detail Rubik’s Apprentice 2x2 successfull
+[2024-05-22T21:34:45.942] [INFO] default - GET DEVICE LIST SUCCESSFULLY FOR USER helloman123
+[2024-05-22T21:34:47.681] [INFO] default - Access about page successful
+[2024-05-22T21:35:18.328] [INFO] default - GET DEVICE LIST SUCCESSFULLY FOR USER helloman123
+[2024-05-22T21:49:39.542] [INFO] default - Access about page successful
+[2024-05-22T21:55:04.765] [INFO] default - Access about page successful
+[2024-05-22T21:55:24.227] [INFO] default - Access about page successful
+[2024-05-22T21:55:44.605] [INFO] default - Access about page successful
+[2024-05-22T21:56:23.428] [INFO] default - Access about page successful
+[2024-05-22T21:56:43.430] [INFO] default - Access about page successful
+[2024-05-22T21:57:41.556] [INFO] default - Access about page successful
+[2024-05-22T21:58:11.058] [INFO] default - Access about page successful
+[2024-05-22T21:59:24.480] [INFO] default - Access about page successful
+[2024-05-22T22:00:14.065] [INFO] default - Access about page successful
+[2024-05-22T22:01:01.224] [INFO] default - Access about page successful
+[2024-05-22T22:01:14.700] [INFO] default - Access about page successful
+[2024-05-22T22:02:32.970] [INFO] default - Access about page successful
