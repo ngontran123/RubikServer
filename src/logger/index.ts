@@ -13,11 +13,11 @@ log4j.configure({
             filename:getLogFileName(),
             pattern:'.yyyy-MM-dd',
             keepFileExt:true,
+            alwaysIncludePattern:true,
             flag:'w',
             layout:{
                 type:'basic'
             },
-            daysToKeep:7
         }
     },
     categories:{

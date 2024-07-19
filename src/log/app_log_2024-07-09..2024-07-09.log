@@ -1,0 +1,131 @@
+[2024-07-09T11:26:15.952] [INFO] default - Image original name:images.png
+[2024-07-09T11:26:15.952] [INFO] default - Image file name:6e8bbc79df43adcad1f744f1e1d4ec80
+[2024-07-09T11:26:15.985] [INFO] default - ADD IMAGES SUCCESSFULLY.
+[2024-07-09T11:26:18.735] [INFO] default - Close Log SSE Successfully.
+[2024-07-09T11:26:18.868] [INFO] default - GET DEVICE LIST SUCCESSFULLY FOR USER helloman123
+[2024-07-09T11:26:21.003] [INFO] default - DELETE IMAGE 6e8bbc79df43adcad1f744f1e1d4ec80 SUCCESSFULLY
+[2024-07-09T11:26:41.858] [INFO] default - Image original name:images.png
+[2024-07-09T11:26:41.858] [INFO] default - Image file name:a9b7628d852a5aecc51461c68dfdd8a0
+[2024-07-09T11:26:45.948] [INFO] default - Third party handle image:undefined
+[2024-07-09T11:26:45.949] [INFO] default - ADD IMAGES SUCCESSFULLY.
+[2024-07-09T11:26:50.968] [INFO] default - DELETE IMAGE a9b7628d852a5aecc51461c68dfdd8a0 SUCCESSFULLY
+[2024-07-09T11:27:13.798] [INFO] default - Image original name:images.png
+[2024-07-09T11:27:13.798] [INFO] default - Image file name:12cb08a5706c6c85676224c357e4c666
+[2024-07-09T11:27:24.409] [INFO] default - ADD IMAGES SUCCESSFULLY.
+[2024-07-09T11:27:29.415] [INFO] default - DELETE IMAGE 12cb08a5706c6c85676224c357e4c666 SUCCESSFULLY
+[2024-07-09T11:47:53.114] [ERROR] default - MQTT INIT FAILED:Connection error: 
+[2024-07-09T11:48:31.019] [INFO] default - Close Log SSE Successfully.
+[2024-07-09T11:48:31.222] [INFO] default - GET DEVICE LIST SUCCESSFULLY FOR USER helloman123
+[2024-07-09T11:48:44.122] [INFO] default - Image original name:download.jpg
+[2024-07-09T11:48:44.123] [INFO] default - Image file name:c028bef71d79fe3967f9a258acc66bbf
+[2024-07-09T11:48:58.230] [ERROR] default - EXCEPTION ADDING IMAGES:Cannot set headers after they are sent to the client
+[2024-07-09T11:51:46.349] [INFO] default - Image original name:download.jpg
+[2024-07-09T11:51:46.349] [INFO] default - Image file name:6f58a97fe62dea3bb516af08669f209b
+[2024-07-09T11:51:47.938] [INFO] default - ADD IMAGES SUCCESSFULLY.
+[2024-07-09T11:51:52.953] [ERROR] default - EXCEPTION ADDING IMAGES:Cannot set headers after they are sent to the client
+[2024-07-09T11:52:39.120] [INFO] default - Image original name:download.jpg
+[2024-07-09T11:52:39.121] [INFO] default - Image file name:a7996ec995e378366cd43aabfbe3c3d8
+[2024-07-09T11:52:40.767] [INFO] default - ADD IMAGES SUCCESSFULLY.
+[2024-07-09T11:52:45.775] [ERROR] default - EXCEPTION ADDING IMAGES:Cannot set headers after they are sent to the client
+[2024-07-09T11:53:40.188] [INFO] default - Image original name:download.jpg
+[2024-07-09T11:53:40.189] [INFO] default - Image file name:82deb60b38a61ef9d130e216b1647024
+[2024-07-09T11:53:42.168] [INFO] default - ADD IMAGES SUCCESSFULLY.
+[2024-07-09T11:53:46.897] [ERROR] default - MQTT INIT FAILED:Connection error: 
+[2024-07-09T11:53:47.174] [ERROR] default - EXCEPTION ADDING IMAGES:Cannot set headers after they are sent to the client
+[2024-07-09T11:54:07.896] [ERROR] default - MQTT INIT FAILED:Connection error: 
+[2024-07-09T11:54:18.996] [INFO] default - Image original name:download.jpg
+[2024-07-09T11:54:18.996] [INFO] default - Image file name:aa73a646f0429cc2ae45061b6cec3b1f
+[2024-07-09T11:54:20.129] [INFO] default - ADD IMAGES SUCCESSFULLY.
+[2024-07-09T11:54:25.142] [INFO] default - DELETE IMAGE aa73a646f0429cc2ae45061b6cec3b1f SUCCESSFULLY
+[2024-07-09T11:54:27.436] [ERROR] default - MQTT INIT FAILED:Connection error: 
+[2024-07-09T11:54:48.132] [INFO] default - Image original name:download.jpg
+[2024-07-09T11:54:48.132] [INFO] default - Image file name:9e1c5bfa1109d4eee73af39e5a8b23f7
+[2024-07-09T11:54:48.567] [INFO] default - ADD IMAGES SUCCESSFULLY.
+[2024-07-09T11:54:53.571] [INFO] default - DELETE IMAGE 9e1c5bfa1109d4eee73af39e5a8b23f7 SUCCESSFULLY
+[2024-07-09T11:55:39.026] [INFO] default - Image original name:download.jpg
+[2024-07-09T11:55:39.026] [INFO] default - Image file name:d23b02d0f390e54e48079b03c76aa4ea
+[2024-07-09T11:55:40.892] [INFO] default - ADD IMAGES SUCCESSFULLY.
+[2024-07-09T11:55:45.907] [INFO] default - DELETE IMAGE d23b02d0f390e54e48079b03c76aa4ea SUCCESSFULLY
+[2024-07-09T11:55:53.864] [INFO] default - Image original name:download.jpg
+[2024-07-09T11:55:53.864] [INFO] default - Image file name:8c39f9704c8a34be07fbd3638a4885c7
+[2024-07-09T11:55:58.999] [INFO] default - ADD IMAGES SUCCESSFULLY.
+[2024-07-09T11:56:04.007] [INFO] default - DELETE IMAGE 8c39f9704c8a34be07fbd3638a4885c7 SUCCESSFULLY
+[2024-07-09T11:56:35.712] [INFO] default - Image original name:download.jpg
+[2024-07-09T11:56:35.712] [INFO] default - Image file name:df76a92bbaeb9e66e6096bb11d4abae9
+[2024-07-09T11:56:40.650] [INFO] default - ADD IMAGES SUCCESSFULLY.
+[2024-07-09T11:56:45.653] [INFO] default - DELETE IMAGE df76a92bbaeb9e66e6096bb11d4abae9 SUCCESSFULLY
+[2024-07-09T11:58:05.073] [INFO] default - Image original name:images.png
+[2024-07-09T11:58:05.073] [INFO] default - Image file name:6615a842595e5f8fca6e8f18ed6904ab
+[2024-07-09T11:58:13.833] [INFO] default - ADD IMAGES SUCCESSFULLY.
+[2024-07-09T11:58:18.842] [INFO] default - DELETE IMAGE 6615a842595e5f8fca6e8f18ed6904ab SUCCESSFULLY
+[2024-07-09T11:58:50.113] [INFO] default - Image original name:images.png
+[2024-07-09T11:58:50.113] [INFO] default - Image file name:b6e81b4359572e5270bf7f98abbe38e8
+[2024-07-09T11:58:51.982] [INFO] default - Third party handle image:Image Color has been retrieved
+[2024-07-09T11:58:51.984] [INFO] default - ADD IMAGES SUCCESSFULLY.
+[2024-07-09T11:58:56.988] [INFO] default - DELETE IMAGE b6e81b4359572e5270bf7f98abbe38e8 SUCCESSFULLY
+[2024-07-09T14:05:07.793] [ERROR] default - MQTT INIT FAILED:Connection error: 
+[2024-07-09T14:06:00.037] [ERROR] default - MQTT INIT FAILED:Connection error: 
+[2024-07-09T14:17:49.125] [INFO] default - Update Topic List Successfully.
+[2024-07-09T14:29:50.894] [INFO] default - Update Topic List Successfully.
+[2024-07-09T14:41:52.503] [INFO] default - Update Topic List Successfully.
+[2024-07-09T14:53:49.104] [INFO] default - Update Topic List Successfully.
+[2024-07-09T15:04:58.596] [INFO] default - Access about page successful
+[2024-07-09T15:05:01.260] [INFO] default - Close Log SSE Successfully.
+[2024-07-09T15:05:01.416] [INFO] default - get product-detail Rubik's Coach Cube successfull
+[2024-07-09T15:05:01.442] [INFO] default - get product-detail Rubik's 3x3 successfull
+[2024-07-09T15:05:01.459] [INFO] default - get product-detail Rubik’s Apprentice 2x2 successfull
+[2024-07-09T15:07:21.721] [INFO] default - GET DEVICE LIST SUCCESSFULLY FOR USER helloman123
+[2024-07-09T15:08:42.017] [INFO] default - Close Log SSE Successfully.
+[2024-07-09T15:08:42.171] [INFO] default - GET DEVICE LIST SUCCESSFULLY FOR USER helloman123
+[2024-07-09T15:16:00.612] [INFO] default - Image original name:rubik_face.jpg
+[2024-07-09T15:16:00.613] [INFO] default - Image file name:a6b5577c43b94f6feba6cb0ecfee4128
+[2024-07-09T15:16:00.619] [INFO] default - Image original name:download.jpg
+[2024-07-09T15:16:00.619] [INFO] default - Image file name:ce11cf249b860ccdd555dfcc7f396c7e
+[2024-07-09T15:16:00.699] [INFO] default - ADD IMAGES SUCCESSFULLY.
+[2024-07-09T15:16:05.712] [INFO] default - DELETE IMAGE a6b5577c43b94f6feba6cb0ecfee4128 SUCCESSFULLY
+[2024-07-09T15:16:05.713] [INFO] default - DELETE IMAGE ce11cf249b860ccdd555dfcc7f396c7e SUCCESSFULLY
+[2024-07-09T15:17:17.838] [INFO] default - Update Topic List Successfully.
+[2024-07-09T15:26:07.999] [INFO] default - Close Log SSE Successfully.
+[2024-07-09T15:26:08.190] [INFO] default - GET DEVICE LIST SUCCESSFULLY FOR USER helloman123
+[2024-07-09T15:40:36.705] [INFO] default - Update Topic List Successfully.
+[2024-07-09T15:52:38.249] [INFO] default - Update Topic List Successfully.
+[2024-07-09T16:04:39.934] [INFO] default - Update Topic List Successfully.
+[2024-07-09T16:16:36.556] [INFO] default - Update Topic List Successfully.
+[2024-07-09T16:28:38.316] [INFO] default - Update Topic List Successfully.
+[2024-07-09T16:40:40.006] [INFO] default - Update Topic List Successfully.
+[2024-07-09T16:52:36.638] [INFO] default - Update Topic List Successfully.
+[2024-07-09T17:04:38.400] [INFO] default - Update Topic List Successfully.
+[2024-07-09T17:16:40.084] [INFO] default - Update Topic List Successfully.
+[2024-07-09T17:28:36.730] [INFO] default - Update Topic List Successfully.
+[2024-07-09T17:40:38.490] [INFO] default - Update Topic List Successfully.
+[2024-07-09T17:52:40.084] [INFO] default - Update Topic List Successfully.
+[2024-07-09T18:04:36.652] [INFO] default - Update Topic List Successfully.
+[2024-07-09T18:16:38.478] [INFO] default - Update Topic List Successfully.
+[2024-07-09T18:28:40.148] [INFO] default - Update Topic List Successfully.
+[2024-07-09T18:40:36.800] [INFO] default - Update Topic List Successfully.
+[2024-07-09T18:52:38.366] [INFO] default - Update Topic List Successfully.
+[2024-07-09T19:04:39.970] [INFO] default - Update Topic List Successfully.
+[2024-07-09T19:16:36.647] [INFO] default - Update Topic List Successfully.
+[2024-07-09T19:28:38.195] [INFO] default - Update Topic List Successfully.
+[2024-07-09T19:40:39.725] [INFO] default - Update Topic List Successfully.
+[2024-07-09T19:52:41.341] [INFO] default - Update Topic List Successfully.
+[2024-07-09T20:04:37.874] [INFO] default - Update Topic List Successfully.
+[2024-07-09T20:16:39.608] [INFO] default - Update Topic List Successfully.
+[2024-07-09T20:28:41.219] [INFO] default - Update Topic List Successfully.
+[2024-07-09T20:40:37.813] [INFO] default - Update Topic List Successfully.
+[2024-07-09T20:52:39.489] [INFO] default - Update Topic List Successfully.
+[2024-07-09T21:04:41.039] [INFO] default - Update Topic List Successfully.
+[2024-07-09T21:16:37.652] [INFO] default - Update Topic List Successfully.
+[2024-07-09T21:28:39.217] [INFO] default - Update Topic List Successfully.
+[2024-07-09T21:40:40.845] [INFO] default - Update Topic List Successfully.
+[2024-07-09T21:52:37.441] [INFO] default - Update Topic List Successfully.
+[2024-07-09T22:04:39.003] [INFO] default - Update Topic List Successfully.
+[2024-07-09T22:16:40.597] [INFO] default - Update Topic List Successfully.
+[2024-07-09T22:28:37.250] [INFO] default - Update Topic List Successfully.
+[2024-07-09T22:40:38.796] [INFO] default - Update Topic List Successfully.
+[2024-07-09T22:52:40.465] [INFO] default - Update Topic List Successfully.
+[2024-07-09T23:04:37.081] [INFO] default - Update Topic List Successfully.
+[2024-07-09T23:16:38.733] [INFO] default - Update Topic List Successfully.
+[2024-07-09T23:28:40.172] [INFO] default - Update Topic List Successfully.
+[2024-07-09T23:40:36.839] [INFO] default - Update Topic List Successfully.
+[2024-07-09T23:52:38.493] [INFO] default - Update Topic List Successfully.

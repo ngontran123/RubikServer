@@ -1,0 +1,48 @@
+[2024-07-01T17:17:28.221] [INFO] default - Close Log SSE Successfully.
+[2024-07-01T17:18:59.480] [INFO] default - Update Topic List Successfully.
+[2024-07-01T17:25:30.062] [INFO] default - Access about page successful
+[2024-07-01T17:25:31.248] [INFO] default - get product-detail Rubik's Coach Cube successfull
+[2024-07-01T17:25:31.267] [INFO] default - get product-detail Rubik's 3x3 successfull
+[2024-07-01T17:25:31.285] [INFO] default - get product-detail Rubik’s Apprentice 2x2 successfull
+[2024-07-01T17:25:32.274] [INFO] default - GET DEVICE LIST SUCCESSFULLY FOR USER helloman123
+[2024-07-01T17:31:01.171] [INFO] default - Update Topic List Successfully.
+[2024-07-01T17:50:34.112] [INFO] default - Update Topic List Successfully.
+[2024-07-01T18:02:35.864] [INFO] default - Update Topic List Successfully.
+[2024-07-01T18:14:37.492] [INFO] default - Update Topic List Successfully.
+[2024-07-01T18:26:34.019] [INFO] default - Update Topic List Successfully.
+[2024-07-01T18:36:04.293] [INFO] default - Close Log SSE Successfully.
+[2024-07-01T18:36:38.794] [INFO] default - Access about page successful
+[2024-07-01T18:36:40.348] [INFO] default - get product-detail Rubik's Coach Cube successfull
+[2024-07-01T18:36:40.364] [INFO] default - get product-detail Rubik's 3x3 successfull
+[2024-07-01T18:36:40.379] [INFO] default - get product-detail Rubik’s Apprentice 2x2 successfull
+[2024-07-01T18:36:41.428] [INFO] default - GET DEVICE LIST SUCCESSFULLY FOR USER helloman123
+[2024-07-01T18:36:51.158] [ERROR] default - EXCEPTION ADDING IMAGES:Failed to execute 'append' on 'FormData': parameter 2 is not of type 'Blob'
+[2024-07-01T18:38:21.030] [ERROR] default - EXCEPTION ADDING IMAGES:The "path" argument must be of type string or an instance of Buffer or URL. Received an instance of Object
+[2024-07-01T18:38:43.601] [ERROR] default - EXCEPTION ADDING IMAGES:Failed to execute 'append' on 'FormData': parameter 2 is not of type 'Blob'
+[2024-07-01T18:38:45.821] [ERROR] default - EXCEPTION ADDING IMAGES:Failed to execute 'append' on 'FormData': parameter 2 is not of type 'Blob'
+[2024-07-01T18:52:22.832] [INFO] default - Update Topic List Successfully.
+[2024-07-01T19:04:19.406] [INFO] default - Update Topic List Successfully.
+[2024-07-01T19:16:20.988] [INFO] default - Update Topic List Successfully.
+[2024-07-01T19:28:22.566] [INFO] default - Update Topic List Successfully.
+[2024-07-01T19:40:19.119] [INFO] default - Update Topic List Successfully.
+[2024-07-01T19:52:20.789] [INFO] default - Update Topic List Successfully.
+[2024-07-01T20:04:22.316] [INFO] default - Update Topic List Successfully.
+[2024-07-01T20:16:23.815] [INFO] default - Update Topic List Successfully.
+[2024-07-01T20:28:20.306] [INFO] default - Update Topic List Successfully.
+[2024-07-01T20:40:21.855] [INFO] default - Update Topic List Successfully.
+[2024-07-01T20:52:23.399] [INFO] default - Update Topic List Successfully.
+[2024-07-01T21:04:19.974] [INFO] default - Update Topic List Successfully.
+[2024-07-01T21:16:21.619] [INFO] default - Update Topic List Successfully.
+[2024-07-01T21:28:23.183] [INFO] default - Update Topic List Successfully.
+[2024-07-01T21:40:19.764] [INFO] default - Update Topic List Successfully.
+[2024-07-01T21:52:21.327] [INFO] default - Update Topic List Successfully.
+[2024-07-01T22:04:22.783] [INFO] default - Update Topic List Successfully.
+[2024-07-01T22:16:19.331] [INFO] default - Update Topic List Successfully.
+[2024-07-01T22:28:20.903] [INFO] default - Update Topic List Successfully.
+[2024-07-01T22:40:22.652] [INFO] default - Update Topic List Successfully.
+[2024-07-01T22:52:19.189] [INFO] default - Update Topic List Successfully.
+[2024-07-01T23:04:20.703] [INFO] default - Update Topic List Successfully.
+[2024-07-01T23:16:22.274] [INFO] default - Update Topic List Successfully.
+[2024-07-01T23:28:23.865] [INFO] default - Update Topic List Successfully.
+[2024-07-01T23:40:20.357] [INFO] default - Update Topic List Successfully.
+[2024-07-01T23:52:21.901] [INFO] default - Update Topic List Successfully.

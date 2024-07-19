@@ -1,0 +1,110 @@
+[2024-06-11T14:32:48.522] [INFO] default - Rotate Secret Key Successfully.
+[2024-06-11T14:44:51.614] [INFO] default - Update Topic List Successfully.
+[2024-06-11T14:56:54.059] [INFO] default - Update Topic List Successfully.
+[2024-06-11T15:03:55.172] [ERROR] default - Sent OTP 016304 failed:The number +8490674XXXX is unverified. Trial accounts cannot send messages to unverified numbers; verify +8490674XXXX at twilio.com/user/account/phone-numbers/verified, or purchase a Twilio number to send messages to unverified numbers
+[2024-06-11T15:08:51.084] [INFO] default - Update Topic List Successfully.
+[2024-06-11T15:20:53.266] [INFO] default - Update Topic List Successfully.
+[2024-06-11T15:32:50.393] [INFO] default - Update Topic List Successfully.
+[2024-06-11T15:38:16.426] [INFO] default - Rotate Secret Key Successfully.
+[2024-06-11T15:45:27.246] [INFO] default - Rotate Secret Key Successfully.
+[2024-06-11T15:45:44.244] [INFO] default - Rotate Secret Key Successfully.
+[2024-06-11T15:45:53.015] [INFO] default - Rotate Secret Key Successfully.
+[2024-06-11T15:46:19.890] [INFO] default - Rotate Secret Key Successfully.
+[2024-06-11T15:47:59.231] [INFO] default - Rotate Secret Key Successfully.
+[2024-06-11T15:48:05.250] [ERROR] default - Sent OTP 016304 failed:
+[2024-06-11T15:48:07.056] [ERROR] default - Sent OTP 016304 failed:
+[2024-06-11T15:48:36.932] [INFO] default - Rotate Secret Key Successfully.
+[2024-06-11T15:49:24.235] [INFO] default - Rotate Secret Key Successfully.
+[2024-06-11T15:49:26.653] [ERROR] default - Sent OTP 016304 failed:
+[2024-06-11T15:49:28.389] [ERROR] default - Sent OTP 016304 failed:
+[2024-06-11T15:50:00.560] [INFO] default - Rotate Secret Key Successfully.
+[2024-06-11T15:50:19.782] [INFO] default - Forgot Password:Sent OTP 016304 successfully:[object Object]
+[2024-06-11T15:50:19.784] [ERROR] default - Sent OTP 016304 failed:Converting circular structure to JSON
+    --> starting at object with constructor 'ClientRequest'
+    |     property 'res' -> object with constructor 'IncomingMessage'
+    --- property 'req' closes the circle
+[2024-06-11T15:50:48.492] [INFO] default - Rotate Secret Key Successfully.
+[2024-06-11T15:50:50.249] [INFO] default - Forgot Password:Sent OTP 016304 successfully:[object Object]
+[2024-06-11T15:50:50.249] [ERROR] default - Sent OTP 016304 failed:Converting circular structure to JSON
+    --> starting at object with constructor 'ClientRequest'
+    |     property 'res' -> object with constructor 'IncomingMessage'
+    --- property 'req' closes the circle
+[2024-06-11T15:53:12.219] [INFO] default - Rotate Secret Key Successfully.
+[2024-06-11T15:53:15.215] [INFO] default - Forgot Password:Sent OTP 016304 successfully:[object Object]
+[2024-06-11T15:54:22.902] [INFO] default - Rotate Secret Key Successfully.
+[2024-06-11T15:54:25.588] [ERROR] default - Sent OTP 016304 failed:Converting circular structure to JSON
+    --> starting at object with constructor 'ClientRequest'
+    |     property 'res' -> object with constructor 'IncomingMessage'
+    --- property 'req' closes the circle
+[2024-06-11T15:54:41.001] [INFO] default - Rotate Secret Key Successfully.
+[2024-06-11T15:54:43.890] [ERROR] default - Sent OTP 016304 failed:Converting circular structure to JSON
+    --> starting at object with constructor 'ClientRequest'
+    |     property 'res' -> object with constructor 'IncomingMessage'
+    --- property 'req' closes the circle
+[2024-06-11T15:54:50.039] [ERROR] default - Sent OTP 016304 failed:Converting circular structure to JSON
+    --> starting at object with constructor 'ClientRequest'
+    |     property 'res' -> object with constructor 'IncomingMessage'
+    --- property 'req' closes the circle
+[2024-06-11T15:55:28.864] [INFO] default - Rotate Secret Key Successfully.
+[2024-06-11T15:55:31.260] [ERROR] default - Sent OTP 016304 failed:Converting circular structure to JSON
+    --> starting at object with constructor 'ClientRequest'
+    |     property 'res' -> object with constructor 'IncomingMessage'
+    --- property 'req' closes the circle
+[2024-06-11T15:57:49.883] [INFO] default - Rotate Secret Key Successfully.
+[2024-06-11T16:09:50.764] [INFO] default - Update Topic List Successfully.
+[2024-06-11T16:10:58.753] [INFO] default - Rotate Secret Key Successfully.
+[2024-06-11T16:11:04.795] [INFO] default - Rotate Secret Key Successfully.
+[2024-06-11T16:11:07.123] [INFO] default - Forgot Password:Sent OTP 016304 successfully:[object Object]
+[2024-06-11T16:16:26.966] [INFO] default - Rotate Secret Key Successfully.
+[2024-06-11T16:16:31.501] [INFO] default - Forgot Password:Sent OTP 016304 successfully:[object Object]
+[2024-06-11T16:17:10.771] [INFO] default - Rotate Secret Key Successfully.
+[2024-06-11T16:17:13.104] [INFO] default - Forgot Password:Sent OTP 016304 successfully:[object Object]
+[2024-06-11T16:17:43.756] [INFO] default - Rotate Secret Key Successfully.
+[2024-06-11T16:26:49.102] [INFO] default - Rotate Secret Key Successfully.
+[2024-06-11T16:27:46.063] [INFO] default - Rotate Secret Key Successfully.
+[2024-06-11T16:39:51.488] [INFO] default - Update Topic List Successfully.
+[2024-06-11T16:44:20.026] [INFO] default - Rotate Secret Key Successfully.
+[2024-06-11T16:44:25.544] [INFO] default - Forgot Password:Sent OTP 016304 successfully:[object Object]
+[2024-06-11T16:44:31.950] [INFO] default - Forgot Password:Sent OTP 016304 successfully:[object Object]
+[2024-06-11T16:44:49.029] [INFO] default - Rotate Secret Key Successfully.
+[2024-06-11T16:46:02.333] [ERROR] default - Sent OTP 016304 failed:Request failed with status code 401
+[2024-06-11T16:50:25.895] [INFO] default - Rotate Secret Key Successfully.
+[2024-06-11T16:50:28.278] [INFO] default - Forgot Password:Sent OTP 016304 successfully:[object Object]
+[2024-06-11T16:55:38.016] [INFO] default - Forgot Password:Sent OTP 016304 successfully:[object Object]
+[2024-06-11T17:01:07.467] [INFO] default - Rotate Secret Key Successfully.
+[2024-06-11T17:01:31.670] [INFO] default - Rotate Secret Key Successfully.
+[2024-06-11T17:13:34.514] [INFO] default - Update Topic List Successfully.
+[2024-06-11T17:23:38.793] [INFO] default - Rotate Secret Key Successfully.
+[2024-06-11T17:35:44.377] [INFO] default - Update Topic List Successfully.
+[2024-06-11T17:42:13.098] [INFO] default - Rotate Secret Key Successfully.
+[2024-06-11T17:54:13.995] [INFO] default - Update Topic List Successfully.
+[2024-06-11T18:06:16.252] [INFO] default - Update Topic List Successfully.
+[2024-06-11T18:18:17.958] [INFO] default - Update Topic List Successfully.
+[2024-06-11T18:30:14.769] [INFO] default - Update Topic List Successfully.
+[2024-06-11T18:42:16.359] [INFO] default - Update Topic List Successfully.
+[2024-06-11T18:54:17.962] [INFO] default - Update Topic List Successfully.
+[2024-06-11T19:06:14.719] [INFO] default - Update Topic List Successfully.
+[2024-06-11T19:18:16.502] [INFO] default - Update Topic List Successfully.
+[2024-06-11T19:30:18.176] [INFO] default - Update Topic List Successfully.
+[2024-06-11T19:42:14.782] [INFO] default - Update Topic List Successfully.
+[2024-06-11T19:54:16.419] [INFO] default - Update Topic List Successfully.
+[2024-06-11T20:06:18.026] [INFO] default - Update Topic List Successfully.
+[2024-06-11T20:18:14.615] [INFO] default - Update Topic List Successfully.
+[2024-06-11T20:30:16.212] [INFO] default - Update Topic List Successfully.
+[2024-06-11T20:42:17.774] [INFO] default - Update Topic List Successfully.
+[2024-06-11T20:54:14.394] [INFO] default - Update Topic List Successfully.
+[2024-06-11T21:06:15.995] [INFO] default - Update Topic List Successfully.
+[2024-06-11T21:18:17.707] [INFO] default - Update Topic List Successfully.
+[2024-06-11T21:30:14.307] [INFO] default - Update Topic List Successfully.
+[2024-06-11T21:42:15.965] [INFO] default - Update Topic List Successfully.
+[2024-06-11T21:54:17.558] [INFO] default - Update Topic List Successfully.
+[2024-06-11T22:06:14.252] [INFO] default - Update Topic List Successfully.
+[2024-06-11T22:18:15.835] [INFO] default - Update Topic List Successfully.
+[2024-06-11T22:30:17.520] [INFO] default - Update Topic List Successfully.
+[2024-06-11T22:42:14.191] [INFO] default - Update Topic List Successfully.
+[2024-06-11T22:54:15.799] [INFO] default - Update Topic List Successfully.
+[2024-06-11T23:06:17.410] [INFO] default - Update Topic List Successfully.
+[2024-06-11T23:18:14.037] [INFO] default - Update Topic List Successfully.
+[2024-06-11T23:30:15.658] [INFO] default - Update Topic List Successfully.
+[2024-06-11T23:42:17.351] [INFO] default - Update Topic List Successfully.
+[2024-06-11T23:54:14.047] [INFO] default - Update Topic List Successfully.

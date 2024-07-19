@@ -1,0 +1,69 @@
+[2024-06-07T14:47:36.309] [INFO] default - Rotate Secret Key Successfully.
+[2024-06-07T14:50:22.039] [INFO] default - Rotate Secret Key Successfully.
+[2024-06-07T14:58:15.787] [ERROR] default - Sent OTP 763902 failed:Invalid 'To' Phone Number: 090674XXXX
+[2024-06-07T14:58:35.072] [ERROR] default - Sent OTP 763902 failed:Invalid 'To' Phone Number: 8490674XXXX
+[2024-06-07T14:58:59.444] [INFO] default - Rotate Secret Key Successfully.
+[2024-06-07T15:00:35.446] [ERROR] default - Sent OTP 763902 failed:The 'From' phone number provided (+16365566723) is not a valid message-capable Twilio phone number for this destination
+[2024-06-07T15:07:36.475] [INFO] default - Rotate Secret Key Successfully.
+[2024-06-07T15:19:41.576] [INFO] default - Update Topic List Successfully.
+[2024-06-07T15:24:00.151] [INFO] default - Rotate Secret Key Successfully.
+[2024-06-07T15:24:43.941] [ERROR] default - Sent OTP 432247 failed:The 'From' phone number provided (+18777804236) is not a valid message-capable Twilio phone number for this destination
+[2024-06-07T15:26:29.308] [INFO] default - Rotate Secret Key Successfully.
+[2024-06-07T15:28:13.416] [ERROR] default - Sent OTP 022633 failed:The number +8490674XXXX is unverified. Trial accounts cannot send messages to unverified numbers; verify +8490674XXXX at twilio.com/user/account/phone-numbers/verified, or purchase a Twilio number to send messages to unverified numbers
+[2024-06-07T15:34:51.726] [INFO] default - Rotate Secret Key Successfully.
+[2024-06-07T15:35:04.603] [ERROR] default - Sent OTP 022633 failed:Invalid 'To' Phone Number: 8490674XXXX
+[2024-06-07T15:35:11.041] [ERROR] default - Sent OTP 022633 failed:The number +8490674XXXX is unverified. Trial accounts cannot send messages to unverified numbers; verify +8490674XXXX at twilio.com/user/account/phone-numbers/verified, or purchase a Twilio number to send messages to unverified numbers
+[2024-06-07T15:35:39.438] [ERROR] default - Sent OTP 022633 failed:The number +84 906 744XXXX is unverified. Trial accounts cannot send messages to unverified numbers; verify +84 906 744XXXX at twilio.com/user/account/phone-numbers/verified, or purchase a Twilio number to send messages to unverified numbers
+[2024-06-07T15:46:56.067] [INFO] default - Update Topic List Successfully.
+[2024-06-07T15:55:12.362] [ERROR] default - Sent OTP 022633 failed:The number +84 906 744XXXX is unverified. Trial accounts cannot send messages to unverified numbers; verify +84 906 744XXXX at twilio.com/user/account/phone-numbers/verified, or purchase a Twilio number to send messages to unverified numbers
+[2024-06-07T15:55:50.774] [ERROR] default - Sent OTP 022633 failed:The number +8490674XXXX is unverified. Trial accounts cannot send messages to unverified numbers; verify +8490674XXXX at twilio.com/user/account/phone-numbers/verified, or purchase a Twilio number to send messages to unverified numbers
+[2024-06-07T15:56:30.299] [INFO] default - Rotate Secret Key Successfully.
+[2024-06-07T15:56:34.512] [ERROR] default - Sent OTP 022633 failed:The number +8490674XXXX is unverified. Trial accounts cannot send messages to unverified numbers; verify +8490674XXXX at twilio.com/user/account/phone-numbers/verified, or purchase a Twilio number to send messages to unverified numbers
+[2024-06-07T16:00:31.311] [INFO] default - Rotate Secret Key Successfully.
+[2024-06-07T16:02:18.924] [ERROR] default - Sent OTP 022633 failed:The number +84906744XXXX is unverified. Trial accounts cannot send messages to unverified numbers; verify +84906744XXXX at twilio.com/user/account/phone-numbers/verified, or purchase a Twilio number to send messages to unverified numbers
+[2024-06-07T16:02:44.693] [ERROR] default - Sent OTP 022633 failed:The number +84906744XXXX is unverified. Trial accounts cannot send messages to unverified numbers; verify +84906744XXXX at twilio.com/user/account/phone-numbers/verified, or purchase a Twilio number to send messages to unverified numbers
+[2024-06-07T16:02:58.424] [ERROR] default - Sent OTP 022633 failed:The number +8490674XXXX is unverified. Trial accounts cannot send messages to unverified numbers; verify +8490674XXXX at twilio.com/user/account/phone-numbers/verified, or purchase a Twilio number to send messages to unverified numbers
+[2024-06-07T16:03:20.900] [INFO] default - Rotate Secret Key Successfully.
+[2024-06-07T16:03:25.625] [ERROR] default - Sent OTP 022633 failed:The number +8490674XXXX is unverified. Trial accounts cannot send messages to unverified numbers; verify +8490674XXXX at twilio.com/user/account/phone-numbers/verified, or purchase a Twilio number to send messages to unverified numbers
+[2024-06-07T16:12:21.189] [ERROR] default - Sent OTP -6-2-6-2-6-2 failed:The number +8490674XXXX is unverified. Trial accounts cannot send messages to unverified numbers; verify +8490674XXXX at twilio.com/user/account/phone-numbers/verified, or purchase a Twilio number to send messages to unverified numbers
+[2024-06-07T16:12:31.432] [ERROR] default - Sent OTP 774263 failed:The number +8490674XXXX is unverified. Trial accounts cannot send messages to unverified numbers; verify +8490674XXXX at twilio.com/user/account/phone-numbers/verified, or purchase a Twilio number to send messages to unverified numbers
+[2024-06-07T16:12:38.032] [ERROR] default - Sent OTP 774263 failed:The number +8490674XXXX is unverified. Trial accounts cannot send messages to unverified numbers; verify +8490674XXXX at twilio.com/user/account/phone-numbers/verified, or purchase a Twilio number to send messages to unverified numbers
+[2024-06-07T16:15:21.445] [INFO] default - Update Topic List Successfully.
+[2024-06-07T16:27:23.359] [INFO] default - Update Topic List Successfully.
+[2024-06-07T16:39:25.281] [INFO] default - Update Topic List Successfully.
+[2024-06-07T16:51:22.067] [INFO] default - Update Topic List Successfully.
+[2024-06-07T17:03:23.989] [INFO] default - Update Topic List Successfully.
+[2024-06-07T17:15:26.021] [INFO] default - Update Topic List Successfully.
+[2024-06-07T17:27:22.700] [INFO] default - Update Topic List Successfully.
+[2024-06-07T17:39:24.528] [INFO] default - Update Topic List Successfully.
+[2024-06-07T17:51:21.383] [INFO] default - Update Topic List Successfully.
+[2024-06-07T18:03:23.197] [INFO] default - Update Topic List Successfully.
+[2024-06-07T18:15:24.866] [INFO] default - Update Topic List Successfully.
+[2024-06-07T18:27:21.497] [INFO] default - Update Topic List Successfully.
+[2024-06-07T18:39:23.244] [INFO] default - Update Topic List Successfully.
+[2024-06-07T18:51:25.161] [INFO] default - Update Topic List Successfully.
+[2024-06-07T19:03:22.003] [INFO] default - Update Topic List Successfully.
+[2024-06-07T19:15:23.935] [INFO] default - Update Topic List Successfully.
+[2024-06-07T19:27:25.887] [INFO] default - Update Topic List Successfully.
+[2024-06-07T19:39:22.587] [INFO] default - Update Topic List Successfully.
+[2024-06-07T19:51:24.170] [INFO] default - Update Topic List Successfully.
+[2024-06-07T20:03:25.698] [INFO] default - Update Topic List Successfully.
+[2024-06-07T20:15:22.418] [INFO] default - Update Topic List Successfully.
+[2024-06-07T20:27:24.049] [INFO] default - Update Topic List Successfully.
+[2024-06-07T20:39:25.655] [INFO] default - Update Topic List Successfully.
+[2024-06-07T20:51:22.217] [INFO] default - Update Topic List Successfully.
+[2024-06-07T21:03:23.917] [INFO] default - Update Topic List Successfully.
+[2024-06-07T21:15:25.618] [INFO] default - Update Topic List Successfully.
+[2024-06-07T21:27:22.240] [INFO] default - Update Topic List Successfully.
+[2024-06-07T21:39:23.907] [INFO] default - Update Topic List Successfully.
+[2024-06-07T21:51:25.559] [INFO] default - Update Topic List Successfully.
+[2024-06-07T22:03:22.093] [INFO] default - Update Topic List Successfully.
+[2024-06-07T22:15:23.782] [INFO] default - Update Topic List Successfully.
+[2024-06-07T22:27:25.431] [INFO] default - Update Topic List Successfully.
+[2024-06-07T22:39:22.082] [INFO] default - Update Topic List Successfully.
+[2024-06-07T22:51:23.671] [INFO] default - Update Topic List Successfully.
+[2024-06-07T23:03:25.406] [INFO] default - Update Topic List Successfully.
+[2024-06-07T23:15:22.046] [INFO] default - Update Topic List Successfully.
+[2024-06-07T23:27:23.705] [INFO] default - Update Topic List Successfully.
+[2024-06-07T23:39:25.382] [INFO] default - Update Topic List Successfully.
+[2024-06-07T23:51:21.925] [INFO] default - Update Topic List Successfully.

@@ -1,0 +1,410 @@
+[2024-07-08T10:01:13.187] [INFO] default - Access about page successful
+[2024-07-08T10:01:15.106] [INFO] default - Access about page successful
+[2024-07-08T10:01:47.532] [INFO] default - get product-detail Rubik's Coach Cube successfull
+[2024-07-08T10:01:47.584] [INFO] default - get product-detail Rubik's 3x3 successfull
+[2024-07-08T10:01:47.596] [INFO] default - get product-detail Rubik’s Apprentice 2x2 successfull
+[2024-07-08T10:01:48.978] [INFO] default - GET DEVICE LIST SUCCESSFULLY FOR USER helloman123
+[2024-07-08T10:02:01.646] [INFO] default - Image original name:download.jpg
+[2024-07-08T10:02:01.646] [INFO] default - Image file name:105e2a06725145cc051b71c86270073b
+[2024-07-08T10:02:18.595] [INFO] default - Third party handle image:undefined
+[2024-07-08T10:02:18.596] [INFO] default - ADD IMAGES SUCCESSFULLY.
+[2024-07-08T10:02:23.610] [INFO] default - DELETE IMAGE 105e2a06725145cc051b71c86270073b SUCCESSFULLY
+[2024-07-08T10:03:02.864] [INFO] default - Image original name:rubik_one_face.jpg
+[2024-07-08T10:03:02.864] [INFO] default - Image file name:e003ac6bf749552b8930fd6a43179755
+[2024-07-08T10:03:02.932] [INFO] default - Third party handle image:undefined
+[2024-07-08T10:03:02.933] [INFO] default - ADD IMAGES SUCCESSFULLY.
+[2024-07-08T10:03:07.936] [INFO] default - DELETE IMAGE e003ac6bf749552b8930fd6a43179755 SUCCESSFULLY
+[2024-07-08T10:03:53.415] [INFO] default - Image original name:rubik_face.jpg
+[2024-07-08T10:03:53.415] [INFO] default - Image file name:6862ac226e3d64ffd5281366c75d3d63
+[2024-07-08T10:03:53.471] [INFO] default - Third party handle image:undefined
+[2024-07-08T10:03:53.471] [INFO] default - ADD IMAGES SUCCESSFULLY.
+[2024-07-08T10:03:58.484] [INFO] default - DELETE IMAGE 6862ac226e3d64ffd5281366c75d3d63 SUCCESSFULLY
+[2024-07-08T10:04:07.983] [INFO] default - Image original name:download.jpg
+[2024-07-08T10:04:07.983] [INFO] default - Image file name:2284f40c6123f5089cbdfed774292f69
+[2024-07-08T10:04:22.423] [INFO] default - Third party handle image:undefined
+[2024-07-08T10:04:22.423] [INFO] default - ADD IMAGES SUCCESSFULLY.
+[2024-07-08T10:04:27.440] [INFO] default - DELETE IMAGE 2284f40c6123f5089cbdfed774292f69 SUCCESSFULLY
+[2024-07-08T10:07:49.014] [INFO] default - Image original name:rubik_face.jpg
+[2024-07-08T10:07:49.014] [INFO] default - Image file name:956f69600866ad19133aad5e26afff25
+[2024-07-08T10:07:49.063] [INFO] default - Third party handle image:undefined
+[2024-07-08T10:07:49.064] [INFO] default - ADD IMAGES SUCCESSFULLY.
+[2024-07-08T10:07:54.075] [INFO] default - DELETE IMAGE 956f69600866ad19133aad5e26afff25 SUCCESSFULLY
+[2024-07-08T10:07:58.598] [INFO] default - Image original name:rubik_face.jpg
+[2024-07-08T10:07:58.598] [INFO] default - Image file name:61392e05303365bc644a6a7e8542ef07
+[2024-07-08T10:07:58.646] [INFO] default - Third party handle image:undefined
+[2024-07-08T10:07:58.646] [INFO] default - ADD IMAGES SUCCESSFULLY.
+[2024-07-08T10:08:03.206] [INFO] default - Image original name:rubik_face.jpg
+[2024-07-08T10:08:03.207] [INFO] default - Image file name:3518541553d01b1914b6522cc96581d9
+[2024-07-08T10:08:03.252] [INFO] default - Third party handle image:undefined
+[2024-07-08T10:08:03.253] [INFO] default - ADD IMAGES SUCCESSFULLY.
+[2024-07-08T10:08:03.664] [INFO] default - DELETE IMAGE 61392e05303365bc644a6a7e8542ef07 SUCCESSFULLY
+[2024-07-08T10:08:08.259] [INFO] default - DELETE IMAGE 3518541553d01b1914b6522cc96581d9 SUCCESSFULLY
+[2024-07-08T10:10:44.199] [INFO] default - Image original name:rubik_face.jpg
+[2024-07-08T10:10:44.199] [INFO] default - Image file name:1600f97f35ba205928e92ef4a9bdd05e
+[2024-07-08T10:10:46.357] [INFO] default - Update Topic List Successfully.
+[2024-07-08T10:10:56.207] [INFO] default - Third party handle image:undefined
+[2024-07-08T10:10:56.207] [INFO] default - ADD IMAGES SUCCESSFULLY.
+[2024-07-08T10:11:01.213] [INFO] default - DELETE IMAGE 1600f97f35ba205928e92ef4a9bdd05e SUCCESSFULLY
+[2024-07-08T10:22:48.318] [INFO] default - Update Topic List Successfully.
+[2024-07-08T10:34:25.482] [INFO] default - Image original name:demo-calibrate-mode-success.jpg
+[2024-07-08T10:34:25.482] [INFO] default - Image file name:ecfe4f6dac9f4ae7a68ffeb17dade7b7
+[2024-07-08T10:34:31.489] [INFO] default - Third party handle image:undefined
+[2024-07-08T10:34:31.490] [INFO] default - ADD IMAGES SUCCESSFULLY.
+[2024-07-08T10:34:36.498] [INFO] default - DELETE IMAGE ecfe4f6dac9f4ae7a68ffeb17dade7b7 SUCCESSFULLY
+[2024-07-08T10:34:38.042] [INFO] default - Image original name:demo-calibrate-mode-success.jpg
+[2024-07-08T10:34:38.043] [INFO] default - Image file name:3d850cbe1dae7266dca8ca832864699c
+[2024-07-08T10:34:45.100] [INFO] default - Update Topic List Successfully.
+[2024-07-08T10:34:49.533] [INFO] default - Third party handle image:undefined
+[2024-07-08T10:34:49.534] [INFO] default - ADD IMAGES SUCCESSFULLY.
+[2024-07-08T10:34:54.543] [INFO] default - DELETE IMAGE 3d850cbe1dae7266dca8ca832864699c SUCCESSFULLY
+[2024-07-08T10:38:05.539] [INFO] default - Image original name:images.png
+[2024-07-08T10:38:05.539] [INFO] default - Image file name:b5074a4fc9db0e6df9cd3f2dce39fd80
+[2024-07-08T10:38:19.645] [INFO] default - Third party handle image:undefined
+[2024-07-08T10:38:19.645] [INFO] default - ADD IMAGES SUCCESSFULLY.
+[2024-07-08T10:38:24.662] [INFO] default - DELETE IMAGE b5074a4fc9db0e6df9cd3f2dce39fd80 SUCCESSFULLY
+[2024-07-08T10:38:28.770] [INFO] default - Image original name:rubik_face.jpg
+[2024-07-08T10:38:28.770] [INFO] default - Image file name:533590ffdbb88121f72f007d5d862c00
+[2024-07-08T10:38:36.763] [INFO] default - Third party handle image:undefined
+[2024-07-08T10:38:36.763] [INFO] default - ADD IMAGES SUCCESSFULLY.
+[2024-07-08T10:38:41.773] [INFO] default - DELETE IMAGE 533590ffdbb88121f72f007d5d862c00 SUCCESSFULLY
+[2024-07-08T10:38:45.175] [INFO] default - Image original name:rubik_face.jpg
+[2024-07-08T10:38:45.175] [INFO] default - Image file name:9a5f7af22f5ebe0c8e4d2839cd980544
+[2024-07-08T10:38:45.229] [INFO] default - Third party handle image:undefined
+[2024-07-08T10:38:45.230] [INFO] default - ADD IMAGES SUCCESSFULLY.
+[2024-07-08T10:38:50.236] [INFO] default - DELETE IMAGE 9a5f7af22f5ebe0c8e4d2839cd980544 SUCCESSFULLY
+[2024-07-08T10:38:53.894] [INFO] default - Image original name:rubik_face.jpg
+[2024-07-08T10:38:53.894] [INFO] default - Image file name:f492cb1e09f3abe900b39b442c030aae
+[2024-07-08T10:38:53.942] [INFO] default - Third party handle image:undefined
+[2024-07-08T10:38:53.946] [INFO] default - ADD IMAGES SUCCESSFULLY.
+[2024-07-08T10:38:58.961] [INFO] default - DELETE IMAGE f492cb1e09f3abe900b39b442c030aae SUCCESSFULLY
+[2024-07-08T10:40:44.960] [INFO] default - Image original name:rubik_face.jpg
+[2024-07-08T10:40:44.960] [INFO] default - Image file name:cdce0690e7ca81935f30db60da9fe138
+[2024-07-08T10:40:45.016] [INFO] default - ADD IMAGES SUCCESSFULLY.
+[2024-07-08T10:40:50.027] [INFO] default - DELETE IMAGE cdce0690e7ca81935f30db60da9fe138 SUCCESSFULLY
+[2024-07-08T10:41:30.843] [INFO] default - Image original name:rubik_face.jpg
+[2024-07-08T10:41:30.843] [INFO] default - Image file name:13dce0efb1f5e42ac6587c1c13577988
+[2024-07-08T10:41:30.892] [INFO] default - Third party handle image:undefined
+[2024-07-08T10:41:30.893] [INFO] default - ADD IMAGES SUCCESSFULLY.
+[2024-07-08T10:41:35.908] [INFO] default - DELETE IMAGE 13dce0efb1f5e42ac6587c1c13577988 SUCCESSFULLY
+[2024-07-08T10:41:51.091] [INFO] default - Image original name:rubik_face.jpg
+[2024-07-08T10:41:51.091] [INFO] default - Image file name:f465de830f43b6af8261fbbee30c6fab
+[2024-07-08T10:41:51.147] [INFO] default - Third party handle image:undefined
+[2024-07-08T10:41:51.147] [INFO] default - ADD IMAGES SUCCESSFULLY.
+[2024-07-08T10:41:56.152] [INFO] default - DELETE IMAGE f465de830f43b6af8261fbbee30c6fab SUCCESSFULLY
+[2024-07-08T10:42:44.460] [INFO] default - Image original name:rubik_face.jpg
+[2024-07-08T10:42:44.460] [INFO] default - Image file name:739ac1af3d768ebe8dcd478c3e913824
+[2024-07-08T10:42:44.509] [INFO] default - Third party handle image:undefined
+[2024-07-08T10:42:44.509] [INFO] default - ADD IMAGES SUCCESSFULLY.
+[2024-07-08T10:42:45.807] [INFO] default - Image original name:rubik_face.jpg
+[2024-07-08T10:42:45.807] [INFO] default - Image file name:dc87767e60fbfc7da599f841cc9f2490
+[2024-07-08T10:42:45.853] [INFO] default - Third party handle image:undefined
+[2024-07-08T10:42:45.854] [INFO] default - ADD IMAGES SUCCESSFULLY.
+[2024-07-08T10:42:49.519] [INFO] default - DELETE IMAGE 739ac1af3d768ebe8dcd478c3e913824 SUCCESSFULLY
+[2024-07-08T10:42:50.858] [INFO] default - DELETE IMAGE dc87767e60fbfc7da599f841cc9f2490 SUCCESSFULLY
+[2024-07-08T10:43:01.177] [INFO] default - Image original name:rubik_face.jpg
+[2024-07-08T10:43:01.177] [INFO] default - Image file name:7c4f0cf673a29e8b71f7f87a89294356
+[2024-07-08T10:43:01.226] [INFO] default - Third party handle image:undefined
+[2024-07-08T10:43:01.226] [INFO] default - ADD IMAGES SUCCESSFULLY.
+[2024-07-08T10:43:06.234] [INFO] default - DELETE IMAGE 7c4f0cf673a29e8b71f7f87a89294356 SUCCESSFULLY
+[2024-07-08T10:43:13.376] [INFO] default - Image original name:rubik_face.jpg
+[2024-07-08T10:43:13.377] [INFO] default - Image file name:e1db18edb481fab9319fd3a72d5ece9e
+[2024-07-08T10:43:21.377] [INFO] default - Third party handle image:undefined
+[2024-07-08T10:43:21.378] [INFO] default - ADD IMAGES SUCCESSFULLY.
+[2024-07-08T10:43:26.391] [INFO] default - DELETE IMAGE e1db18edb481fab9319fd3a72d5ece9e SUCCESSFULLY
+[2024-07-08T10:43:49.299] [INFO] default - Image original name:rubik_face.jpg
+[2024-07-08T10:43:49.299] [INFO] default - Image file name:d2b38d5c4f4d1f414a551a3ae03b04c7
+[2024-07-08T10:43:56.018] [INFO] default - Third party handle image:undefined
+[2024-07-08T10:43:56.018] [INFO] default - ADD IMAGES SUCCESSFULLY.
+[2024-07-08T10:44:01.029] [INFO] default - DELETE IMAGE d2b38d5c4f4d1f414a551a3ae03b04c7 SUCCESSFULLY
+[2024-07-08T10:46:46.830] [INFO] default - Update Topic List Successfully.
+[2024-07-08T10:56:42.274] [INFO] default - Image original name:download.jpg
+[2024-07-08T10:56:42.274] [INFO] default - Image file name:7818038f325336932f738598f25a0279
+[2024-07-08T10:58:43.541] [INFO] default - Update Topic List Successfully.
+[2024-07-08T11:10:45.100] [INFO] default - Update Topic List Successfully.
+[2024-07-08T11:22:46.841] [INFO] default - Update Topic List Successfully.
+[2024-07-08T11:26:34.634] [INFO] default - ADD IMAGES SUCCESSFULLY.
+[2024-07-08T11:26:39.649] [INFO] default - DELETE IMAGE 7818038f325336932f738598f25a0279 SUCCESSFULLY
+[2024-07-08T11:34:43.540] [INFO] default - Update Topic List Successfully.
+[2024-07-08T11:46:45.183] [INFO] default - Update Topic List Successfully.
+[2024-07-08T11:58:46.940] [INFO] default - Update Topic List Successfully.
+[2024-07-08T11:59:13.495] [INFO] default - Access about page successful
+[2024-07-08T11:59:14.339] [INFO] default - Close Log SSE Successfully.
+[2024-07-08T11:59:14.446] [INFO] default - Access about page successful
+[2024-07-08T11:59:15.362] [INFO] default - get product-detail Rubik's Coach Cube successfull
+[2024-07-08T11:59:15.373] [INFO] default - get product-detail Rubik's 3x3 successfull
+[2024-07-08T11:59:15.386] [INFO] default - get product-detail Rubik’s Apprentice 2x2 successfull
+[2024-07-08T11:59:16.884] [INFO] default - GET DEVICE LIST SUCCESSFULLY FOR USER helloman123
+[2024-07-08T11:59:38.974] [INFO] default - Image original name:rubik_face.jpg
+[2024-07-08T11:59:38.974] [INFO] default - Image file name:511d972900a0508567c3c5cca70212e0
+[2024-07-08T11:59:52.346] [INFO] default - Third party handle image:undefined
+[2024-07-08T11:59:52.347] [INFO] default - ADD IMAGES SUCCESSFULLY.
+[2024-07-08T11:59:57.357] [INFO] default - DELETE IMAGE 511d972900a0508567c3c5cca70212e0 SUCCESSFULLY
+[2024-07-08T12:10:43.625] [INFO] default - Update Topic List Successfully.
+[2024-07-08T12:22:45.398] [INFO] default - Update Topic List Successfully.
+[2024-07-08T12:34:47.281] [INFO] default - Update Topic List Successfully.
+[2024-07-08T12:46:43.919] [INFO] default - Update Topic List Successfully.
+[2024-07-08T12:58:45.557] [INFO] default - Update Topic List Successfully.
+[2024-07-08T13:10:47.163] [INFO] default - Update Topic List Successfully.
+[2024-07-08T13:22:43.745] [INFO] default - Update Topic List Successfully.
+[2024-07-08T13:34:45.434] [INFO] default - Update Topic List Successfully.
+[2024-07-08T13:46:47.150] [INFO] default - Update Topic List Successfully.
+[2024-07-08T13:58:43.826] [INFO] default - Update Topic List Successfully.
+[2024-07-08T14:10:45.502] [INFO] default - Update Topic List Successfully.
+[2024-07-08T14:14:31.917] [INFO] default - Access about page successful
+[2024-07-08T14:14:33.700] [INFO] default - Close Log SSE Successfully.
+[2024-07-08T14:14:33.814] [INFO] default - get product-detail Rubik's Coach Cube successfull
+[2024-07-08T14:14:33.828] [INFO] default - get product-detail Rubik's 3x3 successfull
+[2024-07-08T14:14:33.842] [INFO] default - get product-detail Rubik’s Apprentice 2x2 successfull
+[2024-07-08T14:14:34.547] [INFO] default - GET DEVICE LIST SUCCESSFULLY FOR USER helloman123
+[2024-07-08T14:14:41.766] [INFO] default - Image original name:download.jpg
+[2024-07-08T14:14:41.766] [INFO] default - Image file name:0f09a056d9d3fa890d72e5b2a55bf1e7
+[2024-07-08T14:14:48.358] [INFO] default - Third party handle image:undefined
+[2024-07-08T14:14:48.359] [INFO] default - ADD IMAGES SUCCESSFULLY.
+[2024-07-08T14:14:53.365] [INFO] default - DELETE IMAGE 0f09a056d9d3fa890d72e5b2a55bf1e7 SUCCESSFULLY
+[2024-07-08T14:15:15.671] [INFO] default - Image original name:download.jpg
+[2024-07-08T14:15:15.671] [INFO] default - Image file name:aa412c94b6f5a3b4104b721c2fed1fe4
+[2024-07-08T14:15:31.783] [INFO] default - ADD IMAGES SUCCESSFULLY.
+[2024-07-08T14:15:36.791] [INFO] default - DELETE IMAGE aa412c94b6f5a3b4104b721c2fed1fe4 SUCCESSFULLY
+[2024-07-08T14:22:34.999] [INFO] default - Image original name:download.jpg
+[2024-07-08T14:22:35.000] [INFO] default - Image file name:8ae2d4e27a9c71ba4599dfa5f85d26b6
+[2024-07-08T14:22:47.098] [INFO] default - Update Topic List Successfully.
+[2024-07-08T14:24:14.891] [INFO] default - ADD IMAGES SUCCESSFULLY.
+[2024-07-08T14:24:19.897] [INFO] default - DELETE IMAGE 8ae2d4e27a9c71ba4599dfa5f85d26b6 SUCCESSFULLY
+[2024-07-08T14:27:19.498] [INFO] default - Image original name:download.jpg
+[2024-07-08T14:27:19.498] [INFO] default - Image file name:e9680fca13569f9cfd48166576fe266d
+[2024-07-08T14:27:47.290] [INFO] default - ADD IMAGES SUCCESSFULLY.
+[2024-07-08T14:27:50.322] [INFO] default - Image original name:download.jpg
+[2024-07-08T14:27:50.322] [INFO] default - Image file name:d3e109eb56f657950b4b9fdba0ef5263
+[2024-07-08T14:27:50.387] [INFO] default - ADD IMAGES SUCCESSFULLY.
+[2024-07-08T14:27:52.304] [INFO] default - DELETE IMAGE e9680fca13569f9cfd48166576fe266d SUCCESSFULLY
+[2024-07-08T14:27:55.403] [INFO] default - DELETE IMAGE d3e109eb56f657950b4b9fdba0ef5263 SUCCESSFULLY
+[2024-07-08T14:34:43.701] [INFO] default - Update Topic List Successfully.
+[2024-07-08T14:46:45.376] [INFO] default - Update Topic List Successfully.
+[2024-07-08T14:58:46.915] [INFO] default - Update Topic List Successfully.
+[2024-07-08T15:10:43.631] [INFO] default - Update Topic List Successfully.
+[2024-07-08T15:21:09.837] [INFO] default - Access about page successful
+[2024-07-08T15:21:10.880] [INFO] default - Close Log SSE Successfully.
+[2024-07-08T15:21:10.987] [INFO] default - get product-detail Rubik's Coach Cube successfull
+[2024-07-08T15:21:10.998] [INFO] default - get product-detail Rubik's 3x3 successfull
+[2024-07-08T15:21:11.015] [INFO] default - get product-detail Rubik’s Apprentice 2x2 successfull
+[2024-07-08T15:21:11.755] [INFO] default - GET DEVICE LIST SUCCESSFULLY FOR USER helloman123
+[2024-07-08T15:21:17.132] [INFO] default - Image original name:download.jpg
+[2024-07-08T15:21:17.132] [INFO] default - Image file name:252bd27d1ba86bd3a5e2310d04893e13
+[2024-07-08T15:22:07.766] [INFO] default - ADD IMAGES SUCCESSFULLY.
+[2024-07-08T15:22:12.771] [INFO] default - DELETE IMAGE 252bd27d1ba86bd3a5e2310d04893e13 SUCCESSFULLY
+[2024-07-08T15:22:28.091] [INFO] default - Image original name:download.jpg
+[2024-07-08T15:22:28.091] [INFO] default - Image file name:dc24b416429b9c6759ab355799e34389
+[2024-07-08T15:22:40.611] [INFO] default - ADD IMAGES SUCCESSFULLY.
+[2024-07-08T15:22:45.329] [INFO] default - Update Topic List Successfully.
+[2024-07-08T15:22:45.625] [INFO] default - DELETE IMAGE dc24b416429b9c6759ab355799e34389 SUCCESSFULLY
+[2024-07-08T15:22:46.844] [INFO] default - Image original name:download.jpg
+[2024-07-08T15:22:46.844] [INFO] default - Image file name:ff516c0df2e0e10cce7659aa7edc2796
+[2024-07-08T15:23:51.913] [INFO] default - ADD IMAGES SUCCESSFULLY.
+[2024-07-08T15:23:56.929] [INFO] default - DELETE IMAGE ff516c0df2e0e10cce7659aa7edc2796 SUCCESSFULLY
+[2024-07-08T15:24:04.204] [INFO] default - Image original name:download.jpg
+[2024-07-08T15:24:04.204] [INFO] default - Image file name:394d036fb6658ef43a1d84b3cd3c9394
+[2024-07-08T15:24:16.754] [INFO] default - ADD IMAGES SUCCESSFULLY.
+[2024-07-08T15:24:21.698] [INFO] default - Image original name:download.jpg
+[2024-07-08T15:24:21.698] [INFO] default - Image file name:e65f7df9d97be90dadd3bee42ed6afd0
+[2024-07-08T15:24:21.759] [INFO] default - DELETE IMAGE 394d036fb6658ef43a1d84b3cd3c9394 SUCCESSFULLY
+[2024-07-08T15:24:22.580] [INFO] default - Image original name:download.jpg
+[2024-07-08T15:24:22.580] [INFO] default - Image file name:d6e877814b4cc5dc6725e446ab99cd35
+[2024-07-08T15:26:30.146] [INFO] default - ADD IMAGES SUCCESSFULLY.
+[2024-07-08T15:26:30.154] [INFO] default - ADD IMAGES SUCCESSFULLY.
+[2024-07-08T15:26:32.841] [INFO] default - Image original name:download.jpg
+[2024-07-08T15:26:32.841] [INFO] default - Image file name:0017549a08ac4c25d2c332baa02f2a1c
+[2024-07-08T15:26:35.166] [INFO] default - DELETE IMAGE e65f7df9d97be90dadd3bee42ed6afd0 SUCCESSFULLY
+[2024-07-08T15:26:35.167] [INFO] default - DELETE IMAGE d6e877814b4cc5dc6725e446ab99cd35 SUCCESSFULLY
+[2024-07-08T15:26:47.099] [INFO] default - ADD IMAGES SUCCESSFULLY.
+[2024-07-08T15:26:52.109] [INFO] default - DELETE IMAGE 0017549a08ac4c25d2c332baa02f2a1c SUCCESSFULLY
+[2024-07-08T15:26:58.990] [INFO] default - Image original name:download.jpg
+[2024-07-08T15:26:58.990] [INFO] default - Image file name:170786334848504ee4085484fa3d05d3
+[2024-07-08T15:27:29.940] [INFO] default - ADD IMAGES SUCCESSFULLY.
+[2024-07-08T15:27:34.949] [INFO] default - DELETE IMAGE 170786334848504ee4085484fa3d05d3 SUCCESSFULLY
+[2024-07-08T15:27:59.652] [INFO] default - Image original name:download.jpg
+[2024-07-08T15:27:59.652] [INFO] default - Image file name:8b638de495b730d19835a11b2bc1da1b
+[2024-07-08T15:28:31.117] [INFO] default - ADD IMAGES SUCCESSFULLY.
+[2024-07-08T15:28:36.130] [INFO] default - DELETE IMAGE 8b638de495b730d19835a11b2bc1da1b SUCCESSFULLY
+[2024-07-08T15:28:58.436] [INFO] default - Image original name:download.jpg
+[2024-07-08T15:28:58.436] [INFO] default - Image file name:835f5d4de122cf5899edcda921c3435a
+[2024-07-08T15:29:03.227] [INFO] default - ADD IMAGES SUCCESSFULLY.
+[2024-07-08T15:29:08.243] [INFO] default - DELETE IMAGE 835f5d4de122cf5899edcda921c3435a SUCCESSFULLY
+[2024-07-08T15:29:19.951] [INFO] default - Image original name:download.jpg
+[2024-07-08T15:29:19.951] [INFO] default - Image file name:6eb10bae09183bb325935b2d27dc07db
+[2024-07-08T15:29:41.507] [INFO] default - ADD IMAGES SUCCESSFULLY.
+[2024-07-08T15:29:45.349] [INFO] default - Image original name:download.jpg
+[2024-07-08T15:29:45.349] [INFO] default - Image file name:6ee31ccf912a8de7d766711ffed96862
+[2024-07-08T15:29:46.510] [INFO] default - DELETE IMAGE 6eb10bae09183bb325935b2d27dc07db SUCCESSFULLY
+[2024-07-08T15:29:49.383] [INFO] default - ADD IMAGES SUCCESSFULLY.
+[2024-07-08T15:29:54.392] [INFO] default - DELETE IMAGE 6ee31ccf912a8de7d766711ffed96862 SUCCESSFULLY
+[2024-07-08T15:30:10.951] [INFO] default - Image original name:download.jpg
+[2024-07-08T15:30:10.951] [INFO] default - Image file name:450fed66dc91698cf0d0c0ffde1f1d01
+[2024-07-08T15:30:38.178] [INFO] default - ADD IMAGES SUCCESSFULLY.
+[2024-07-08T15:30:40.951] [INFO] default - Image original name:download.jpg
+[2024-07-08T15:30:40.951] [INFO] default - Image file name:bb3f415c4ed420efe169dd9f30980489
+[2024-07-08T15:30:43.191] [INFO] default - DELETE IMAGE 450fed66dc91698cf0d0c0ffde1f1d01 SUCCESSFULLY
+[2024-07-08T15:30:46.118] [INFO] default - ADD IMAGES SUCCESSFULLY.
+[2024-07-08T15:30:51.135] [INFO] default - DELETE IMAGE bb3f415c4ed420efe169dd9f30980489 SUCCESSFULLY
+[2024-07-08T15:31:00.575] [INFO] default - Image original name:download.jpg
+[2024-07-08T15:31:00.575] [INFO] default - Image file name:7bedb0da71740649645e940b3fca6255
+[2024-07-08T15:31:18.687] [INFO] default - ADD IMAGES SUCCESSFULLY.
+[2024-07-08T15:31:22.164] [INFO] default - Image original name:download.jpg
+[2024-07-08T15:31:22.164] [INFO] default - Image file name:473531c0a4a28da7316f63f45efbc540
+[2024-07-08T15:31:22.528] [INFO] default - Image original name:download.jpg
+[2024-07-08T15:31:22.528] [INFO] default - Image file name:ab2504c1b5cac29eec44da171e65cdf2
+[2024-07-08T15:31:23.700] [INFO] default - DELETE IMAGE 7bedb0da71740649645e940b3fca6255 SUCCESSFULLY
+[2024-07-08T15:32:57.282] [INFO] default - ADD IMAGES SUCCESSFULLY.
+[2024-07-08T15:32:59.171] [INFO] default - ADD IMAGES SUCCESSFULLY.
+[2024-07-08T15:33:02.295] [INFO] default - DELETE IMAGE 473531c0a4a28da7316f63f45efbc540 SUCCESSFULLY
+[2024-07-08T15:33:04.177] [INFO] default - DELETE IMAGE ab2504c1b5cac29eec44da171e65cdf2 SUCCESSFULLY
+[2024-07-08T15:33:10.926] [INFO] default - Image original name:download.jpg
+[2024-07-08T15:33:10.926] [INFO] default - Image file name:6893cbfa3c72abd565b05ba4baea4eda
+[2024-07-08T15:34:46.935] [INFO] default - Update Topic List Successfully.
+[2024-07-08T15:37:49.417] [INFO] default - ADD IMAGES SUCCESSFULLY.
+[2024-07-08T15:37:53.017] [INFO] default - Image original name:download.jpg
+[2024-07-08T15:37:53.017] [INFO] default - Image file name:27b7e2a7a78fab64d392ad717d640a4d
+[2024-07-08T15:37:54.429] [INFO] default - DELETE IMAGE 6893cbfa3c72abd565b05ba4baea4eda SUCCESSFULLY
+[2024-07-08T15:38:25.332] [INFO] default - ADD IMAGES SUCCESSFULLY.
+[2024-07-08T15:38:30.347] [INFO] default - DELETE IMAGE 27b7e2a7a78fab64d392ad717d640a4d SUCCESSFULLY
+[2024-07-08T15:38:38.959] [INFO] default - Image original name:images.png
+[2024-07-08T15:38:38.959] [INFO] default - Image file name:92e292d030633df4f23df39d0c961459
+[2024-07-08T15:46:48.560] [INFO] default - Update Topic List Successfully.
+[2024-07-08T15:53:31.100] [INFO] default - ADD IMAGES SUCCESSFULLY.
+[2024-07-08T15:53:36.151] [INFO] default - DELETE IMAGE 92e292d030633df4f23df39d0c961459 SUCCESSFULLY
+[2024-07-08T15:53:40.183] [INFO] default - Image original name:images.png
+[2024-07-08T15:53:40.183] [INFO] default - Image file name:33fdf15b86b31d5555abe60dc630bb56
+[2024-07-08T15:55:05.975] [INFO] default - ADD IMAGES SUCCESSFULLY.
+[2024-07-08T15:55:10.986] [INFO] default - DELETE IMAGE 33fdf15b86b31d5555abe60dc630bb56 SUCCESSFULLY
+[2024-07-08T15:58:06.622] [INFO] default - Image original name:images.png
+[2024-07-08T15:58:06.622] [INFO] default - Image file name:3f0faabf0e8932917316799a4b51e009
+[2024-07-08T15:58:19.484] [INFO] default - ADD IMAGES SUCCESSFULLY.
+[2024-07-08T15:58:24.498] [INFO] default - DELETE IMAGE 3f0faabf0e8932917316799a4b51e009 SUCCESSFULLY
+[2024-07-08T15:58:28.401] [INFO] default - Image original name:download.jpg
+[2024-07-08T15:58:28.401] [INFO] default - Image file name:d8ac766bb493f1ec9d75a44b055fb95f
+[2024-07-08T15:58:45.368] [INFO] default - Update Topic List Successfully.
+[2024-07-08T16:04:06.849] [INFO] default - ADD IMAGES SUCCESSFULLY.
+[2024-07-08T16:04:10.806] [INFO] default - Image original name:download.jpg
+[2024-07-08T16:04:10.806] [INFO] default - Image file name:805e18b162811457100aef60d73eaa58
+[2024-07-08T16:04:11.866] [INFO] default - DELETE IMAGE d8ac766bb493f1ec9d75a44b055fb95f SUCCESSFULLY
+[2024-07-08T16:06:11.219] [INFO] default - ADD IMAGES SUCCESSFULLY.
+[2024-07-08T16:06:14.339] [INFO] default - Image original name:download.jpg
+[2024-07-08T16:06:14.340] [INFO] default - Image file name:24e62ab71f89755c773ae2acf1312c64
+[2024-07-08T16:06:16.233] [INFO] default - DELETE IMAGE 805e18b162811457100aef60d73eaa58 SUCCESSFULLY
+[2024-07-08T16:06:36.526] [INFO] default - ADD IMAGES SUCCESSFULLY.
+[2024-07-08T16:06:41.540] [INFO] default - DELETE IMAGE 24e62ab71f89755c773ae2acf1312c64 SUCCESSFULLY
+[2024-07-08T16:06:52.476] [INFO] default - Image original name:images.png
+[2024-07-08T16:06:52.476] [INFO] default - Image file name:575143e5747f19f56d8abcde32b63816
+[2024-07-08T16:07:09.654] [INFO] default - ADD IMAGES SUCCESSFULLY.
+[2024-07-08T16:07:14.660] [INFO] default - DELETE IMAGE 575143e5747f19f56d8abcde32b63816 SUCCESSFULLY
+[2024-07-08T16:10:31.546] [INFO] default - Image original name:rubik_face.jpg
+[2024-07-08T16:10:31.546] [INFO] default - Image file name:34868802673f605d07370098519170d7
+[2024-07-08T16:10:47.064] [INFO] default - Update Topic List Successfully.
+[2024-07-08T16:11:14.901] [INFO] default - Third party handle image:undefined
+[2024-07-08T16:11:14.901] [INFO] default - ADD IMAGES SUCCESSFULLY.
+[2024-07-08T16:11:19.916] [INFO] default - DELETE IMAGE 34868802673f605d07370098519170d7 SUCCESSFULLY
+[2024-07-08T16:12:06.761] [INFO] default - Image original name:rubik_face-removebg-preview.png
+[2024-07-08T16:12:06.761] [INFO] default - Image file name:dcf7f7d54fa484c51d49b55697adc311
+[2024-07-08T16:12:21.009] [INFO] default - Third party handle image:undefined
+[2024-07-08T16:12:21.009] [INFO] default - ADD IMAGES SUCCESSFULLY.
+[2024-07-08T16:12:26.019] [INFO] default - DELETE IMAGE dcf7f7d54fa484c51d49b55697adc311 SUCCESSFULLY
+[2024-07-08T16:13:38.575] [INFO] default - Image original name:download (2).png
+[2024-07-08T16:13:38.575] [INFO] default - Image file name:fa749332b4f58ee30e004450fdbe8a27
+[2024-07-08T16:13:44.017] [INFO] default - Third party handle image:undefined
+[2024-07-08T16:13:44.017] [INFO] default - ADD IMAGES SUCCESSFULLY.
+[2024-07-08T16:13:49.026] [INFO] default - DELETE IMAGE fa749332b4f58ee30e004450fdbe8a27 SUCCESSFULLY
+[2024-07-08T16:13:54.259] [INFO] default - Image original name:download.jpg
+[2024-07-08T16:13:54.259] [INFO] default - Image file name:7a0d6b49f338c180c901bfd64717d7f4
+[2024-07-08T16:14:33.597] [INFO] default - Image original name:download (3).png
+[2024-07-08T16:14:33.597] [INFO] default - Image file name:2a3af82f0cf535dea7a480129ea38e6c
+[2024-07-08T16:14:37.142] [INFO] default - ADD IMAGES SUCCESSFULLY.
+[2024-07-08T16:14:42.152] [INFO] default - DELETE IMAGE 7a0d6b49f338c180c901bfd64717d7f4 SUCCESSFULLY
+[2024-07-08T16:14:46.750] [INFO] default - Third party handle image:undefined
+[2024-07-08T16:14:46.750] [INFO] default - ADD IMAGES SUCCESSFULLY.
+[2024-07-08T16:14:51.759] [INFO] default - DELETE IMAGE 2a3af82f0cf535dea7a480129ea38e6c SUCCESSFULLY
+[2024-07-08T16:15:51.153] [INFO] default - Image original name:demo-calibrate-mode-success.jpg
+[2024-07-08T16:15:51.153] [INFO] default - Image file name:009eeb0ef17899b35bc9cc1141412931
+[2024-07-08T16:16:00.551] [INFO] default - Third party handle image:undefined
+[2024-07-08T16:16:00.552] [INFO] default - ADD IMAGES SUCCESSFULLY.
+[2024-07-08T16:16:05.557] [INFO] default - DELETE IMAGE 009eeb0ef17899b35bc9cc1141412931 SUCCESSFULLY
+[2024-07-08T16:16:23.961] [INFO] default - Image original name:rubik.png
+[2024-07-08T16:16:23.961] [INFO] default - Image file name:5b3301d1a747018aa9dc4a6583956ce9
+[2024-07-08T16:16:26.540] [INFO] default - Third party handle image:undefined
+[2024-07-08T16:16:26.540] [INFO] default - ADD IMAGES SUCCESSFULLY.
+[2024-07-08T16:16:31.543] [INFO] default - DELETE IMAGE 5b3301d1a747018aa9dc4a6583956ce9 SUCCESSFULLY
+[2024-07-08T16:16:35.097] [INFO] default - Image original name:rubik_face-removebg-preview.png
+[2024-07-08T16:16:35.097] [INFO] default - Image file name:e581f48d9f3ed4f27fd77598b3e7a995
+[2024-07-08T16:16:40.563] [INFO] default - Third party handle image:undefined
+[2024-07-08T16:16:40.564] [INFO] default - ADD IMAGES SUCCESSFULLY.
+[2024-07-08T16:16:45.580] [INFO] default - DELETE IMAGE e581f48d9f3ed4f27fd77598b3e7a995 SUCCESSFULLY
+[2024-07-08T16:17:06.113] [INFO] default - Image original name:demo-solve-mode.jpg
+[2024-07-08T16:17:06.113] [INFO] default - Image file name:3c63389d0d552252099770375930c04a
+[2024-07-08T16:17:58.646] [INFO] default - ADD IMAGES SUCCESSFULLY.
+[2024-07-08T16:18:03.662] [INFO] default - DELETE IMAGE 3c63389d0d552252099770375930c04a SUCCESSFULLY
+[2024-07-08T16:22:43.768] [INFO] default - Update Topic List Successfully.
+[2024-07-08T16:25:06.837] [INFO] default - Access about page successful
+[2024-07-08T16:25:07.900] [INFO] default - Close Log SSE Successfully.
+[2024-07-08T16:25:08.034] [INFO] default - get product-detail Rubik's Coach Cube successfull
+[2024-07-08T16:25:08.047] [INFO] default - get product-detail Rubik's 3x3 successfull
+[2024-07-08T16:25:08.060] [INFO] default - get product-detail Rubik’s Apprentice 2x2 successfull
+[2024-07-08T16:25:08.686] [INFO] default - GET DEVICE LIST SUCCESSFULLY FOR USER helloman123
+[2024-07-08T16:25:18.584] [INFO] default - Image original name:rubik_face.jpg
+[2024-07-08T16:25:18.584] [INFO] default - Image file name:d020bcaf6b0d8748a00ddf8a2165f879
+[2024-07-08T16:27:31.015] [INFO] default - Third party handle image:undefined
+[2024-07-08T16:27:31.016] [INFO] default - ADD IMAGES SUCCESSFULLY.
+[2024-07-08T16:27:36.026] [INFO] default - DELETE IMAGE d020bcaf6b0d8748a00ddf8a2165f879 SUCCESSFULLY
+[2024-07-08T16:27:53.996] [INFO] default - Image original name:rubik_face.jpg
+[2024-07-08T16:27:53.996] [INFO] default - Image file name:a8aa465cce093def3214087d826c3a64
+[2024-07-08T16:34:45.380] [INFO] default - Update Topic List Successfully.
+[2024-07-08T16:46:47.037] [INFO] default - Update Topic List Successfully.
+[2024-07-08T16:58:48.610] [INFO] default - Update Topic List Successfully.
+[2024-07-08T17:01:38.581] [INFO] default - Third party handle image:undefined
+[2024-07-08T17:01:38.582] [INFO] default - ADD IMAGES SUCCESSFULLY.
+[2024-07-08T17:01:43.596] [INFO] default - DELETE IMAGE a8aa465cce093def3214087d826c3a64 SUCCESSFULLY
+[2024-07-08T17:01:46.565] [INFO] default - Image original name:rubik_face.jpg
+[2024-07-08T17:01:46.565] [INFO] default - Image file name:6935852053ccbe7cf4b7248706dc0077
+[2024-07-08T17:01:46.632] [INFO] default - ADD IMAGES SUCCESSFULLY.
+[2024-07-08T17:01:48.348] [INFO] default - Image original name:rubik_face.jpg
+[2024-07-08T17:01:48.348] [INFO] default - Image file name:40f299568b9d1fa7dbe46595cab57222
+[2024-07-08T17:01:48.398] [INFO] default - ADD IMAGES SUCCESSFULLY.
+[2024-07-08T17:01:51.651] [INFO] default - DELETE IMAGE 6935852053ccbe7cf4b7248706dc0077 SUCCESSFULLY
+[2024-07-08T17:01:53.411] [INFO] default - DELETE IMAGE 40f299568b9d1fa7dbe46595cab57222 SUCCESSFULLY
+[2024-07-08T17:02:25.452] [INFO] default - Image original name:rubik_face.jpg
+[2024-07-08T17:02:25.452] [INFO] default - Image file name:c9c2a0a864d4c8a5d63b4c8306ad622f
+[2024-07-08T17:02:35.863] [INFO] default - Third party handle image:undefined
+[2024-07-08T17:02:35.863] [INFO] default - ADD IMAGES SUCCESSFULLY.
+[2024-07-08T17:02:40.868] [INFO] default - DELETE IMAGE c9c2a0a864d4c8a5d63b4c8306ad622f SUCCESSFULLY
+[2024-07-08T17:10:45.188] [INFO] default - Update Topic List Successfully.
+[2024-07-08T17:22:46.781] [INFO] default - Update Topic List Successfully.
+[2024-07-08T17:34:48.460] [INFO] default - Update Topic List Successfully.
+[2024-07-08T17:46:45.105] [INFO] default - Update Topic List Successfully.
+[2024-07-08T17:58:46.727] [INFO] default - Update Topic List Successfully.
+[2024-07-08T18:10:48.347] [INFO] default - Update Topic List Successfully.
+[2024-07-08T18:22:45.137] [INFO] default - Update Topic List Successfully.
+[2024-07-08T18:34:46.800] [INFO] default - Update Topic List Successfully.
+[2024-07-08T18:46:48.293] [INFO] default - Update Topic List Successfully.
+[2024-07-08T18:58:44.848] [INFO] default - Update Topic List Successfully.
+[2024-07-08T19:10:46.538] [INFO] default - Update Topic List Successfully.
+[2024-07-08T19:22:48.104] [INFO] default - Update Topic List Successfully.
+[2024-07-08T19:34:44.695] [INFO] default - Update Topic List Successfully.
+[2024-07-08T19:46:46.317] [INFO] default - Update Topic List Successfully.
+[2024-07-08T19:58:47.807] [INFO] default - Update Topic List Successfully.
+[2024-07-08T20:10:44.332] [INFO] default - Update Topic List Successfully.
+[2024-07-08T20:22:45.822] [INFO] default - Update Topic List Successfully.
+[2024-07-08T20:34:47.374] [INFO] default - Update Topic List Successfully.
+[2024-07-08T20:46:44.083] [INFO] default - Update Topic List Successfully.
+[2024-07-08T20:58:45.660] [INFO] default - Update Topic List Successfully.
+[2024-07-08T21:10:47.211] [INFO] default - Update Topic List Successfully.
+[2024-07-08T21:22:48.751] [INFO] default - Update Topic List Successfully.
+[2024-07-08T21:34:45.243] [INFO] default - Update Topic List Successfully.
+[2024-07-08T21:46:46.751] [INFO] default - Update Topic List Successfully.
+[2024-07-08T21:58:48.268] [INFO] default - Update Topic List Successfully.
+[2024-07-08T22:10:44.808] [INFO] default - Update Topic List Successfully.
+[2024-07-08T22:22:46.321] [INFO] default - Update Topic List Successfully.
+[2024-07-08T22:34:47.803] [INFO] default - Update Topic List Successfully.
+[2024-07-08T22:46:46.932] [INFO] default - Update Topic List Successfully.
+[2024-07-08T22:58:48.533] [INFO] default - Update Topic List Successfully.
+[2024-07-08T23:10:50.064] [INFO] default - Update Topic List Successfully.
+[2024-07-08T23:22:46.555] [INFO] default - Update Topic List Successfully.
+[2024-07-08T23:34:48.156] [INFO] default - Update Topic List Successfully.
+[2024-07-08T23:46:49.708] [INFO] default - Update Topic List Successfully.
+[2024-07-08T23:58:51.208] [INFO] default - Update Topic List Successfully.

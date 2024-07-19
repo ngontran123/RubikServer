@@ -14,7 +14,7 @@ import 'reflect-metadata';
 import Connection from '../database/db';
 import bodyParser from 'body-parser';
 // view engine setup
-//app.set('views', path.join(__dirname, 'views'));
+app.set('views', path.join(__dirname, 'views'));
 //app.set('view engine', 'jade');
 app.use(logger('dev'));
 app.use(express.json());
@@ -28,6 +28,7 @@ app.use(session({
 // app.use(compression);
 var corsOption={optionsSuccessStatus: 200};
 app.use(express.static(path.join(__dirname, 'views')));
+app.use(express.static('uploads'));
 app.use(cors(corsOption));
 app.use('/',indexRouter);
 Connection();

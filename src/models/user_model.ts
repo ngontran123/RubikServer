@@ -7,16 +7,17 @@ const userSchema=new Schema({
     password:{type:String,require:true},
     gender:{type:String,required:true},
     email:{type:String,required:true},
+    phone:{type:String,required:true},
     avatar:{type:String,required:true},
     created_date:{type:String,required:true},
     last_active:{type:String,required:true},
+    last_action:{type:String,required:true},
     is_checking:{type:Boolean,required:true},
     role_id:{type:Number,required:true},
 });
 autoIncrement.initialize(mongoose.connection);
 userSchema.plugin(autoIncrement.plugin,'user');
 const user=mongoose.model('user',userSchema,'User');
-
 
 const sessionSchema = new Schema({
     _id:{type:Number,required:false},
@@ -29,12 +30,36 @@ const sessionSchema = new Schema({
 
 sessionSchema.plugin(autoIncrement.plugin,'session');
 
+
 const session=mongoose.model('session',sessionSchema,'Session');
+
+
+const rubikProblemSchema = new Schema({
+   _id:{type:Number,required:false},
+   problem:{type:String,required:true},
+   solution:{type:String,required:true}
+})
+
+rubikProblemSchema.plugin(autoIncrement.plugin,'problem');
+
+const rubikProblem=mongoose.model('problem',rubikProblemSchema,'rubikProblem');
+
+const rubikProlemDetailSchema=new Schema({
+    _id:{type:Number,required:false},
+    user_id:{type:Number,required:true},
+    problem_id:{type:Number,required:true},
+    date_created:{type:String,required:true}
+});
+
+rubikProlemDetailSchema.plugin(autoIncrement.plugin,'problem_detail');
+
+const rubikProblemDetail=mongoose.model('problem_detail',rubikProlemDetailSchema,'rubikProblemDetail');
 
 const questionLevelSchema=new Schema({
     _id:{type:Number,required:false},
     level:{type:String,required:true}
 });
+
 
 questionLevelSchema.plugin(autoIncrement.plugin,'question')
 
@@ -98,8 +123,6 @@ const roleSchema=new Schema({
 });
 
 
-
-
 const question_level=mongoose.model('question',questionLevelSchema,'QuestionLevel');
 
 roomSchema.plugin(autoIncrement.plugin,'room');
@@ -126,6 +149,7 @@ const single_board_detail=mongoose.model('singleBoardDetail',singleBoardDetailSc
 
 const rubik_info=mongoose.model('rubikInfo',rubikInfoSchema,'RubikInfo');
 
+
 const device=mongoose.model('device',deviceSchema,'Device');
 
 const temp_device=mongoose.model('tempDevice',tempDeviceSchema,'TempDevice');
@@ -134,7 +158,7 @@ const image_detail=mongoose.model('detailImage',detailImageSchema,'DetailImage')
 
 const role=mongoose.model('role',roleSchema,'Role');
 
-export {user,question_level,room_user,user_room_detail,single_board_detail,rubik_info,image_detail,session,temp_device,device,role}; 
+export {user,question_level,room_user,user_room_detail,single_board_detail,rubik_info,image_detail,session,temp_device,device,rubikProblem,rubikProblemDetail,role}; 
 
 
 

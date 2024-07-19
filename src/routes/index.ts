@@ -1,19 +1,20 @@
 import * as express from 'express'
-import {user,room_user,user_room_detail,rubik_info,image_detail,session,role, temp_device,device} from '../models/user_model';
+import {user,room_user,user_room_detail,rubik_info,image_detail,session,role,rubikProblem,rubikProblemDetail,temp_device,device} from '../models/user_model';
 import checkingDuplicateUserNameOrEmail from '../config/checking';
 import {token_checking,email_token_checking} from '../config/checkingToken';
-import {username,password,registerUrl,loginUrl,registerServerUrl} from './gmail_account';
+import {username,password,loginUrl,registerServerUrl} from './gmail_account';
 import { DateTime, Interval } from 'luxon';
 import { Kafka } from 'kafkajs';
-import mongoose from 'mongoose';
-import { log } from 'console';
-import { json } from 'stream/consumers';
+import { Body } from 'twilio/lib/twiml/MessagingResponse';
+import { resolveSoa } from 'dns';
+import { text } from 'stream/consumers';
 const logger=require('../logger/index');
 var router = express.Router();
 var config=require('../config/auth');
 var jwt=require('jsonwebtoken');
 var nodemailer=require('nodemailer');
 /* GET home page. */
+require('dotenv').config();
 const bcrypt=require('bcrypt');
 const crypto=require('crypto');
 const uuid=require('uuid');
@@ -22,16 +23,40 @@ var axios= require('axios');
 const Cube= require('cubejs');
 const fs=require('fs');
 const rimraf= require('rimraf');
+const twilio = require('twilio');
+const multer = require('multer');
+const account_sid=process.env.ACCOUNT_SID;
+const authenticate_token=process.env.AUTHENTICATION_TOKEN;
+const twilio_phone=process.env.TWILIO_PHONE;
+const twilio_client = new twilio(account_sid,authenticate_token);
+const INFOBIP_API_BASE_URL=process.env.INFOBIP_API_BASE_URL;
+const API_KEY=process.env.API_KEY;
+const path=require('path');
+const fs_promise = require('fs').promises;
+
 const kafka=new Kafka({
   clientId:"Rubik-BE",
   brokers:['localhost:9092','localhost:9092']
 });
+// const storage = multer.diskStorage(
+//   {
+//   destination:(req,file,cb)=>{
+//     cb(null,'uploads/');
+//   },
+//   filename:(req,file,cb)=>{
+//      cb(null,Date.now()+path.extname(file.originalname));
+//   }
+// })
+//const upload=multer({storage:storage});
+const upload = multer({ dest: 'upload/' });
+
 const producer=kafka.producer();
 const consumer = kafka.consumer({groupId:'Rubik-BE'});
 const admin= kafka.admin();
 var list_topic=[];
 var subscribe_list=[];
 var received_message='';
+
 const mqttInit=async()=>{
   try
   {    
@@ -58,6 +83,7 @@ const mqttInit=async()=>{
       topics:list_topic
     });
    console.log('Topic created successfully');
+
    await consumer.subscribe({topics:subscribe_list,fromBeginning:true});
    await consumer_run();
   }
@@ -72,7 +98,7 @@ const autoUpdateTopicList=()=>
 {
    try
    {
-    setInterval(async()=>{
+       setInterval(async()=>{
        var new_device_list=await temp_device.find({});
        var list_new_topic=[];
        var subscribe_new_topic=[];
@@ -106,6 +132,7 @@ const autoUpdateTopicList=()=>
         await consumer_run();
         await temp_device.deleteMany({});
         console.log("Update Topic List Successful");
+        logger.info("Update Topic List Successfully.");
     },720000);
    }
    catch(ex)
@@ -132,6 +159,7 @@ const deleteAllTopics=async()=>
     await admin.disconnect();
   
   console.log("delete topics successfully");
+  logger.info("Delete all topics successfully");
     }
   catch(err)
   {
@@ -188,6 +216,7 @@ const rotateSerectKey=()=>
   try
   {
    config.secret=Math.random().toString(36).slice(2);
+   logger.info("Rotate Secret Key Successfully.");
   }
   catch(ex)
   {
@@ -196,15 +225,57 @@ const rotateSerectKey=()=>
   }
 }
 
+const checkValidPhone=(phone:string):boolean=>
+{
+  const pattern = /^[+]{1}(?:[0-9\-\\(\\)\\/.]\s?){6,15}[0-9]{1}$/;
+  var reg=new RegExp(pattern);
+  return reg.test(phone); 
+}
+const deleteHandledImage=async(images:string[])=>
+{
+  try
+  {
+   var cwd=path.join(process.cwd(),'upload/');
+   for(let img of images)
+    { console.log("image here is:"+img);
+      var img_path=path.join(cwd,img);
+      await fs_promise.unlink(img_path);
+      logger.info("DELETE IMAGE "+img+" SUCCESSFULLY");
+    }
+   console.log("current working path is:"+cwd);
+  }
+  catch(err)
+  {
+    console.log("DELETE IMAGE EXCEPTION:"+err.message);
+    logger.error("DELETE IMAGE EXCEPTION:"+err.message);
+  }
+};
+
+
+const convertQrToOtp=(qr:string)=>{
+  var otp='';
+  for(let i =0;i<qr.length;i++)
+    {
+      var qr_value= qr[i].charCodeAt(0)-65;
+      var otp_val=qr_value%10;
+      otp+=otp_val;
+    }
+    return otp;
+};
+
+const checkPassword=(password:string):boolean=>{
+  const pattern= /^(?=.*\d)(?=.*[!@#$%^&*])(?=.*[a-z])(?=.*[A-Z]).{10,}$/;
+  var reg=new RegExp(pattern);
+  return reg.test(password);
+}
 
 
 
-rotateSerectKey();
+//rotateSerectKey();
 //deleteAllLogsFiles('C:/kafka/config/kafka-logs');
 //deleteAllTopics();
 mqttInit();
 autoUpdateTopicList();
-
 
 const transportEmail=nodemailer.createTransport({
     service:'gmail',
@@ -215,13 +286,12 @@ const transportEmail=nodemailer.createTransport({
   });
 
 const hbs=require('nodemailer-express-handlebars');
-const path=require('path');
 const handlebarsOption={
     viewEngine :{
         partialsDir: path.resolve('../sudokusv/src/views/'),
         defaultLayout: false,
     },
-    viewPath:path.resolve('../sudokusv/src/views/')
+    viewPath:path.resolve('../sudokusv/src/views/') 
 };
 
 transportEmail.use('compile',hbs(handlebarsOption));
@@ -252,7 +322,6 @@ transportEmail.use('compile',hbs(handlebarsOption));
         if(error)
         {  
            throw Error(error);
-           
         }
         console.log("Send mail successfully:"+info);
        });
@@ -307,7 +376,8 @@ const convertRubikAnno=(colors:string[])=>
 };
 
 router.post('/register',email_token_checking,function(req, res, next) {
-   const new_user={
+   const new_user=
+   {
     username:'',
     password:'',
     gender:'',
@@ -329,7 +399,8 @@ router.post('/register',email_token_checking,function(req, res, next) {
    {
     res.redirect(301,`${loginUrl}?email=${new_user.email}`);
    }
-   else{
+   else
+   {
    const register_user=new user(new_user);
    try{
     register_user.save((err,doc)=>{
@@ -361,8 +432,9 @@ router.get('/login',function(req,res,next){
          {
             res.status(201).send({message:"Đã đăng ký thành công"});
          }
-         else{
-            res.status(409).send({message:"Đăng ký thất bại."});
+         else
+         {
+            res.status(400).send({message:"Đăng ký thất bại."});
          }
         });
     }
@@ -395,7 +467,7 @@ try
   var email=req.body.email;
   var avatar_url=req.body.avatar;
   var role_id=req.body.role_id;
-  
+
   var check_exist=await user.find({$or:[{username:username},{email:email}]}).exec((err,data)=>{
    if(err)
    {
@@ -438,7 +510,8 @@ catch(err)
 }
 });
 
-router.get('/device/:username',token_checking,async function(req,res,next){
+router.get('/device/:username',token_checking,async function(req,res,next)
+{
   try
   {
    var username =req.params.username;
@@ -446,9 +519,8 @@ router.get('/device/:username',token_checking,async function(req,res,next){
      if(err)
       { 
         logger.success(`GET DEVICE LIST FAILED FOR USER ${username}:${err}`);
-        res.status(400).send({status:false,message:err.message})
+        res.status(400).send({status:false,message:err.message});
       }
-
       logger.info(`GET DEVICE LIST SUCCESSFULLY FOR USER ${username}`);
       res.status(200).send({status:true,message:devicee});
    });
@@ -457,8 +529,67 @@ router.get('/device/:username',token_checking,async function(req,res,next){
   {
     console.log("Exception occured when getting device list:"+err.message);
     logger.error("EXCEPTION GETTING DEVICE LIST:"+err.message);
+    
     res.status(400).send({status:false,message:err.message});
   }
+});
+
+
+
+
+router.post('/add_images',token_checking,upload.array('images',10),async function(req,res,next)
+{
+try
+{ 
+  var img_files=req.files;
+  var img_files_name=[];
+  var color_images=[];
+  var index=-1;
+  var original_cube=req.body.original_cube;
+  console.log('original_cube here is:'+original_cube);
+  var formData=new FormData();
+  for(let img of img_files)
+    { logger.info("Image original name:"+img.originalname);
+      logger.info("Image file name:"+img.filename);
+      console.log("image info:"+JSON.stringify(img));
+      index+=1;
+      img_files_name.push(img.filename);
+      console.log('image file path:'+img.path);
+      const img_path=path.join(process.cwd(),img.path);
+      const file_data=await fs_promise.readFile(img_path);
+      const blob = new Blob([file_data],{type:img.mimetype});
+      console.log("blob file obj:"+JSON.stringify(blob));
+      formData.append('img',blob,img.originalname);
+      console.log(img.filename);
+    }
+    formData.append("original_cube",original_cube);
+    var response = await axios.post('http://localhost:8004/color_detection_image/',formData,{headers:{'Content-Type': 'multipart/form-data'}}).then((res)=>{
+      console.log("Response from third party;"+res.data.message);
+      logger.info("Third party handle image:"+res.data.message);
+      color_images.push(res.data.data);
+    }).catch(err=>{console.log("There is error while sending image to third-party"+err.message);
+     throw err;
+    });
+  
+    res.status(200).send({'status':true,'data':color_images});
+      
+
+  // console.log('file here is:'+img_files);
+  
+  // var img_face_name=req.body.arr;
+
+  logger.info('ADD IMAGES SUCCESSFULLY.'); 
+  await delay(5000); 
+  deleteHandledImage(img_files_name);
+ //res.status(200).send({status:true,message:'Add images successfully.'});
+  
+}
+catch(ex)
+{
+  console.log("EXCEPTION ADDING IMAGES:"+ex.message);
+  logger.error("EXCEPTION ADDING IMAGES:"+ex.message);
+  res.status(400).send({status:false,message:'Error receiving images:'+ex.message});
+}
 });
 
 router.post('/add_device',token_checking,async function(req,res,next)
@@ -486,6 +617,7 @@ catch(err)
   console.log("Exception occured when adding device:"+err.message);
   logger.error("EXCEPTION ADDING DEVICE:"+err.message);
   res.status(400).send({status:false,message:err.message});
+  
 }
 });
 
@@ -495,6 +627,7 @@ try
 {
   var device_name=req.body.device_name;
   var username=req.body.username;
+  
   await device.deleteOne({$and:[{username:username},{device_name:device_name}]}).exec((err,deleted_device)=>{
     if(err)
       { 
@@ -513,8 +646,11 @@ catch(err)
 }
 });
 
+
+
 router.post('/login',function (req,res,next){
- try{
+ try
+ {
    console.log("Username here is:"+req.body.username);
    console.log("Password here is:"+req.body.password);
    var ip_addr=req.body.ip_addr;
@@ -574,6 +710,7 @@ router.post('/login',function (req,res,next){
     if(!passwordIsValid)
     {  
         return res.status(401).send({message:"Password is invalid"});
+        
     }
     
     const jwt_payload=
@@ -581,6 +718,7 @@ router.post('/login',function (req,res,next){
         user_id:userr.id,
         username:userr.username
     }
+
     var token=jwt.sign(jwt_payload,config.secret,{expiresIn:'1h'});
     var created_time=DateTime.now().toLocaleString(DateTime.DATETIME_FULL_WITH_SECONDS);
     const existingToken=await session.findOne({user_name:userr.username});
@@ -604,25 +742,137 @@ router.post('/login',function (req,res,next){
 });
 
 
+router.post('/forgot_password',async function(req,res,next){
+   try
+   {
+    var phone = req.body.phone.trim();
+    var qr_code = req.body.qr;
+    console.log(phone);
+
+    var otp=convertQrToOtp(qr_code);
+
+    console.log('Your otp is:'+otp);
+
+    const sent_data={
+      messages:[
+        {
+          destinations:[
+            {
+            to:phone
+            }
+          ],
+         from:'InfoSMS',
+         text:`Your verify OTP is ${otp}`
+        }
+      ]
+    };
+  
+   const headers={
+    'Authorization':`App ${API_KEY}`,
+    'Content-Type':'application/json',
+    'Accept':'application/json'
+   };
+   const config={headers:headers};
+   const url=`${INFOBIP_API_BASE_URL}sms/2/text/advanced`
+   const response=await axios.post(url,sent_data,config).then((mess)=>
+   { 
+    logger.info(`Forgot Password:Sent OTP ${otp} successfully:${JSON.stringify(mess.data)}`);
+    res.status(200).send({status:true,message:JSON.stringify(mess.data)});
+   }).catch((err)=>{
+   logger.error(`Sent OTP ${otp} failed:${err.message}`);    
+   res.status(400).send({status:false,message:err.message});
+   });
+    // twilio_client.messages.create({
+    //   body:`Your verify OTP is ${otp}`,
+    //   from:twilio_phone,
+    //   to:'+84906744816'
+    // }).then((mess)=>{
+    //   console.log('Sent Message Successfully');
+    //   logger.info(`Forgot Password:Sent OTP ${otp} successfully:${mess}`);
+    //   res.status(200).send({status:true,message:`Sent message to ${phone} successfully`});
+    // }).catch(err=>
+    // {
+    //   logger.error(`Sent OTP ${otp} failed:${err.message}`);
+    //   res.status(400).send({status:false,message:err.message});
+    // })
+   }
+   catch(ex)
+   {
+    logger.error("Forget Password Exception:"+ex.message);
+   } 
+});
+
+
+router.post('/reset-password',async function(req,res,next){
+try
+{
+  var phone = req.body.phone;
+  if(phone.indexOf('0')==0)
+    {
+      phone=phone.replace('0','+84');
+    }
+
+  var is_valid_phone=checkValidPhone(phone);
+
+  if(!is_valid_phone)
+    { 
+      logger.info('Phone Number is invalid');
+      res.status(400).send({status:false,message:'Phone Number is invalid'});
+      return;
+    }
+  var password = req.body.password;
+  if(!checkPassword(password))
+    {
+      res.status(400).send({status:false,message:'Your password is not strong enough.'})
+      return;
+    }
+  
+  const new_password=bcrypt.hashSync(password,8);
+  
+  var user_found=await user.findOne({phone:phone});
+
+  if(user_found)
+    {
+    var response=await user.updateOne({phone:user_found.phone},{$set:{password:new_password}});
+    logger.info("Reset password successfully");
+    res.status(200).send({status:true,message:'Reset password successfully'});
+    return;
+    }
+    else
+    {
+      logger.error("User not exist");
+      res.status(400).send({status:false,message:'User not exist'}); 
+      return;
+    }
+}
+catch(ex)
+{
+  console.log("RESET PASSWORD EXCEPTION:"+ex.message);
+
+  logger.error("RESET PASSWORD EXCEPTION:"+ex.message);
+}
+});
 
 router.post('/auth/verify',function(req,res,next){
-    try{
+    try
+    {
     let token=req.body.token;
     let decoded_token=jwt.verify(token,config.secret);
     console.log(decoded_token);
     user.findOne({username:decoded_token.username}).exec((err,userr)=>{
    if(err)
    {
-    throw err;
+    throw err; 
    }
    if(userr)
    {
     res.status(200).send({message:userr});
    }
-   else{
+   else
+   {
     res.send({message:'Invalid'});
    }
-    });
+  });
 }
 catch(error)
 {
@@ -640,7 +890,8 @@ router.get('/hall',token_checking,function(req,res,next)
   return res.status(200).send({user:''});
 });
 
-router.get('/level',token_checking,function(req,res,next){
+router.get('/level',token_checking,function(req,res,next)
+{
  return res.status(200).send();
 });
 
@@ -671,8 +922,7 @@ router.get('/user_profile/:username',token_checking,function(req,res,next)
      catch(error)
      {
         throw error;
-     }
-     
+     }     
 });
 
 
@@ -1190,10 +1440,12 @@ router.get('/mqtt_connect/:username',async function(req,res,next){
       {
       res.write(`event:message\n`);
       res.write(`data:${received_message}\n\n`);
+      logger.info("Send Solve Command Successfully:"+received_message);
       received_message='';
       }
   },100);
   req.on('close',()=>{
+    logger.info("Close Log SSE Successfully.");
     clearInterval(send_log_interval);
     
   });
@@ -1245,6 +1497,7 @@ router.post('/mqtt_transmit',async function(req,res,next)
      value:content,
     },]
   });
+  logger.info("Send Content To Topic Successfully.");
  }
  catch(err)
  {
@@ -1295,7 +1548,7 @@ try{
   if(rubik_name =="Rubik's 3x3")
   {  
     var payload={name:rubik_name,facelets:face_convert,original_cube:'',des_cube:''}
-    var response=await axios.post('http://localhost:8001/solve_rubik',payload).then(async(result)=>
+    var response=await axios.post('http://localhost:8004/solve_rubik',payload).then(async(result)=>
     {   
         var sol=result.data.data;
         if(sol!=='')
@@ -1306,6 +1559,41 @@ try{
                value:sol,
               },]
             });
+          var user_id=0;
+          const current_user=await user.findOne({username:username});
+          user_id=current_user._id;
+            const rubik_problem_ob=
+            {
+              problem:face_convert,
+              solution:sol
+            };
+           const rubik_problem=new rubikProblem(rubik_problem_ob);
+
+           rubik_problem.save((err,savedOb)=>{
+              if(err)
+                {
+                  throw err;
+                }
+              logger.info("Rubik problem saved");
+              var problem_id=savedOb._id;
+              var date_created = DateTime.now().toLocaleString(DateTime.DATETIME_FULL_WITH_SECONDS);
+              const problem_detail_ob=
+              {
+                user_id:user_id,
+                problem_id:problem_id,
+                date_created:date_created
+              };
+
+              const problem_detail=new rubikProblemDetail(problem_detail_ob);
+
+              problem_detail.save((err,savedOb)=>{
+                if(err)
+                  {
+                    throw err;
+                  }
+                logger.info("Problem detail saved");
+              })
+           });
             res.status(200).send({status:true,message:sol});
           }
         else 

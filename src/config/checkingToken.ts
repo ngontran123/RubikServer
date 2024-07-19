@@ -2,14 +2,16 @@ import {session, user,device} from "../models/user_model"
 import {DateTime} from 'luxon';
 const jwt=require('jsonwebtoken');
 const config=require('./auth');
+const logger=require('../logger/index');
 var token_checking=async(req,res,next)=>{
  var token=req.header('authorization');
+ console.log('token here is:'+token);
  if(!token)
  {  return res.status(401).send({message:"No token is provided"});
  }
  var existingToken=await session.findOne({token:token});
  if(!existingToken)
-  {
+  { logger.error("Your account has been login from another place.");
     return res.status(401).send({message:"Your account has been login from another place"});
   }
  jwt.verify(token,config.secret,async (err,decoded)=>{
@@ -18,8 +20,13 @@ var token_checking=async(req,res,next)=>{
     return res.status(401).send({message:"Unauthorized"});
   }
   req.userId=decoded.id;
+  var user_info=await user.findOne({username:decoded.username});
+  if(user_info)
+    {
+  var last_active_action=user_info.last_active;
   var now_str=DateTime.now().toLocaleString(DateTime.DATETIME_FULL_WITH_SECONDS);
-  await user.updateOne({username:decoded.username},{$set:{last_active:now_str}});
+  await user.updateOne({username:user_info.username},{$set:{last_active:now_str,last_action:last_active_action}});
+    }
   next();
  }) 
 }

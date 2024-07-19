@@ -1,0 +1,143 @@
+[2024-06-17T10:15:32.006] [INFO] default - Rotate Secret Key Successfully.
+[2024-06-17T10:15:42.067] [ERROR] default - MQTT INIT FAILED:Connection error: 
+[2024-06-17T10:16:13.936] [INFO] default - Rotate Secret Key Successfully.
+[2024-06-17T10:16:19.732] [ERROR] default - MQTT INIT FAILED:Connection error: 
+[2024-06-17T10:16:41.215] [INFO] default - Rotate Secret Key Successfully.
+[2024-06-17T10:19:11.297] [INFO] default - Rotate Secret Key Successfully.
+[2024-06-17T10:19:13.161] [INFO] default - Forgot Password:Sent OTP 791640 successfully:{"messages":[{"messageId":"4185943530844335809245","status":{"description":"Message sent to next instance","groupId":1,"groupName":"PENDING","id":26,"name":"PENDING_ACCEPTED"},"to":"0906744852"}]}
+[2024-06-17T10:22:07.302] [INFO] default - Forgot Password:Sent OTP 677404 successfully:{"messages":[{"messageId":"4185945272324335758303","status":{"description":"Message sent to next instance","groupId":1,"groupName":"PENDING","id":26,"name":"PENDING_ACCEPTED"},"to":"+84906744852"}]}
+[2024-06-17T10:25:25.978] [INFO] default - Forgot Password:Sent OTP 832700 successfully:{"messages":[{"messageId":"4185947258984335696881","status":{"description":"Message sent to next instance","groupId":1,"groupName":"PENDING","id":26,"name":"PENDING_ACCEPTED"},"to":"+84906744852"}]}
+[2024-06-17T10:30:38.201] [INFO] default - Rotate Secret Key Successfully.
+[2024-06-17T10:32:38.799] [INFO] default - Forgot Password:Sent OTP 236571 successfully:{"messages":[{"messageId":"4185951587234335412049","status":{"description":"Message sent to next instance","groupId":1,"groupName":"PENDING","id":26,"name":"PENDING_ACCEPTED"},"to":"+84906744852"}]}
+[2024-06-17T10:34:33.528] [INFO] default - Forgot Password:Sent OTP 491115 successfully:{"messages":[{"messageId":"4185952734574335771175","status":{"description":"Message sent to next instance","groupId":1,"groupName":"PENDING","id":26,"name":"PENDING_ACCEPTED"},"to":"+84906744852"}]}
+[2024-06-17T10:35:46.334] [INFO] default - Rotate Secret Key Successfully.
+[2024-06-17T10:36:39.989] [INFO] default - Forgot Password:Sent OTP 063839 successfully:{"messages":[{"messageId":"4185953999254335937907","status":{"description":"Message sent to next instance","groupId":1,"groupName":"PENDING","id":26,"name":"PENDING_ACCEPTED"},"to":"+84906744852"}]}
+[2024-06-17T10:38:04.877] [INFO] default - Forgot Password:Sent OTP 545351 successfully:{"messages":[{"messageId":"4185954847104335416956","status":{"description":"Message sent to next instance","groupId":1,"groupName":"PENDING","id":26,"name":"PENDING_ACCEPTED"},"to":"+84906744852"}]}
+[2024-06-17T10:40:17.296] [INFO] default - Forgot Password:Sent OTP 361181 successfully:{"messages":[{"messageId":"4185956171734335418866","status":{"description":"Message sent to next instance","groupId":1,"groupName":"PENDING","id":26,"name":"PENDING_ACCEPTED"},"to":"+84906744852"}]}
+[2024-06-17T10:40:20.000] [INFO] default - Forgot Password:Sent OTP 361181 successfully:{"messages":[{"messageId":"4185956184874335321325","status":{"description":"Message sent to next instance","groupId":1,"groupName":"PENDING","id":26,"name":"PENDING_ACCEPTED"},"to":"+84906744852"}]}
+[2024-06-17T10:41:53.383] [INFO] default - Forgot Password:Sent OTP 701435 successfully:{"messages":[{"messageId":"4185957133034335322499","status":{"description":"Message sent to next instance","groupId":1,"groupName":"PENDING","id":26,"name":"PENDING_ACCEPTED"},"to":"+84906744852"}]}
+[2024-06-17T10:47:51.193] [INFO] default - Update Topic List Successfully.
+[2024-06-17T10:48:32.759] [INFO] default - Forgot Password:Sent OTP 824516 successfully:{"messages":[{"messageId":"4185961127014335836092","status":{"description":"Message sent to next instance","groupId":1,"groupName":"PENDING","id":26,"name":"PENDING_ACCEPTED"},"to":"+84906744852"}]}
+[2024-06-17T10:49:12.113] [ERROR] default - RESET PASSWORD EXCEPTION:Cannot read properties of undefined (reading 'indexOf')
+[2024-06-17T10:50:30.847] [ERROR] default - RESET PASSWORD EXCEPTION:Cannot read properties of undefined (reading 'indexOf')
+[2024-06-17T10:51:04.461] [ERROR] default - RESET PASSWORD EXCEPTION:Cannot read properties of undefined (reading 'indexOf')
+[2024-06-17T10:52:14.786] [INFO] default - Reset password successfully
+[2024-06-17T10:53:27.370] [INFO] default - Access about page successful
+[2024-06-17T10:54:49.577] [INFO] default - Forgot Password:Sent OTP 172663 successfully:{"messages":[{"messageId":"4185964895224335431199","status":{"description":"Message sent to next instance","groupId":1,"groupName":"PENDING","id":26,"name":"PENDING_ACCEPTED"},"to":"84906744852"}]}
+[2024-06-17T10:55:06.275] [INFO] default - Phone Number is invalid
+[2024-06-17T10:55:06.293] [ERROR] default - User not exist
+[2024-06-17T10:55:06.294] [ERROR] default - RESET PASSWORD EXCEPTION:Cannot set headers after they are sent to the client
+[2024-06-17T10:55:41.405] [INFO] default - Phone Number is invalid
+[2024-06-17T10:55:41.422] [ERROR] default - User not exist
+[2024-06-17T10:55:41.423] [ERROR] default - RESET PASSWORD EXCEPTION:Cannot set headers after they are sent to the client
+[2024-06-17T10:55:52.901] [INFO] default - Phone Number is invalid
+[2024-06-17T10:55:52.921] [ERROR] default - User not exist
+[2024-06-17T10:55:52.921] [ERROR] default - RESET PASSWORD EXCEPTION:Cannot set headers after they are sent to the client
+[2024-06-17T10:58:26.622] [INFO] default - Rotate Secret Key Successfully.
+[2024-06-17T10:58:32.843] [INFO] default - Phone Number is invalid
+[2024-06-17T11:02:19.155] [INFO] default - Forgot Password:Sent OTP 422123 successfully:{"messages":[{"messageId":"4185969375934335960307","status":{"description":"Message sent to next instance","groupId":1,"groupName":"PENDING","id":26,"name":"PENDING_ACCEPTED"},"to":"84906744852"}]}
+[2024-06-17T11:02:36.456] [INFO] default - Phone Number is invalid
+[2024-06-17T11:02:43.391] [INFO] default - Phone Number is invalid
+[2024-06-17T11:05:21.934] [INFO] default - Forgot Password:Sent OTP 984097 successfully:{"messages":[{"messageId":"4185971218134335342887","status":{"description":"Message sent to next instance","groupId":1,"groupName":"PENDING","id":26,"name":"PENDING_ACCEPTED"},"to":"84906744852"}]}
+[2024-06-17T11:05:37.402] [INFO] default - Phone Number is invalid
+[2024-06-17T11:05:42.981] [INFO] default - Reset password successfully
+[2024-06-17T11:08:35.055] [INFO] default - Rotate Secret Key Successfully.
+[2024-06-17T11:08:41.564] [INFO] default - Rotate Secret Key Successfully.
+[2024-06-17T11:11:01.955] [INFO] default - Rotate Secret Key Successfully.
+[2024-06-17T11:11:16.948] [INFO] default - Rotate Secret Key Successfully.
+[2024-06-17T11:11:33.750] [INFO] default - Rotate Secret Key Successfully.
+[2024-06-17T11:11:49.459] [INFO] default - Rotate Secret Key Successfully.
+[2024-06-17T11:12:14.631] [INFO] default - Rotate Secret Key Successfully.
+[2024-06-17T11:12:25.380] [INFO] default - Rotate Secret Key Successfully.
+[2024-06-17T11:24:25.715] [INFO] default - Update Topic List Successfully.
+[2024-06-17T11:36:27.242] [INFO] default - Update Topic List Successfully.
+[2024-06-17T11:48:28.927] [INFO] default - Update Topic List Successfully.
+[2024-06-17T11:55:25.687] [INFO] default - Forgot Password:Sent OTP 557403 successfully:{"messages":[{"messageId":"4186001256954335497782","status":{"description":"Message sent to next instance","groupId":1,"groupName":"PENDING","id":26,"name":"PENDING_ACCEPTED"},"to":"+84906744852"}]}
+[2024-06-17T11:55:50.663] [INFO] default - Reset password successfully
+[2024-06-17T11:57:45.864] [INFO] default - Access about page successful
+[2024-06-17T11:57:47.223] [INFO] default - Access about page successful
+[2024-06-17T11:57:48.065] [INFO] default - get product-detail Rubik's Coach Cube successfull
+[2024-06-17T11:57:48.086] [INFO] default - get product-detail Rubik's 3x3 successfull
+[2024-06-17T11:57:48.107] [INFO] default - get product-detail Rubik’s Apprentice 2x2 successfull
+[2024-06-17T11:57:51.384] [INFO] default - Access about page successful
+[2024-06-17T11:58:06.941] [INFO] default - get Rubik successful
+[2024-06-17T11:58:09.201] [INFO] default - get product-detail Rubik’s Connector Snake 2-Pack successfull
+[2024-06-17T11:58:14.154] [INFO] default - Access about page successful
+[2024-06-17T11:58:15.160] [INFO] default - get product-detail Rubik's Coach Cube successfull
+[2024-06-17T11:58:15.245] [INFO] default - get product-detail Rubik's 3x3 successfull
+[2024-06-17T11:58:15.262] [INFO] default - get product-detail Rubik’s Apprentice 2x2 successfull
+[2024-06-17T11:58:17.398] [INFO] default - GET DEVICE LIST SUCCESSFULLY FOR USER helloman123
+[2024-06-17T11:58:50.798] [INFO] default - Access about page successful
+[2024-06-17T11:58:55.570] [INFO] default - Access about page successful
+[2024-06-17T11:59:36.862] [INFO] default - Access about page successful
+[2024-06-17T11:59:38.312] [INFO] default - GET DEVICE LIST SUCCESSFULLY FOR USER helloman123
+[2024-06-17T12:00:25.719] [INFO] default - Update Topic List Successfully.
+[2024-06-17T12:12:27.155] [INFO] default - Update Topic List Successfully.
+[2024-06-17T12:24:28.736] [INFO] default - Update Topic List Successfully.
+[2024-06-17T12:36:30.589] [INFO] default - Update Topic List Successfully.
+[2024-06-17T12:48:27.377] [INFO] default - Update Topic List Successfully.
+[2024-06-17T13:00:29.064] [INFO] default - Update Topic List Successfully.
+[2024-06-17T13:12:25.650] [INFO] default - Update Topic List Successfully.
+[2024-06-17T13:24:27.271] [INFO] default - Update Topic List Successfully.
+[2024-06-17T13:36:28.984] [INFO] default - Update Topic List Successfully.
+[2024-06-17T13:48:25.517] [INFO] default - Update Topic List Successfully.
+[2024-06-17T14:00:27.078] [INFO] default - Update Topic List Successfully.
+[2024-06-17T14:12:20.974] [INFO] default - Rotate Secret Key Successfully.
+[2024-06-17T14:14:59.619] [INFO] default - Rotate Secret Key Successfully.
+[2024-06-17T14:27:00.580] [INFO] default - Update Topic List Successfully.
+[2024-06-17T14:33:08.902] [INFO] default - Access about page successful
+[2024-06-17T14:33:10.507] [INFO] default - Access about page successful
+[2024-06-17T14:33:29.709] [INFO] default - Access about page successful
+[2024-06-17T14:33:39.437] [INFO] default - GET DEVICE LIST SUCCESSFULLY FOR USER helloman123
+[2024-06-17T14:34:31.985] [INFO] default - Access about page successful
+[2024-06-17T14:34:33.520] [INFO] default - GET DEVICE LIST SUCCESSFULLY FOR USER helloman123
+[2024-06-17T14:34:43.953] [INFO] default - Access about page successful
+[2024-06-17T14:39:02.129] [INFO] default - Update Topic List Successfully.
+[2024-06-17T14:45:42.540] [INFO] default - Access about page successful
+[2024-06-17T14:48:04.493] [INFO] default - GET DEVICE LIST SUCCESSFULLY FOR USER helloman123
+[2024-06-17T14:51:03.606] [INFO] default - Update Topic List Successfully.
+[2024-06-17T15:03:00.051] [INFO] default - Update Topic List Successfully.
+[2024-06-17T15:15:01.660] [INFO] default - Update Topic List Successfully.
+[2024-06-17T15:27:03.258] [INFO] default - Update Topic List Successfully.
+[2024-06-17T15:38:59.768] [INFO] default - Update Topic List Successfully.
+[2024-06-17T15:51:01.326] [INFO] default - Update Topic List Successfully.
+[2024-06-17T16:03:02.834] [INFO] default - Update Topic List Successfully.
+[2024-06-17T16:15:04.386] [INFO] default - Update Topic List Successfully.
+[2024-06-17T16:27:00.887] [INFO] default - Update Topic List Successfully.
+[2024-06-17T16:39:02.423] [INFO] default - Update Topic List Successfully.
+[2024-06-17T16:51:03.960] [INFO] default - Update Topic List Successfully.
+[2024-06-17T17:03:00.432] [INFO] default - Update Topic List Successfully.
+[2024-06-17T17:15:01.974] [INFO] default - Update Topic List Successfully.
+[2024-06-17T17:27:03.521] [INFO] default - Update Topic List Successfully.
+[2024-06-17T17:39:00.075] [INFO] default - Update Topic List Successfully.
+[2024-06-17T17:51:01.701] [INFO] default - Update Topic List Successfully.
+[2024-06-17T18:03:03.360] [INFO] default - Update Topic List Successfully.
+[2024-06-17T18:14:59.884] [INFO] default - Update Topic List Successfully.
+[2024-06-17T18:27:01.469] [INFO] default - Update Topic List Successfully.
+[2024-06-17T18:39:02.908] [INFO] default - Update Topic List Successfully.
+[2024-06-17T18:51:04.399] [INFO] default - Update Topic List Successfully.
+[2024-06-17T19:03:00.819] [INFO] default - Update Topic List Successfully.
+[2024-06-17T19:15:02.395] [INFO] default - Update Topic List Successfully.
+[2024-06-17T19:27:03.924] [INFO] default - Update Topic List Successfully.
+[2024-06-17T19:39:00.433] [INFO] default - Update Topic List Successfully.
+[2024-06-17T19:51:01.978] [INFO] default - Update Topic List Successfully.
+[2024-06-17T20:03:03.472] [INFO] default - Update Topic List Successfully.
+[2024-06-17T20:14:59.957] [INFO] default - Update Topic List Successfully.
+[2024-06-17T20:27:01.539] [INFO] default - Update Topic List Successfully.
+[2024-06-17T20:39:03.059] [INFO] default - Update Topic List Successfully.
+[2024-06-17T20:51:04.611] [INFO] default - Update Topic List Successfully.
+[2024-06-17T21:03:01.319] [INFO] default - Update Topic List Successfully.
+[2024-06-17T21:15:02.934] [INFO] default - Update Topic List Successfully.
+[2024-06-17T21:27:04.463] [INFO] default - Update Topic List Successfully.
+[2024-06-17T21:39:01.003] [INFO] default - Update Topic List Successfully.
+[2024-06-17T21:51:02.594] [INFO] default - Update Topic List Successfully.
+[2024-06-17T22:03:04.200] [INFO] default - Update Topic List Successfully.
+[2024-06-17T22:15:00.752] [INFO] default - Update Topic List Successfully.
+[2024-06-17T22:27:02.335] [INFO] default - Update Topic List Successfully.
+[2024-06-17T22:39:03.947] [INFO] default - Update Topic List Successfully.
+[2024-06-17T22:51:00.418] [INFO] default - Update Topic List Successfully.
+[2024-06-17T23:03:01.812] [INFO] default - Update Topic List Successfully.
+[2024-06-17T23:15:03.308] [INFO] default - Update Topic List Successfully.
+[2024-06-17T23:27:04.756] [INFO] default - Update Topic List Successfully.
+[2024-06-17T23:39:01.239] [INFO] default - Update Topic List Successfully.
+[2024-06-17T23:51:02.699] [INFO] default - Update Topic List Successfully.

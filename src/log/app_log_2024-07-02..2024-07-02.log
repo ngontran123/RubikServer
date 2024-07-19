@@ -1,0 +1,530 @@
+[2024-07-02T11:00:35.848] [INFO] default - Close Log SSE Successfully.
+[2024-07-02T11:00:52.008] [INFO] default - Access about page successful
+[2024-07-02T11:00:53.337] [INFO] default - get product-detail Rubik's Coach Cube successfull
+[2024-07-02T11:00:53.371] [INFO] default - get product-detail Rubik's 3x3 successfull
+[2024-07-02T11:00:53.390] [INFO] default - get product-detail Rubik’s Apprentice 2x2 successfull
+[2024-07-02T11:00:54.303] [INFO] default - GET DEVICE LIST SUCCESSFULLY FOR USER helloman123
+[2024-07-02T11:01:10.334] [ERROR] default - EXCEPTION ADDING IMAGES:Failed to execute 'append' on 'FormData': parameter 2 is not of type 'Blob'
+[2024-07-02T11:02:37.987] [ERROR] default - EXCEPTION ADDING IMAGES:Failed to execute 'append' on 'FormData': parameter 2 is not of type 'Blob'
+[2024-07-02T11:03:42.358] [ERROR] default - EXCEPTION ADDING IMAGES:fs.createreadstream is not a function
+[2024-07-02T11:04:18.652] [ERROR] default - EXCEPTION ADDING IMAGES:fs.createreadstream is not a function
+[2024-07-02T11:05:40.797] [ERROR] default - EXCEPTION ADDING IMAGES:fs.createreadstream is not a function
+[2024-07-02T11:07:29.111] [ERROR] default - EXCEPTION ADDING IMAGES:fs.createreadstream is not a function
+[2024-07-02T11:08:20.623] [ERROR] default - EXCEPTION ADDING IMAGES:Failed to execute 'append' on 'FormData': parameter 2 is not of type 'Blob'
+[2024-07-02T11:09:31.582] [ERROR] default - EXCEPTION ADDING IMAGES:Failed to execute 'append' on 'FormData': parameter 2 is not of type 'Blob'
+[2024-07-02T11:10:38.376] [ERROR] default - EXCEPTION ADDING IMAGES:Failed to execute 'append' on 'FormData': parameter 2 is not of type 'Blob'
+[2024-07-02T11:17:16.913] [INFO] default - ADD IMAGES SUCCESSFULLY.
+[2024-07-02T11:17:21.928] [ERROR] default - DELETE IMAGE EXCEPTION:The "path" argument must be of type string. Received an instance of Object
+[2024-07-02T11:29:32.433] [INFO] default - ADD IMAGES SUCCESSFULLY.
+[2024-07-02T11:29:34.885] [INFO] default - ADD IMAGES SUCCESSFULLY.
+[2024-07-02T11:30:12.420] [INFO] default - ADD IMAGES SUCCESSFULLY.
+[2024-07-02T11:35:03.704] [INFO] default - ADD IMAGES SUCCESSFULLY.
+[2024-07-02T11:36:06.105] [INFO] default - ADD IMAGES SUCCESSFULLY.
+[2024-07-02T11:51:48.855] [INFO] default - Update Topic List Successfully.
+[2024-07-02T12:03:50.681] [INFO] default - Update Topic List Successfully.
+[2024-07-02T12:15:48.158] [INFO] default - Update Topic List Successfully.
+[2024-07-02T12:27:50.016] [INFO] default - Update Topic List Successfully.
+[2024-07-02T12:39:51.793] [INFO] default - Update Topic List Successfully.
+[2024-07-02T12:51:48.519] [INFO] default - Update Topic List Successfully.
+[2024-07-02T13:03:50.423] [INFO] default - Update Topic List Successfully.
+[2024-07-02T13:15:52.184] [INFO] default - Update Topic List Successfully.
+[2024-07-02T13:27:48.750] [INFO] default - Update Topic List Successfully.
+[2024-07-02T13:39:50.335] [INFO] default - Update Topic List Successfully.
+[2024-07-02T13:51:51.927] [INFO] default - Update Topic List Successfully.
+[2024-07-02T14:03:48.473] [INFO] default - Update Topic List Successfully.
+[2024-07-02T14:15:50.039] [INFO] default - Update Topic List Successfully.
+[2024-07-02T14:27:51.682] [INFO] default - Update Topic List Successfully.
+[2024-07-02T14:31:18.169] [INFO] default - Close Log SSE Successfully.
+[2024-07-02T14:31:36.843] [INFO] default - Access about page successful
+[2024-07-02T14:31:37.866] [INFO] default - Close Log SSE Successfully.
+[2024-07-02T14:31:38.005] [INFO] default - get product-detail Rubik's Coach Cube successfull
+[2024-07-02T14:31:38.060] [INFO] default - get product-detail Rubik's 3x3 successfull
+[2024-07-02T14:31:38.088] [INFO] default - get product-detail Rubik’s Apprentice 2x2 successfull
+[2024-07-02T14:31:38.888] [INFO] default - GET DEVICE LIST SUCCESSFULLY FOR USER helloman123
+[2024-07-02T14:32:18.866] [INFO] default - Image original name:rubik.png
+[2024-07-02T14:32:18.866] [INFO] default - Image file name:6edaf87addfb01ef8e91e5c2e5a9178c
+[2024-07-02T14:32:19.080] [INFO] default - Third party handle image:undefined
+[2024-07-02T14:32:19.080] [INFO] default - Image original name:Rubik's_cube_colors.svg.png
+[2024-07-02T14:32:19.080] [INFO] default - Image file name:c51f0b2c1de3914245540d328e30240f
+[2024-07-02T14:32:19.093] [INFO] default - Third party handle image:undefined
+[2024-07-02T14:32:19.095] [INFO] default - ADD IMAGES SUCCESSFULLY.
+[2024-07-02T14:36:25.786] [INFO] default - Image original name:rubik.png
+[2024-07-02T14:36:25.787] [INFO] default - Image file name:ea19f51df192d739c8bc22a5aebadcfd
+[2024-07-02T14:36:25.824] [INFO] default - Third party handle image:undefined
+[2024-07-02T14:36:25.824] [INFO] default - Image original name:Rubik's_cube_colors.svg.png
+[2024-07-02T14:36:25.824] [INFO] default - Image file name:5e7cbaa3684b7e80838e548ca2f1dff9
+[2024-07-02T14:36:25.829] [INFO] default - Third party handle image:undefined
+[2024-07-02T14:36:25.830] [INFO] default - ADD IMAGES SUCCESSFULLY.
+[2024-07-02T14:36:30.845] [INFO] default - DELETE IMAGE ea19f51df192d739c8bc22a5aebadcfd SUCCESSFULLY
+[2024-07-02T14:36:30.848] [INFO] default - DELETE IMAGE 5e7cbaa3684b7e80838e548ca2f1dff9 SUCCESSFULLY
+[2024-07-02T14:38:36.256] [INFO] default - Image original name:rubik.png
+[2024-07-02T14:38:36.256] [INFO] default - Image file name:8b873a9c122454fbf5424d0314e17f92
+[2024-07-02T14:38:36.262] [INFO] default - Third party handle image:undefined
+[2024-07-02T14:38:36.262] [INFO] default - Image original name:Rubik's_cube_colors.svg.png
+[2024-07-02T14:38:36.262] [INFO] default - Image file name:2a3ca201374690a8138874cc64205d8c
+[2024-07-02T14:38:36.269] [INFO] default - Third party handle image:undefined
+[2024-07-02T14:38:36.270] [INFO] default - ADD IMAGES SUCCESSFULLY.
+[2024-07-02T14:38:41.275] [INFO] default - DELETE IMAGE 8b873a9c122454fbf5424d0314e17f92 SUCCESSFULLY
+[2024-07-02T14:38:41.276] [INFO] default - DELETE IMAGE 2a3ca201374690a8138874cc64205d8c SUCCESSFULLY
+[2024-07-02T14:41:48.073] [INFO] default - Image original name:rubik.png
+[2024-07-02T14:41:48.074] [INFO] default - Image file name:e01ba9f26f5d8793edaefedde0329643
+[2024-07-02T14:41:48.104] [INFO] default - Third party handle image:undefined
+[2024-07-02T14:41:48.104] [INFO] default - Image original name:Rubik's_cube_colors.svg.png
+[2024-07-02T14:41:48.104] [INFO] default - Image file name:b13d0e921fdb89a9b62b6ca172d87750
+[2024-07-02T14:41:48.107] [INFO] default - Third party handle image:undefined
+[2024-07-02T14:41:48.107] [INFO] default - ADD IMAGES SUCCESSFULLY.
+[2024-07-02T14:41:53.124] [INFO] default - DELETE IMAGE e01ba9f26f5d8793edaefedde0329643 SUCCESSFULLY
+[2024-07-02T14:41:53.126] [INFO] default - DELETE IMAGE b13d0e921fdb89a9b62b6ca172d87750 SUCCESSFULLY
+[2024-07-02T14:53:50.654] [INFO] default - Update Topic List Successfully.
+[2024-07-02T15:00:22.850] [INFO] default - Close Log SSE Successfully.
+[2024-07-02T15:01:00.608] [INFO] default - GET DEVICE LIST SUCCESSFULLY FOR USER helloman123
+[2024-07-02T15:05:47.271] [INFO] default - Update Topic List Successfully.
+[2024-07-02T15:12:42.668] [INFO] default - Close Log SSE Successfully.
+[2024-07-02T15:16:05.580] [INFO] default - GET DEVICE LIST SUCCESSFULLY FOR USER helloman123
+[2024-07-02T15:17:27.514] [INFO] default - Image original name:rubik.png
+[2024-07-02T15:17:27.515] [INFO] default - Image file name:a0fb8d94a07cf2731f338b270c0d534e
+[2024-07-02T15:17:27.555] [INFO] default - Third party handle image:undefined
+[2024-07-02T15:17:27.555] [INFO] default - Image original name:Rubik's_cube_colors.svg.png
+[2024-07-02T15:17:27.555] [INFO] default - Image file name:3d46bd0035979e363041129c6b8cc8ad
+[2024-07-02T15:17:27.559] [INFO] default - Third party handle image:undefined
+[2024-07-02T15:17:27.560] [INFO] default - ADD IMAGES SUCCESSFULLY.
+[2024-07-02T15:17:32.570] [INFO] default - DELETE IMAGE a0fb8d94a07cf2731f338b270c0d534e SUCCESSFULLY
+[2024-07-02T15:17:32.573] [INFO] default - DELETE IMAGE 3d46bd0035979e363041129c6b8cc8ad SUCCESSFULLY
+[2024-07-02T15:17:59.088] [INFO] default - Image original name:rubik.png
+[2024-07-02T15:17:59.088] [INFO] default - Image file name:d96b23effe782e19a396456a6876d153
+[2024-07-02T15:17:59.103] [INFO] default - Image original name:Rubik's_cube_colors.svg.png
+[2024-07-02T15:17:59.103] [INFO] default - Image file name:d9884398566e56f5cd57dc891e9dcae8
+[2024-07-02T15:17:59.107] [INFO] default - ADD IMAGES SUCCESSFULLY.
+[2024-07-02T15:18:04.114] [INFO] default - DELETE IMAGE d96b23effe782e19a396456a6876d153 SUCCESSFULLY
+[2024-07-02T15:18:04.115] [INFO] default - DELETE IMAGE d9884398566e56f5cd57dc891e9dcae8 SUCCESSFULLY
+[2024-07-02T15:29:21.948] [INFO] default - Update Topic List Successfully.
+[2024-07-02T15:30:57.515] [INFO] default - Image original name:rubik.png
+[2024-07-02T15:30:57.516] [INFO] default - Image file name:064d12fb32464466c5e245ccaba198f0
+[2024-07-02T15:30:57.553] [INFO] default - Image original name:Rubik's_cube_colors.svg.png
+[2024-07-02T15:30:57.553] [INFO] default - Image file name:e52461491a34e87f179b52b9084af5a1
+[2024-07-02T15:30:57.560] [INFO] default - ADD IMAGES SUCCESSFULLY.
+[2024-07-02T15:31:02.568] [INFO] default - DELETE IMAGE 064d12fb32464466c5e245ccaba198f0 SUCCESSFULLY
+[2024-07-02T15:31:02.569] [INFO] default - DELETE IMAGE e52461491a34e87f179b52b9084af5a1 SUCCESSFULLY
+[2024-07-02T15:31:14.653] [INFO] default - Image original name:rubik.png
+[2024-07-02T15:31:14.654] [INFO] default - Image file name:f2486a747bd701139907c37e9769c1c9
+[2024-07-02T15:31:14.660] [INFO] default - Image original name:Rubik's_cube_colors.svg.png
+[2024-07-02T15:31:14.660] [INFO] default - Image file name:55d0b083ccec08598dd80cf2d31a47ad
+[2024-07-02T15:31:14.675] [INFO] default - ADD IMAGES SUCCESSFULLY.
+[2024-07-02T15:31:19.692] [INFO] default - DELETE IMAGE f2486a747bd701139907c37e9769c1c9 SUCCESSFULLY
+[2024-07-02T15:31:19.696] [INFO] default - DELETE IMAGE 55d0b083ccec08598dd80cf2d31a47ad SUCCESSFULLY
+[2024-07-02T15:31:52.316] [INFO] default - Close Log SSE Successfully.
+[2024-07-02T15:38:18.476] [INFO] default - Access about page successful
+[2024-07-02T15:38:20.648] [INFO] default - get product-detail Rubik's Coach Cube successfull
+[2024-07-02T15:38:20.666] [INFO] default - get product-detail Rubik's 3x3 successfull
+[2024-07-02T15:38:20.689] [INFO] default - get product-detail Rubik’s Apprentice 2x2 successfull
+[2024-07-02T15:38:21.634] [INFO] default - GET DEVICE LIST SUCCESSFULLY FOR USER helloman123
+[2024-07-02T15:38:52.654] [INFO] default - Image original name:rubik.png
+[2024-07-02T15:38:52.654] [INFO] default - Image file name:937a8562e6d74baf31ac86aad12fab9d
+[2024-07-02T15:38:52.674] [INFO] default - Image original name:Rubik's_cube_colors.svg.png
+[2024-07-02T15:38:52.674] [INFO] default - Image file name:d13f1e39ccd88d28a2a0e97df794bcf2
+[2024-07-02T15:38:52.679] [INFO] default - ADD IMAGES SUCCESSFULLY.
+[2024-07-02T15:38:57.692] [INFO] default - DELETE IMAGE 937a8562e6d74baf31ac86aad12fab9d SUCCESSFULLY
+[2024-07-02T15:38:57.695] [INFO] default - DELETE IMAGE d13f1e39ccd88d28a2a0e97df794bcf2 SUCCESSFULLY
+[2024-07-02T15:39:36.088] [INFO] default - Image original name:rubik.png
+[2024-07-02T15:39:36.088] [INFO] default - Image file name:fd3eacc3e3399544a68fe03ae7f4b1d9
+[2024-07-02T15:39:36.095] [INFO] default - Image original name:Rubik's_cube_colors.svg.png
+[2024-07-02T15:39:36.095] [INFO] default - Image file name:b76cbc5d825ecc8032061bc7e3492ac5
+[2024-07-02T15:39:36.099] [INFO] default - ADD IMAGES SUCCESSFULLY.
+[2024-07-02T15:39:36.714] [INFO] default - Image original name:rubik.png
+[2024-07-02T15:39:36.714] [INFO] default - Image file name:7e4767f7c559f05b8bb4ea16a851ced8
+[2024-07-02T15:39:36.718] [INFO] default - Image original name:Rubik's_cube_colors.svg.png
+[2024-07-02T15:39:36.718] [INFO] default - Image file name:70ba00cd32a011cf7e2ed4c5075b7f08
+[2024-07-02T15:39:36.723] [INFO] default - ADD IMAGES SUCCESSFULLY.
+[2024-07-02T15:39:41.109] [INFO] default - DELETE IMAGE fd3eacc3e3399544a68fe03ae7f4b1d9 SUCCESSFULLY
+[2024-07-02T15:39:41.110] [INFO] default - DELETE IMAGE b76cbc5d825ecc8032061bc7e3492ac5 SUCCESSFULLY
+[2024-07-02T15:39:41.735] [INFO] default - DELETE IMAGE 7e4767f7c559f05b8bb4ea16a851ced8 SUCCESSFULLY
+[2024-07-02T15:39:41.737] [INFO] default - DELETE IMAGE 70ba00cd32a011cf7e2ed4c5075b7f08 SUCCESSFULLY
+[2024-07-02T15:40:02.518] [INFO] default - Image original name:rubik.png
+[2024-07-02T15:40:02.518] [INFO] default - Image file name:c90525ef001770a18c17441320a06d0f
+[2024-07-02T15:40:02.559] [INFO] default - Image original name:Rubik's_cube_colors.svg.png
+[2024-07-02T15:40:02.559] [INFO] default - Image file name:095bd4f28fd3a307cb1e0c9c7d13ae34
+[2024-07-02T15:40:02.563] [INFO] default - ADD IMAGES SUCCESSFULLY.
+[2024-07-02T15:40:07.581] [INFO] default - DELETE IMAGE c90525ef001770a18c17441320a06d0f SUCCESSFULLY
+[2024-07-02T15:40:07.581] [INFO] default - DELETE IMAGE 095bd4f28fd3a307cb1e0c9c7d13ae34 SUCCESSFULLY
+[2024-07-02T15:41:48.328] [INFO] default - Image original name:about-img.png
+[2024-07-02T15:41:48.328] [INFO] default - Image file name:4bc523cdc3338c2611eb03e309d61515
+[2024-07-02T15:41:48.337] [INFO] default - Image original name:curved-left-arrow.png
+[2024-07-02T15:41:48.337] [INFO] default - Image file name:c58b6e92cf28f7ff81ce8879ec6d271f
+[2024-07-02T15:41:48.343] [INFO] default - ADD IMAGES SUCCESSFULLY.
+[2024-07-02T15:41:53.347] [INFO] default - DELETE IMAGE 4bc523cdc3338c2611eb03e309d61515 SUCCESSFULLY
+[2024-07-02T15:41:53.348] [INFO] default - DELETE IMAGE c58b6e92cf28f7ff81ce8879ec6d271f SUCCESSFULLY
+[2024-07-02T15:42:43.462] [INFO] default - Image original name:about-img.png
+[2024-07-02T15:42:43.462] [INFO] default - Image file name:968e3872217d8affc757013fbaa33e8e
+[2024-07-02T15:42:43.468] [INFO] default - Image original name:curved-left-arrow.png
+[2024-07-02T15:42:43.468] [INFO] default - Image file name:2c5da4ebeb67a56fbe154a56a978c82c
+[2024-07-02T15:42:43.472] [INFO] default - ADD IMAGES SUCCESSFULLY.
+[2024-07-02T15:42:48.486] [INFO] default - DELETE IMAGE 968e3872217d8affc757013fbaa33e8e SUCCESSFULLY
+[2024-07-02T15:42:48.487] [INFO] default - DELETE IMAGE 2c5da4ebeb67a56fbe154a56a978c82c SUCCESSFULLY
+[2024-07-02T15:43:17.875] [INFO] default - Image original name:about-img.png
+[2024-07-02T15:43:17.875] [INFO] default - Image file name:7a5f56d737da2585b9bc6f26b50a1cac
+[2024-07-02T15:43:17.883] [INFO] default - Image original name:curved-left-arrow.png
+[2024-07-02T15:43:17.883] [INFO] default - Image file name:6f0c7c38a09700a1449b6a40f6d48180
+[2024-07-02T15:43:17.886] [INFO] default - ADD IMAGES SUCCESSFULLY.
+[2024-07-02T15:43:22.889] [INFO] default - DELETE IMAGE 7a5f56d737da2585b9bc6f26b50a1cac SUCCESSFULLY
+[2024-07-02T15:43:22.890] [INFO] default - DELETE IMAGE 6f0c7c38a09700a1449b6a40f6d48180 SUCCESSFULLY
+[2024-07-02T15:47:15.795] [INFO] default - Image original name:share.png
+[2024-07-02T15:47:15.796] [INFO] default - Image file name:4f706f7f9cf1e4540b5a9bef64698c63
+[2024-07-02T15:47:15.802] [INFO] default - Image original name:curved-left-arrow.png
+[2024-07-02T15:47:15.802] [INFO] default - Image file name:e289b1724c9fb62cf3503cf0a1547145
+[2024-07-02T15:47:15.807] [INFO] default - ADD IMAGES SUCCESSFULLY.
+[2024-07-02T15:47:20.816] [INFO] default - DELETE IMAGE 4f706f7f9cf1e4540b5a9bef64698c63 SUCCESSFULLY
+[2024-07-02T15:47:20.818] [INFO] default - DELETE IMAGE e289b1724c9fb62cf3503cf0a1547145 SUCCESSFULLY
+[2024-07-02T15:51:55.549] [INFO] default - Update Topic List Successfully.
+[2024-07-02T15:53:36.728] [INFO] default - Image original name:share.png
+[2024-07-02T15:53:36.728] [INFO] default - Image file name:fdd350011791ce8a75f9315e69aea680
+[2024-07-02T15:53:36.733] [INFO] default - Third party handle image:undefined
+[2024-07-02T15:53:36.733] [INFO] default - Image original name:curved-left-arrow.png
+[2024-07-02T15:53:36.733] [INFO] default - Image file name:3f0ccf260f2df2d79598d2ecce7d1449
+[2024-07-02T15:53:36.736] [INFO] default - Third party handle image:undefined
+[2024-07-02T15:53:36.736] [INFO] default - ADD IMAGES SUCCESSFULLY.
+[2024-07-02T15:53:41.745] [INFO] default - DELETE IMAGE fdd350011791ce8a75f9315e69aea680 SUCCESSFULLY
+[2024-07-02T15:53:41.746] [INFO] default - DELETE IMAGE 3f0ccf260f2df2d79598d2ecce7d1449 SUCCESSFULLY
+[2024-07-02T15:54:01.250] [INFO] default - Image original name:share.png
+[2024-07-02T15:54:01.250] [INFO] default - Image file name:bdd251a10d75e6f9b4b9cbad424ccc1f
+[2024-07-02T15:54:01.254] [INFO] default - Third party handle image:undefined
+[2024-07-02T15:54:01.255] [INFO] default - Image original name:curved-left-arrow.png
+[2024-07-02T15:54:01.255] [INFO] default - Image file name:1dc934d3333163ac0420fbf1c56d7941
+[2024-07-02T15:54:01.259] [INFO] default - Third party handle image:undefined
+[2024-07-02T15:54:01.259] [INFO] default - ADD IMAGES SUCCESSFULLY.
+[2024-07-02T15:54:06.266] [INFO] default - DELETE IMAGE bdd251a10d75e6f9b4b9cbad424ccc1f SUCCESSFULLY
+[2024-07-02T15:54:06.268] [INFO] default - DELETE IMAGE 1dc934d3333163ac0420fbf1c56d7941 SUCCESSFULLY
+[2024-07-02T15:59:40.517] [INFO] default - Image original name:share.png
+[2024-07-02T15:59:40.517] [INFO] default - Image file name:c70d7ebf795b79bbe40b5693600181a6
+[2024-07-02T15:59:40.523] [INFO] default - Third party handle image:undefined
+[2024-07-02T15:59:40.523] [INFO] default - Image original name:curved-left-arrow.png
+[2024-07-02T15:59:40.524] [INFO] default - Image file name:1d8dc0156f080c3da27ea2199237aef1
+[2024-07-02T15:59:40.530] [INFO] default - Third party handle image:undefined
+[2024-07-02T15:59:40.531] [INFO] default - ADD IMAGES SUCCESSFULLY.
+[2024-07-02T15:59:45.540] [INFO] default - DELETE IMAGE c70d7ebf795b79bbe40b5693600181a6 SUCCESSFULLY
+[2024-07-02T15:59:45.543] [INFO] default - DELETE IMAGE 1d8dc0156f080c3da27ea2199237aef1 SUCCESSFULLY
+[2024-07-02T16:00:09.143] [INFO] default - Image original name:share.png
+[2024-07-02T16:00:09.143] [INFO] default - Image file name:4946c59f7ff020fc33321c034b7754f1
+[2024-07-02T16:00:09.148] [INFO] default - Third party handle image:undefined
+[2024-07-02T16:00:09.148] [INFO] default - Image original name:curved-left-arrow.png
+[2024-07-02T16:00:09.148] [INFO] default - Image file name:a4ee7d393b8b5836143d4697969a20bf
+[2024-07-02T16:00:09.151] [INFO] default - Third party handle image:undefined
+[2024-07-02T16:00:09.152] [INFO] default - ADD IMAGES SUCCESSFULLY.
+[2024-07-02T16:00:14.158] [INFO] default - DELETE IMAGE 4946c59f7ff020fc33321c034b7754f1 SUCCESSFULLY
+[2024-07-02T16:00:14.162] [INFO] default - DELETE IMAGE a4ee7d393b8b5836143d4697969a20bf SUCCESSFULLY
+[2024-07-02T16:00:27.364] [INFO] default - Image original name:share.png
+[2024-07-02T16:00:27.364] [INFO] default - Image file name:cfd1d76200359722e33a2d9b03be0ef8
+[2024-07-02T16:00:27.383] [INFO] default - Image original name:curved-left-arrow.png
+[2024-07-02T16:00:27.383] [INFO] default - Image file name:5302c4056f0a2a4e216f20581c4532d6
+[2024-07-02T16:00:27.387] [INFO] default - ADD IMAGES SUCCESSFULLY.
+[2024-07-02T16:00:32.403] [INFO] default - DELETE IMAGE cfd1d76200359722e33a2d9b03be0ef8 SUCCESSFULLY
+[2024-07-02T16:00:32.405] [INFO] default - DELETE IMAGE 5302c4056f0a2a4e216f20581c4532d6 SUCCESSFULLY
+[2024-07-02T16:02:37.325] [INFO] default - Image original name:share.png
+[2024-07-02T16:02:37.325] [INFO] default - Image file name:54535b430a509d239a40646656034673
+[2024-07-02T16:02:37.334] [INFO] default - Image original name:curved-left-arrow.png
+[2024-07-02T16:02:37.334] [INFO] default - Image file name:cdc7a198f1a88338adab14855102b445
+[2024-07-02T16:02:37.339] [INFO] default - ADD IMAGES SUCCESSFULLY.
+[2024-07-02T16:02:42.342] [INFO] default - DELETE IMAGE 54535b430a509d239a40646656034673 SUCCESSFULLY
+[2024-07-02T16:02:42.346] [INFO] default - DELETE IMAGE cdc7a198f1a88338adab14855102b445 SUCCESSFULLY
+[2024-07-02T16:03:20.081] [INFO] default - Image original name:share.png
+[2024-07-02T16:03:20.081] [INFO] default - Image file name:bdb2835101ba62f41ff8d1be65278918
+[2024-07-02T16:03:20.090] [INFO] default - Image original name:curved-left-arrow.png
+[2024-07-02T16:03:20.090] [INFO] default - Image file name:9acfed6a60634600779ea5a4fb10d100
+[2024-07-02T16:03:20.096] [INFO] default - ADD IMAGES SUCCESSFULLY.
+[2024-07-02T16:03:25.106] [INFO] default - DELETE IMAGE bdb2835101ba62f41ff8d1be65278918 SUCCESSFULLY
+[2024-07-02T16:03:25.107] [INFO] default - DELETE IMAGE 9acfed6a60634600779ea5a4fb10d100 SUCCESSFULLY
+[2024-07-02T16:03:57.557] [INFO] default - Update Topic List Successfully.
+[2024-07-02T16:10:02.230] [INFO] default - Image original name:share.png
+[2024-07-02T16:10:02.230] [INFO] default - Image file name:619a0000d89d3e7ae9822c28c9c521a2
+[2024-07-02T16:10:02.236] [INFO] default - Image original name:curved-left-arrow.png
+[2024-07-02T16:10:02.236] [INFO] default - Image file name:05c529762b206f635e0a67c0369873da
+[2024-07-02T16:10:02.239] [INFO] default - ADD IMAGES SUCCESSFULLY.
+[2024-07-02T16:10:07.245] [INFO] default - DELETE IMAGE 619a0000d89d3e7ae9822c28c9c521a2 SUCCESSFULLY
+[2024-07-02T16:10:07.246] [INFO] default - DELETE IMAGE 05c529762b206f635e0a67c0369873da SUCCESSFULLY
+[2024-07-02T16:10:23.278] [INFO] default - Image original name:share.png
+[2024-07-02T16:10:23.278] [INFO] default - Image file name:3ba4df20a4b6c8282daadea4d28a1eb6
+[2024-07-02T16:10:23.285] [INFO] default - Image original name:curved-left-arrow.png
+[2024-07-02T16:10:23.285] [INFO] default - Image file name:10d645b79d31ffa631a5d899ee91a3bd
+[2024-07-02T16:10:23.291] [INFO] default - ADD IMAGES SUCCESSFULLY.
+[2024-07-02T16:10:28.300] [INFO] default - DELETE IMAGE 3ba4df20a4b6c8282daadea4d28a1eb6 SUCCESSFULLY
+[2024-07-02T16:10:28.301] [INFO] default - DELETE IMAGE 10d645b79d31ffa631a5d899ee91a3bd SUCCESSFULLY
+[2024-07-02T16:10:36.932] [INFO] default - Image original name:share.png
+[2024-07-02T16:10:36.932] [INFO] default - Image file name:dbcfbce6b1a989cbaeb969287c8e431a
+[2024-07-02T16:10:36.942] [INFO] default - Image original name:curved-left-arrow.png
+[2024-07-02T16:10:36.942] [INFO] default - Image file name:eb9b266e7f08315b281b20fec74d6c25
+[2024-07-02T16:10:36.965] [INFO] default - ADD IMAGES SUCCESSFULLY.
+[2024-07-02T16:10:41.970] [INFO] default - DELETE IMAGE dbcfbce6b1a989cbaeb969287c8e431a SUCCESSFULLY
+[2024-07-02T16:10:41.971] [INFO] default - DELETE IMAGE eb9b266e7f08315b281b20fec74d6c25 SUCCESSFULLY
+[2024-07-02T16:10:50.199] [INFO] default - Image original name:share.png
+[2024-07-02T16:10:50.200] [INFO] default - Image file name:720c53c22a89297a57adaced35661bd2
+[2024-07-02T16:10:50.208] [INFO] default - Image original name:curved-left-arrow.png
+[2024-07-02T16:10:50.208] [INFO] default - Image file name:d0cf3b05102cc9110451db81d86538ba
+[2024-07-02T16:10:50.211] [INFO] default - ADD IMAGES SUCCESSFULLY.
+[2024-07-02T16:10:55.216] [INFO] default - DELETE IMAGE 720c53c22a89297a57adaced35661bd2 SUCCESSFULLY
+[2024-07-02T16:10:55.217] [INFO] default - DELETE IMAGE d0cf3b05102cc9110451db81d86538ba SUCCESSFULLY
+[2024-07-02T16:11:22.149] [INFO] default - Image original name:share.png
+[2024-07-02T16:11:22.149] [INFO] default - Image file name:d84a526fdf093b7bca1d7bc2c8e8d026
+[2024-07-02T16:11:22.156] [INFO] default - Image original name:curved-left-arrow.png
+[2024-07-02T16:11:22.157] [INFO] default - Image file name:008e6fc4800d964addbdb4f7ca60e457
+[2024-07-02T16:11:22.162] [INFO] default - ADD IMAGES SUCCESSFULLY.
+[2024-07-02T16:11:27.169] [INFO] default - DELETE IMAGE d84a526fdf093b7bca1d7bc2c8e8d026 SUCCESSFULLY
+[2024-07-02T16:11:27.170] [INFO] default - DELETE IMAGE 008e6fc4800d964addbdb4f7ca60e457 SUCCESSFULLY
+[2024-07-02T16:11:31.691] [INFO] default - Image original name:share.png
+[2024-07-02T16:11:31.691] [INFO] default - Image file name:333af5d44049eeadd6d075889951fb9a
+[2024-07-02T16:11:31.697] [INFO] default - Image original name:curved-left-arrow.png
+[2024-07-02T16:11:31.697] [INFO] default - Image file name:29c1ebc9fa6af61051ea8889c40abaec
+[2024-07-02T16:11:31.702] [INFO] default - ADD IMAGES SUCCESSFULLY.
+[2024-07-02T16:11:36.705] [INFO] default - DELETE IMAGE 333af5d44049eeadd6d075889951fb9a SUCCESSFULLY
+[2024-07-02T16:11:36.706] [INFO] default - DELETE IMAGE 29c1ebc9fa6af61051ea8889c40abaec SUCCESSFULLY
+[2024-07-02T16:11:55.665] [INFO] default - Image original name:share.png
+[2024-07-02T16:11:55.665] [INFO] default - Image file name:43a9fefceb38c7a9c8ef70fef64b44c8
+[2024-07-02T16:11:55.672] [INFO] default - Image original name:curved-left-arrow.png
+[2024-07-02T16:11:55.672] [INFO] default - Image file name:ee733155a4141ce886d8006697e6e8fb
+[2024-07-02T16:11:55.678] [INFO] default - ADD IMAGES SUCCESSFULLY.
+[2024-07-02T16:12:00.692] [INFO] default - DELETE IMAGE 43a9fefceb38c7a9c8ef70fef64b44c8 SUCCESSFULLY
+[2024-07-02T16:12:00.693] [INFO] default - DELETE IMAGE ee733155a4141ce886d8006697e6e8fb SUCCESSFULLY
+[2024-07-02T16:14:14.576] [INFO] default - Image original name:share.png
+[2024-07-02T16:14:14.576] [INFO] default - Image file name:fcc500dd841d70fb5ba3325615bcea22
+[2024-07-02T16:14:14.582] [INFO] default - Third party handle image:undefined
+[2024-07-02T16:14:14.582] [INFO] default - Image original name:curved-left-arrow.png
+[2024-07-02T16:14:14.582] [INFO] default - Image file name:0c40f53a256affbd9efc133a5a579864
+[2024-07-02T16:14:14.585] [INFO] default - Third party handle image:undefined
+[2024-07-02T16:14:14.586] [INFO] default - ADD IMAGES SUCCESSFULLY.
+[2024-07-02T16:14:19.588] [INFO] default - DELETE IMAGE fcc500dd841d70fb5ba3325615bcea22 SUCCESSFULLY
+[2024-07-02T16:14:19.589] [INFO] default - DELETE IMAGE 0c40f53a256affbd9efc133a5a579864 SUCCESSFULLY
+[2024-07-02T16:15:59.349] [INFO] default - Update Topic List Successfully.
+[2024-07-02T16:16:35.586] [INFO] default - Image original name:share.png
+[2024-07-02T16:16:35.586] [INFO] default - Image file name:990cbf484ac3f7bda579bdda1fd8029b
+[2024-07-02T16:16:35.595] [INFO] default - Third party handle image:undefined
+[2024-07-02T16:16:35.596] [INFO] default - Image original name:curved-left-arrow.png
+[2024-07-02T16:16:35.596] [INFO] default - Image file name:1fbbc169e4888bc122fa96be0d06a6bb
+[2024-07-02T16:16:35.598] [INFO] default - Third party handle image:undefined
+[2024-07-02T16:16:35.599] [INFO] default - ADD IMAGES SUCCESSFULLY.
+[2024-07-02T16:16:40.611] [INFO] default - DELETE IMAGE 990cbf484ac3f7bda579bdda1fd8029b SUCCESSFULLY
+[2024-07-02T16:16:40.613] [INFO] default - DELETE IMAGE 1fbbc169e4888bc122fa96be0d06a6bb SUCCESSFULLY
+[2024-07-02T16:16:48.564] [INFO] default - Image original name:share.png
+[2024-07-02T16:16:48.564] [INFO] default - Image file name:93f11a7a7b3b5fe39ff7b094cef6d93c
+[2024-07-02T16:16:48.568] [INFO] default - Third party handle image:undefined
+[2024-07-02T16:16:48.569] [INFO] default - Image original name:curved-left-arrow.png
+[2024-07-02T16:16:48.569] [INFO] default - Image file name:a1f79373c7e91cd8023ddea1238b365c
+[2024-07-02T16:16:48.574] [INFO] default - Third party handle image:undefined
+[2024-07-02T16:16:48.575] [INFO] default - ADD IMAGES SUCCESSFULLY.
+[2024-07-02T16:16:53.591] [INFO] default - DELETE IMAGE 93f11a7a7b3b5fe39ff7b094cef6d93c SUCCESSFULLY
+[2024-07-02T16:16:53.594] [INFO] default - DELETE IMAGE a1f79373c7e91cd8023ddea1238b365c SUCCESSFULLY
+[2024-07-02T16:17:15.230] [INFO] default - Image original name:share.png
+[2024-07-02T16:17:15.230] [INFO] default - Image file name:b430f22633fae38378b04db6ab706405
+[2024-07-02T16:17:15.235] [INFO] default - Third party handle image:undefined
+[2024-07-02T16:17:15.235] [INFO] default - Image original name:curved-left-arrow.png
+[2024-07-02T16:17:15.235] [INFO] default - Image file name:fd62c72ec8323d5131b14711dd9bd2a3
+[2024-07-02T16:17:15.240] [INFO] default - Third party handle image:undefined
+[2024-07-02T16:17:15.241] [INFO] default - ADD IMAGES SUCCESSFULLY.
+[2024-07-02T16:17:20.260] [INFO] default - DELETE IMAGE b430f22633fae38378b04db6ab706405 SUCCESSFULLY
+[2024-07-02T16:17:20.262] [INFO] default - DELETE IMAGE fd62c72ec8323d5131b14711dd9bd2a3 SUCCESSFULLY
+[2024-07-02T16:18:14.049] [INFO] default - Image original name:share.png
+[2024-07-02T16:18:14.049] [INFO] default - Image file name:36b5dd81f3d1b570418e12bf59e1a049
+[2024-07-02T16:18:14.053] [INFO] default - Third party handle image:undefined
+[2024-07-02T16:18:14.054] [INFO] default - Image original name:curved-left-arrow.png
+[2024-07-02T16:18:14.054] [INFO] default - Image file name:f851d91e2b23ea5522867820027fdbc0
+[2024-07-02T16:18:14.057] [INFO] default - Third party handle image:undefined
+[2024-07-02T16:18:14.058] [INFO] default - ADD IMAGES SUCCESSFULLY.
+[2024-07-02T16:18:19.068] [INFO] default - DELETE IMAGE 36b5dd81f3d1b570418e12bf59e1a049 SUCCESSFULLY
+[2024-07-02T16:18:19.070] [INFO] default - DELETE IMAGE f851d91e2b23ea5522867820027fdbc0 SUCCESSFULLY
+[2024-07-02T16:19:00.813] [INFO] default - Image original name:share.png
+[2024-07-02T16:19:00.814] [INFO] default - Image file name:0b42ca46558f54f1e236354be9890bc8
+[2024-07-02T16:19:00.818] [INFO] default - Third party handle image:undefined
+[2024-07-02T16:19:00.818] [INFO] default - Image original name:curved-left-arrow.png
+[2024-07-02T16:19:00.818] [INFO] default - Image file name:51ea2aabf1deaba4e118f085a76c9644
+[2024-07-02T16:19:00.822] [INFO] default - Third party handle image:undefined
+[2024-07-02T16:19:00.823] [INFO] default - ADD IMAGES SUCCESSFULLY.
+[2024-07-02T16:19:05.831] [INFO] default - DELETE IMAGE 0b42ca46558f54f1e236354be9890bc8 SUCCESSFULLY
+[2024-07-02T16:19:05.833] [INFO] default - DELETE IMAGE 51ea2aabf1deaba4e118f085a76c9644 SUCCESSFULLY
+[2024-07-02T16:27:56.103] [INFO] default - Update Topic List Successfully.
+[2024-07-02T16:28:08.257] [INFO] default - Image original name:share.png
+[2024-07-02T16:28:08.258] [INFO] default - Image file name:fe0e7af6ab8231d0f6a6f70cf6584ebe
+[2024-07-02T16:28:08.264] [INFO] default - Third party handle image:undefined
+[2024-07-02T16:28:08.264] [INFO] default - Image original name:curved-left-arrow.png
+[2024-07-02T16:28:08.264] [INFO] default - Image file name:2546892b5cf8348229b63291c1415e26
+[2024-07-02T16:28:08.267] [INFO] default - Third party handle image:undefined
+[2024-07-02T16:28:08.267] [INFO] default - ADD IMAGES SUCCESSFULLY.
+[2024-07-02T16:28:13.319] [INFO] default - DELETE IMAGE fe0e7af6ab8231d0f6a6f70cf6584ebe SUCCESSFULLY
+[2024-07-02T16:28:13.320] [INFO] default - DELETE IMAGE 2546892b5cf8348229b63291c1415e26 SUCCESSFULLY
+[2024-07-02T16:28:20.080] [INFO] default - Image original name:share.png
+[2024-07-02T16:28:20.081] [INFO] default - Image file name:b2752339eadef7740191dfe1a07542b4
+[2024-07-02T16:28:20.123] [INFO] default - Image original name:curved-left-arrow.png
+[2024-07-02T16:28:20.123] [INFO] default - Image file name:b3feadd40fb91f3d63732d5e158d787d
+[2024-07-02T16:28:20.131] [INFO] default - ADD IMAGES SUCCESSFULLY.
+[2024-07-02T16:28:25.146] [INFO] default - DELETE IMAGE b2752339eadef7740191dfe1a07542b4 SUCCESSFULLY
+[2024-07-02T16:28:25.147] [INFO] default - DELETE IMAGE b3feadd40fb91f3d63732d5e158d787d SUCCESSFULLY
+[2024-07-02T16:29:24.557] [INFO] default - Image original name:share.png
+[2024-07-02T16:29:24.557] [INFO] default - Image file name:eb91e78441a3c9a7309ada43a0e17ea8
+[2024-07-02T16:29:24.565] [INFO] default - Image original name:curved-left-arrow.png
+[2024-07-02T16:29:24.565] [INFO] default - Image file name:96da4051ecbbbe269befea40fb5f54b6
+[2024-07-02T16:29:24.571] [INFO] default - ADD IMAGES SUCCESSFULLY.
+[2024-07-02T16:29:29.576] [INFO] default - DELETE IMAGE eb91e78441a3c9a7309ada43a0e17ea8 SUCCESSFULLY
+[2024-07-02T16:29:29.578] [INFO] default - DELETE IMAGE 96da4051ecbbbe269befea40fb5f54b6 SUCCESSFULLY
+[2024-07-02T16:40:23.064] [INFO] default - Update Topic List Successfully.
+[2024-07-02T16:52:19.892] [INFO] default - Update Topic List Successfully.
+[2024-07-02T16:57:16.977] [INFO] default - Close Log SSE Successfully.
+[2024-07-02T16:57:42.541] [INFO] default - Access about page successful
+[2024-07-02T16:57:43.659] [INFO] default - get product-detail Rubik's Coach Cube successfull
+[2024-07-02T16:57:43.693] [INFO] default - get product-detail Rubik's 3x3 successfull
+[2024-07-02T16:57:43.718] [INFO] default - get product-detail Rubik’s Apprentice 2x2 successfull
+[2024-07-02T16:57:44.434] [INFO] default - GET DEVICE LIST SUCCESSFULLY FOR USER helloman123
+[2024-07-02T16:57:59.027] [INFO] default - Image original name:rubik.png
+[2024-07-02T16:57:59.027] [INFO] default - Image file name:7e2c0121e1ce8680277cbf797b9d885f
+[2024-07-02T16:57:59.050] [INFO] default - Third party handle image:undefined
+[2024-07-02T16:57:59.050] [INFO] default - Image original name:full1.jpg
+[2024-07-02T16:57:59.050] [INFO] default - Image file name:cbe8d251cf81e0df83edcaad4b20238a
+[2024-07-02T16:57:59.053] [INFO] default - Third party handle image:undefined
+[2024-07-02T16:57:59.053] [INFO] default - ADD IMAGES SUCCESSFULLY.
+[2024-07-02T16:58:04.062] [INFO] default - DELETE IMAGE 7e2c0121e1ce8680277cbf797b9d885f SUCCESSFULLY
+[2024-07-02T16:58:04.063] [INFO] default - DELETE IMAGE cbe8d251cf81e0df83edcaad4b20238a SUCCESSFULLY
+[2024-07-02T16:59:34.270] [INFO] default - Image original name:rubik.png
+[2024-07-02T16:59:34.270] [INFO] default - Image file name:111773ed1530881ad1edbd75e4958023
+[2024-07-02T16:59:34.296] [INFO] default - Image original name:full1.jpg
+[2024-07-02T16:59:34.296] [INFO] default - Image file name:e31b549dc87c384c1e599954795fccbe
+[2024-07-02T16:59:34.300] [INFO] default - ADD IMAGES SUCCESSFULLY.
+[2024-07-02T16:59:39.312] [INFO] default - DELETE IMAGE 111773ed1530881ad1edbd75e4958023 SUCCESSFULLY
+[2024-07-02T16:59:39.315] [INFO] default - DELETE IMAGE e31b549dc87c384c1e599954795fccbe SUCCESSFULLY
+[2024-07-02T16:59:51.973] [INFO] default - Image original name:rubik.png
+[2024-07-02T16:59:51.973] [INFO] default - Image file name:ab27946df6fdb396049686953a1814f1
+[2024-07-02T16:59:51.979] [INFO] default - Third party handle image:undefined
+[2024-07-02T16:59:51.980] [INFO] default - Image original name:full1.jpg
+[2024-07-02T16:59:51.980] [INFO] default - Image file name:473a1091002aa582a6fb7d7b435323d8
+[2024-07-02T16:59:51.984] [INFO] default - Third party handle image:undefined
+[2024-07-02T16:59:51.984] [INFO] default - ADD IMAGES SUCCESSFULLY.
+[2024-07-02T16:59:52.736] [INFO] default - Image original name:rubik.png
+[2024-07-02T16:59:52.737] [INFO] default - Image file name:55f7ffd9e2747e6f2f4e168089a74c81
+[2024-07-02T16:59:52.742] [INFO] default - Third party handle image:undefined
+[2024-07-02T16:59:52.742] [INFO] default - Image original name:full1.jpg
+[2024-07-02T16:59:52.742] [INFO] default - Image file name:9034a0cdebaf8f70f2a9cd91d5f08f08
+[2024-07-02T16:59:52.746] [INFO] default - Third party handle image:undefined
+[2024-07-02T16:59:52.747] [INFO] default - ADD IMAGES SUCCESSFULLY.
+[2024-07-02T16:59:56.991] [INFO] default - DELETE IMAGE ab27946df6fdb396049686953a1814f1 SUCCESSFULLY
+[2024-07-02T16:59:56.992] [INFO] default - DELETE IMAGE 473a1091002aa582a6fb7d7b435323d8 SUCCESSFULLY
+[2024-07-02T16:59:57.748] [INFO] default - DELETE IMAGE 55f7ffd9e2747e6f2f4e168089a74c81 SUCCESSFULLY
+[2024-07-02T16:59:57.749] [INFO] default - DELETE IMAGE 9034a0cdebaf8f70f2a9cd91d5f08f08 SUCCESSFULLY
+[2024-07-02T17:00:30.764] [INFO] default - Image original name:rubik.png
+[2024-07-02T17:00:30.765] [INFO] default - Image file name:d9c397ba7b08364d44b9535c159a86c5
+[2024-07-02T17:00:30.773] [INFO] default - Image original name:full1.jpg
+[2024-07-02T17:00:30.773] [INFO] default - Image file name:8ac9c28ff1121894c9470ba571e15f1e
+[2024-07-02T17:00:30.778] [INFO] default - ADD IMAGES SUCCESSFULLY.
+[2024-07-02T17:00:35.782] [INFO] default - DELETE IMAGE d9c397ba7b08364d44b9535c159a86c5 SUCCESSFULLY
+[2024-07-02T17:00:35.783] [INFO] default - DELETE IMAGE 8ac9c28ff1121894c9470ba571e15f1e SUCCESSFULLY
+[2024-07-02T17:02:09.327] [INFO] default - Image original name:rubik.png
+[2024-07-02T17:02:09.327] [INFO] default - Image file name:4e5b2a0903e4d5dea7e78016eb573ada
+[2024-07-02T17:02:09.335] [INFO] default - Image original name:full1.jpg
+[2024-07-02T17:02:09.335] [INFO] default - Image file name:2f42e2e2dcee1e83245c45146fee0101
+[2024-07-02T17:02:09.341] [INFO] default - ADD IMAGES SUCCESSFULLY.
+[2024-07-02T17:02:14.348] [INFO] default - DELETE IMAGE 4e5b2a0903e4d5dea7e78016eb573ada SUCCESSFULLY
+[2024-07-02T17:02:14.350] [INFO] default - DELETE IMAGE 2f42e2e2dcee1e83245c45146fee0101 SUCCESSFULLY
+[2024-07-02T17:02:36.743] [INFO] default - Image original name:rubik.png
+[2024-07-02T17:02:36.743] [INFO] default - Image file name:d5d8cab6f111487e9eee8a77b4f029c8
+[2024-07-02T17:02:36.766] [INFO] default - Image original name:full1.jpg
+[2024-07-02T17:02:36.766] [INFO] default - Image file name:4dac319ac407cc0a49530dc4da51b01e
+[2024-07-02T17:02:36.770] [INFO] default - ADD IMAGES SUCCESSFULLY.
+[2024-07-02T17:02:41.773] [INFO] default - DELETE IMAGE d5d8cab6f111487e9eee8a77b4f029c8 SUCCESSFULLY
+[2024-07-02T17:02:41.774] [INFO] default - DELETE IMAGE 4dac319ac407cc0a49530dc4da51b01e SUCCESSFULLY
+[2024-07-02T17:04:22.030] [INFO] default - Update Topic List Successfully.
+[2024-07-02T17:10:09.641] [INFO] default - Image original name:rubik.png
+[2024-07-02T17:10:09.641] [INFO] default - Image file name:ecfbae5715a3de9f987aa2056c4a597f
+[2024-07-02T17:10:09.668] [INFO] default - Image original name:full1.jpg
+[2024-07-02T17:10:09.668] [INFO] default - Image file name:ab706197745c16ed5ed5118eee41103f
+[2024-07-02T17:10:09.681] [INFO] default - ADD IMAGES SUCCESSFULLY.
+[2024-07-02T17:10:14.685] [INFO] default - DELETE IMAGE ecfbae5715a3de9f987aa2056c4a597f SUCCESSFULLY
+[2024-07-02T17:10:14.686] [INFO] default - DELETE IMAGE ab706197745c16ed5ed5118eee41103f SUCCESSFULLY
+[2024-07-02T17:10:59.447] [INFO] default - Image original name:rubik.png
+[2024-07-02T17:10:59.448] [INFO] default - Image file name:abb4551c1d97eb141e310f318fe3e8e2
+[2024-07-02T17:10:59.454] [INFO] default - Image original name:full1.jpg
+[2024-07-02T17:10:59.454] [INFO] default - Image file name:faea2066c04bfa828910ffc5298ed873
+[2024-07-02T17:10:59.462] [INFO] default - ADD IMAGES SUCCESSFULLY.
+[2024-07-02T17:11:04.474] [INFO] default - DELETE IMAGE abb4551c1d97eb141e310f318fe3e8e2 SUCCESSFULLY
+[2024-07-02T17:11:04.475] [INFO] default - DELETE IMAGE faea2066c04bfa828910ffc5298ed873 SUCCESSFULLY
+[2024-07-02T17:14:57.500] [INFO] default - Image original name:rubik.png
+[2024-07-02T17:14:57.500] [INFO] default - Image file name:0d995cc1a515f1097ce88f58db017321
+[2024-07-02T17:14:57.512] [INFO] default - Image original name:full1.jpg
+[2024-07-02T17:14:57.512] [INFO] default - Image file name:88bc262708e1794561a8eeb8725efd2d
+[2024-07-02T17:14:57.517] [INFO] default - ADD IMAGES SUCCESSFULLY.
+[2024-07-02T17:15:02.529] [INFO] default - DELETE IMAGE 0d995cc1a515f1097ce88f58db017321 SUCCESSFULLY
+[2024-07-02T17:15:02.534] [INFO] default - DELETE IMAGE 88bc262708e1794561a8eeb8725efd2d SUCCESSFULLY
+[2024-07-02T17:15:41.076] [INFO] default - Image original name:rubik.png
+[2024-07-02T17:15:41.076] [INFO] default - Image file name:15f7e73c46103e2b1dc724375c23d87d
+[2024-07-02T17:15:41.086] [INFO] default - Image original name:full1.jpg
+[2024-07-02T17:15:41.086] [INFO] default - Image file name:6e209f1364ed31f7fb65a46d86905ee7
+[2024-07-02T17:15:41.091] [INFO] default - ADD IMAGES SUCCESSFULLY.
+[2024-07-02T17:15:46.100] [INFO] default - DELETE IMAGE 15f7e73c46103e2b1dc724375c23d87d SUCCESSFULLY
+[2024-07-02T17:15:46.103] [INFO] default - DELETE IMAGE 6e209f1364ed31f7fb65a46d86905ee7 SUCCESSFULLY
+[2024-07-02T17:16:23.946] [INFO] default - Update Topic List Successfully.
+[2024-07-02T17:28:21.099] [INFO] default - Update Topic List Successfully.
+[2024-07-02T17:40:22.876] [INFO] default - Update Topic List Successfully.
+[2024-07-02T17:52:20.076] [INFO] default - Update Topic List Successfully.
+[2024-07-02T18:02:57.492] [INFO] default - Close Log SSE Successfully.
+[2024-07-02T18:03:23.042] [INFO] default - Access about page successful
+[2024-07-02T18:03:25.382] [INFO] default - get product-detail Rubik's Coach Cube successfull
+[2024-07-02T18:03:25.394] [INFO] default - get product-detail Rubik's 3x3 successfull
+[2024-07-02T18:03:25.407] [INFO] default - get product-detail Rubik’s Apprentice 2x2 successfull
+[2024-07-02T18:03:26.488] [INFO] default - GET DEVICE LIST SUCCESSFULLY FOR USER helloman123
+[2024-07-02T18:03:40.760] [INFO] default - Image original name:Rubik's_cube_colors.svg.png
+[2024-07-02T18:03:40.760] [INFO] default - Image file name:53121321ff9403da1a5cf5278aa0871b
+[2024-07-02T18:03:40.789] [INFO] default - Image original name:rubik.png
+[2024-07-02T18:03:40.789] [INFO] default - Image file name:72478dc80d75137deb8d915540cceacd
+[2024-07-02T18:03:40.795] [INFO] default - ADD IMAGES SUCCESSFULLY.
+[2024-07-02T18:03:45.803] [INFO] default - DELETE IMAGE 53121321ff9403da1a5cf5278aa0871b SUCCESSFULLY
+[2024-07-02T18:03:45.804] [INFO] default - DELETE IMAGE 72478dc80d75137deb8d915540cceacd SUCCESSFULLY
+[2024-07-02T18:04:21.811] [INFO] default - Update Topic List Successfully.
+[2024-07-02T18:04:48.485] [INFO] default - Image original name:Rubik's_cube_colors.svg.png
+[2024-07-02T18:04:48.485] [INFO] default - Image file name:f83e8973f0dba704b62fd464cd06a1dd
+[2024-07-02T18:04:48.492] [INFO] default - Image original name:rubik.png
+[2024-07-02T18:04:48.492] [INFO] default - Image file name:a833dbad03514e0b9d3afc08989296cc
+[2024-07-02T18:04:48.499] [INFO] default - ADD IMAGES SUCCESSFULLY.
+[2024-07-02T18:04:53.505] [INFO] default - DELETE IMAGE f83e8973f0dba704b62fd464cd06a1dd SUCCESSFULLY
+[2024-07-02T18:04:53.506] [INFO] default - DELETE IMAGE a833dbad03514e0b9d3afc08989296cc SUCCESSFULLY
+[2024-07-02T18:05:12.434] [INFO] default - Image original name:Rubik's_cube_colors.svg.png
+[2024-07-02T18:05:12.434] [INFO] default - Image file name:c2b045ddedb75dc50084afaec5587270
+[2024-07-02T18:05:12.442] [INFO] default - Image original name:rubik.png
+[2024-07-02T18:05:12.443] [INFO] default - Image file name:3dd4296f079c8f13f236edd055e609d6
+[2024-07-02T18:05:12.448] [INFO] default - ADD IMAGES SUCCESSFULLY.
+[2024-07-02T18:05:13.490] [INFO] default - Image original name:Rubik's_cube_colors.svg.png
+[2024-07-02T18:05:13.490] [INFO] default - Image file name:8fe0ee58094474ddbd1a78179ac94f81
+[2024-07-02T18:05:13.494] [INFO] default - Image original name:rubik.png
+[2024-07-02T18:05:13.494] [INFO] default - Image file name:08a969d17d907d4544240f3748429c9f
+[2024-07-02T18:05:13.500] [INFO] default - ADD IMAGES SUCCESSFULLY.
+[2024-07-02T18:05:17.465] [INFO] default - DELETE IMAGE c2b045ddedb75dc50084afaec5587270 SUCCESSFULLY
+[2024-07-02T18:05:17.467] [INFO] default - DELETE IMAGE 3dd4296f079c8f13f236edd055e609d6 SUCCESSFULLY
+[2024-07-02T18:05:18.504] [INFO] default - DELETE IMAGE 8fe0ee58094474ddbd1a78179ac94f81 SUCCESSFULLY
+[2024-07-02T18:05:18.505] [INFO] default - DELETE IMAGE 08a969d17d907d4544240f3748429c9f SUCCESSFULLY
+[2024-07-02T18:05:27.877] [INFO] default - Image original name:Rubik's_cube_colors.svg.png
+[2024-07-02T18:05:27.877] [INFO] default - Image file name:179eb62a650f222911f39099766221ce
+[2024-07-02T18:05:27.885] [INFO] default - Image original name:rubik.png
+[2024-07-02T18:05:27.885] [INFO] default - Image file name:8cea1058b6b069c54a4f6ad88a1e0309
+[2024-07-02T18:05:27.891] [INFO] default - ADD IMAGES SUCCESSFULLY.
+[2024-07-02T18:05:32.896] [INFO] default - DELETE IMAGE 179eb62a650f222911f39099766221ce SUCCESSFULLY
+[2024-07-02T18:05:32.898] [INFO] default - DELETE IMAGE 8cea1058b6b069c54a4f6ad88a1e0309 SUCCESSFULLY
+[2024-07-02T18:16:23.317] [INFO] default - Update Topic List Successfully.
+[2024-07-02T18:28:19.831] [INFO] default - Update Topic List Successfully.
+[2024-07-02T18:40:21.441] [INFO] default - Update Topic List Successfully.
+[2024-07-02T18:52:22.958] [INFO] default - Update Topic List Successfully.
+[2024-07-02T19:04:24.480] [INFO] default - Update Topic List Successfully.
+[2024-07-02T19:16:21.020] [INFO] default - Update Topic List Successfully.
+[2024-07-02T19:28:22.493] [INFO] default - Update Topic List Successfully.
+[2024-07-02T19:40:23.990] [INFO] default - Update Topic List Successfully.
+[2024-07-02T19:52:20.607] [INFO] default - Update Topic List Successfully.
+[2024-07-02T20:04:22.177] [INFO] default - Update Topic List Successfully.
+[2024-07-02T20:16:23.722] [INFO] default - Update Topic List Successfully.
+[2024-07-02T20:28:20.312] [INFO] default - Update Topic List Successfully.
+[2024-07-02T20:40:21.870] [INFO] default - Update Topic List Successfully.
+[2024-07-02T20:52:23.316] [INFO] default - Update Topic List Successfully.
+[2024-07-02T21:04:19.929] [INFO] default - Update Topic List Successfully.
+[2024-07-02T21:16:21.503] [INFO] default - Update Topic List Successfully.
+[2024-07-02T21:28:23.047] [INFO] default - Update Topic List Successfully.
+[2024-07-02T21:40:24.672] [INFO] default - Update Topic List Successfully.
+[2024-07-02T21:52:21.151] [INFO] default - Update Topic List Successfully.
+[2024-07-02T22:04:22.713] [INFO] default - Update Topic List Successfully.
+[2024-07-02T22:16:24.259] [INFO] default - Update Topic List Successfully.
+[2024-07-02T22:28:20.766] [INFO] default - Update Topic List Successfully.
+[2024-07-02T22:40:22.204] [INFO] default - Update Topic List Successfully.
+[2024-07-02T22:52:23.683] [INFO] default - Update Topic List Successfully.
+[2024-07-02T23:04:20.245] [INFO] default - Update Topic List Successfully.
+[2024-07-02T23:16:21.711] [INFO] default - Update Topic List Successfully.
+[2024-07-02T23:28:23.204] [INFO] default - Update Topic List Successfully.
+[2024-07-02T23:40:24.719] [INFO] default - Update Topic List Successfully.
+[2024-07-02T23:52:21.275] [INFO] default - Update Topic List Successfully.

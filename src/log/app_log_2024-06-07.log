@@ -1,0 +1,67 @@
+[2024-06-11T00:03:29.286] [INFO] default - Update Topic List Successfully.
+[2024-06-11T00:15:31.183] [INFO] default - Update Topic List Successfully.
+[2024-06-11T00:27:27.783] [INFO] default - Update Topic List Successfully.
+[2024-06-11T00:39:29.446] [INFO] default - Update Topic List Successfully.
+[2024-06-11T00:51:31.289] [INFO] default - Update Topic List Successfully.
+[2024-06-11T01:03:27.909] [INFO] default - Update Topic List Successfully.
+[2024-06-11T01:15:29.618] [INFO] default - Update Topic List Successfully.
+[2024-06-11T01:27:31.274] [INFO] default - Update Topic List Successfully.
+[2024-06-11T01:39:27.900] [INFO] default - Update Topic List Successfully.
+[2024-06-11T01:51:29.669] [INFO] default - Update Topic List Successfully.
+[2024-06-11T02:03:31.223] [INFO] default - Update Topic List Successfully.
+[2024-06-11T02:15:28.018] [INFO] default - Update Topic List Successfully.
+[2024-06-11T02:27:29.682] [INFO] default - Update Topic List Successfully.
+[2024-06-11T02:39:31.337] [INFO] default - Update Topic List Successfully.
+[2024-06-11T02:51:28.024] [INFO] default - Update Topic List Successfully.
+[2024-06-11T03:03:30.040] [INFO] default - Update Topic List Successfully.
+[2024-06-11T03:15:31.773] [INFO] default - Update Topic List Successfully.
+[2024-06-11T03:27:28.338] [INFO] default - Update Topic List Successfully.
+[2024-06-11T03:39:29.933] [INFO] default - Update Topic List Successfully.
+[2024-06-11T03:51:31.488] [INFO] default - Update Topic List Successfully.
+[2024-06-11T04:03:28.145] [INFO] default - Update Topic List Successfully.
+[2024-06-11T04:15:29.779] [INFO] default - Update Topic List Successfully.
+[2024-06-11T04:27:31.398] [INFO] default - Update Topic List Successfully.
+[2024-06-11T04:39:28.057] [INFO] default - Update Topic List Successfully.
+[2024-06-11T04:51:29.613] [INFO] default - Update Topic List Successfully.
+[2024-06-11T05:03:31.263] [INFO] default - Update Topic List Successfully.
+[2024-06-11T05:15:28.371] [INFO] default - Update Topic List Successfully.
+[2024-06-11T05:27:30.018] [INFO] default - Update Topic List Successfully.
+[2024-06-11T05:39:31.753] [INFO] default - Update Topic List Successfully.
+[2024-06-11T05:51:28.346] [INFO] default - Update Topic List Successfully.
+[2024-06-11T06:03:29.882] [INFO] default - Update Topic List Successfully.
+[2024-06-11T06:15:31.524] [INFO] default - Update Topic List Successfully.
+[2024-06-11T06:27:28.154] [INFO] default - Update Topic List Successfully.
+[2024-06-11T06:39:29.771] [INFO] default - Update Topic List Successfully.
+[2024-06-11T06:51:31.438] [INFO] default - Update Topic List Successfully.
+[2024-06-11T07:03:28.054] [INFO] default - Update Topic List Successfully.
+[2024-06-11T07:15:29.813] [INFO] default - Update Topic List Successfully.
+[2024-06-11T07:27:31.459] [INFO] default - Update Topic List Successfully.
+[2024-06-11T07:39:28.503] [INFO] default - Update Topic List Successfully.
+[2024-06-11T07:51:30.016] [INFO] default - Update Topic List Successfully.
+[2024-06-11T08:03:31.661] [INFO] default - Update Topic List Successfully.
+[2024-06-11T08:15:28.328] [INFO] default - Update Topic List Successfully.
+[2024-06-11T08:27:29.857] [INFO] default - Update Topic List Successfully.
+[2024-06-11T08:39:31.431] [INFO] default - Update Topic List Successfully.
+[2024-06-11T08:51:28.141] [INFO] default - Update Topic List Successfully.
+[2024-06-11T09:03:29.856] [INFO] default - Update Topic List Successfully.
+[2024-06-11T09:15:32.862] [INFO] default - Update Topic List Successfully.
+[2024-06-11T09:27:29.577] [INFO] default - Update Topic List Successfully.
+[2024-06-11T09:39:31.194] [INFO] default - Update Topic List Successfully.
+[2024-06-11T09:51:34.210] [INFO] default - Update Topic List Successfully.
+[2024-06-11T10:03:30.909] [INFO] default - Update Topic List Successfully.
+[2024-06-11T10:15:33.210] [INFO] default - Update Topic List Successfully.
+[2024-06-11T10:27:30.549] [INFO] default - Update Topic List Successfully.
+[2024-06-11T10:30:56.349] [INFO] default - Access about page successful
+[2024-06-11T10:39:32.811] [INFO] default - Update Topic List Successfully.
+[2024-06-11T10:46:21.128] [ERROR] default - Sent OTP 016304 failed:The number +8490674XXXX is unverified. Trial accounts cannot send messages to unverified numbers; verify +8490674XXXX at twilio.com/user/account/phone-numbers/verified, or purchase a Twilio number to send messages to unverified numbers
+[2024-06-11T10:51:35.254] [INFO] default - Update Topic List Successfully.
+[2024-06-11T11:03:32.482] [INFO] default - Update Topic List Successfully.
+[2024-06-11T11:04:41.804] [ERROR] default - Sent OTP 016304 failed:Invalid 'To' Phone Number: 090674XXXX
+[2024-06-11T11:04:47.846] [ERROR] default - Sent OTP 016304 failed:Invalid 'To' Phone Number: 8490674XXXX
+[2024-06-11T11:04:52.966] [ERROR] default - Sent OTP 016304 failed:The number +8490674XXXX is unverified. Trial accounts cannot send messages to unverified numbers; verify +8490674XXXX at twilio.com/user/account/phone-numbers/verified, or purchase a Twilio number to send messages to unverified numbers
+[2024-06-11T11:15:30.003] [INFO] default - Update Topic List Successfully.
+[2024-06-11T11:27:32.844] [INFO] default - Update Topic List Successfully.
+[2024-06-11T11:39:30.047] [INFO] default - Update Topic List Successfully.
+[2024-06-11T11:51:32.139] [INFO] default - Update Topic List Successfully.
+[2024-06-11T12:00:03.211] [ERROR] default - Sent OTP 016304 failed:The number +84 906 744XXXX is unverified. Trial accounts cannot send messages to unverified numbers; verify +84 906 744XXXX at twilio.com/user/account/phone-numbers/verified, or purchase a Twilio number to send messages to unverified numbers
+[2024-06-11T12:00:15.872] [ERROR] default - Sent OTP 016304 failed:The number +84 906 744XXXX is unverified. Trial accounts cannot send messages to unverified numbers; verify +84 906 744XXXX at twilio.com/user/account/phone-numbers/verified, or purchase a Twilio number to send messages to unverified numbers
