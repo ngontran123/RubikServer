@@ -563,7 +563,7 @@ try
       console.log(img.filename);
     }
     formData.append("original_cube",original_cube);
-    var response = await axios.post('http://localhost:8004/color_detection_image/',formData,{headers:{'Content-Type': 'multipart/form-data'}}).then((res)=>{
+    var response = await axios.post(`${process.env.THIRD_PARTY_IP}/color_detection_image/`,formData,{headers:{'Content-Type': 'multipart/form-data'}}).then((res)=>{
       console.log("Response from third party;"+res.data.message);
       logger.info("Third party handle image:"+res.data.message);
       color_images.push(res.data.data);
@@ -1548,7 +1548,7 @@ try{
   if(rubik_name =="Rubik's 3x3")
   {  
     var payload={name:rubik_name,facelets:face_convert,original_cube:'',des_cube:''}
-    var response=await axios.post('http://localhost:8004/solve_rubik',payload).then(async(result)=>
+    var response=await axios.post(`${process.env.THIRD_PARTY_IP}/solve_rubik`,payload).then(async(result)=>
     {   
         var sol=result.data.data;
         if(sol!=='')
