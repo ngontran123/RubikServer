@@ -28,7 +28,7 @@ app.use(session({
 // app.use(compression);
 var corsOption={optionsSuccessStatus: 200};
 app.use(express.static(path.join(__dirname, 'views')));
-app.use(express.static('uploads'));
+app.use(express.static('dist'));
 app.use(cors(corsOption));
 app.use('/',indexRouter);
 Connection();
