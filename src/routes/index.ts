@@ -22,7 +22,6 @@ const cheerio=require('cheerio');
 var axios= require('axios');
 const Cube= require('cubejs');
 const fs=require('fs');
-const rimraf= require('rimraf');
 const twilio = require('twilio');
 const multer = require('multer');
 const account_sid=process.env.ACCOUNT_SID;
@@ -1567,7 +1566,9 @@ try{
               problem:face_convert,
               solution:sol
             };
-           const rubik_problem=new rubikProblem(rubik_problem_ob);
+           
+           
+       const rubik_problem=new rubikProblem(rubik_problem_ob);
 
            rubik_problem.save((err,savedOb)=>{
               if(err)
